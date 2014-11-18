@@ -1,9 +1,6 @@
 package de.l3s.boilerpipe.sax;
 
 import de.l3s.boilerpipe.BoilerpipeExtractor;
-import de.l3s.boilerpipe.document.Image;
-import de.l3s.boilerpipe.document.Media;
-import de.l3s.boilerpipe.document.Video;
 import de.l3s.boilerpipe.extractors.CommonExtractors;
 import de.l3s.boilerpipe.extractors.LtArticleExtractor;
 import org.junit.Test;
@@ -13,14 +10,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
-import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.util.List;
-
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 
 /**
  * Created by martynas on 13/11/14.
@@ -61,7 +52,7 @@ public class LtExtractorTest {
         InputStream stream = getClass().getResourceAsStream(file);
         BufferedReader br = new BufferedReader(new InputStreamReader(stream));
         StringBuilder sb = new StringBuilder();
-        String line = "";
+        String line;
 
         try {
             while ((line = br.readLine()) != null) {
