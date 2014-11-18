@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.l3s.boilerpipe</groupId>
   <artifactId>boilerpipe-core</artifactId>
-  <version>1.2.2</version>
+  <version>1.2.3</version>
   <name>boilerpipe</name>
   <description>Boilerplate Removal and Fulltext Extraction from HTML pages  - fork of version 1.2.0</description>
   <url>https://github.com/Netbreeze-GmbH/boilerpipe</url>
