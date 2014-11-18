@@ -18,7 +18,7 @@ import java.net.URL;
  */
 public class LtExtractorTest {
     @Test
-    public void shouldGetDocumentMedia() throws IOException, URISyntaxException {
+    public void shouldGetLtText() throws IOException, URISyntaxException {
         URL url = new URL("http://www.balsas.lt/naujiena/814860/parlamento-gynejas-zaliojo-tilto-skulpturas-papuose-grandinemis");
         url = new URL("http://www.balsas.lt/naujiena/814867/ukraina-paskelbe-kam-ruosis-artimiausiu-metu?utm_source=kitiRubrikosStr&utm_medium=susijeEuropa&utm_campaign=naujiena");
         url = new URL("http://iq.lt/pasaulis/rygos-randas");
