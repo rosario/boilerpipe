@@ -61,8 +61,10 @@ public class TerminatingBlocksFinder implements BoilerpipeFilter {
 									" users responded in")
 							|| textLC.startsWith("copyright ©")
 							|| textLC.equals("references")
+							|| textLC.equals("acknowledgments")
+							|| textLC.equals("conflict of interest statement")
 							|| textLC
-									.equals("thanks for your comments - this feedback is now closed")) {
+							.equals("thanks for your comments - this feedback is now closed")) {
 						tb.addLabel(DefaultLabels.INDICATES_END_OF_TEXT);
 						changes = true;
 					}
