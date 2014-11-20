@@ -89,18 +89,65 @@ public class SciExtractorTest {
 //        }
 //    }
 
+//    @Test
+//    public void shouldGetSciText6() throws IOException, URISyntaxException {
+////        http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1517-83822010000200030
+//        try {
+//            final SciArticleExtractor ae = SciArticleExtractor.INSTANCE;
+//            String text = ae.getText(getFileAsString("/en7.html"));
+//            System.out.println(text);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
+
+//    @Test
+//    public void shouldGetSciText7() throws IOException, URISyntaxException {
+////        http://journal.frontiersin.org/Journal/10.3389/fmicb.2013.00166/full
+//        try {
+//            final SciArticleExtractor ae = SciArticleExtractor.INSTANCE;
+//            String text = ae.getText(getFileAsString("/en7.html"));
+//            System.out.println(text);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
+
+//    @Test
+//    public void shouldGetSciText8() throws IOException, URISyntaxException {
+////        http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0001-37141999000300012
+//        try {
+//            final SciArticleExtractor ae = SciArticleExtractor.INSTANCE;
+//            String text = ae.getText(getFileAsString("/en8.html"));
+//            System.out.println(text);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
+
+//    @Test
+//    public void shouldGetSciText9() throws IOException, URISyntaxException {
+////        http://www.revistas.unal.edu.co/index.php/biotecnologia/article/view/15540
+//        try {
+//            final SciArticleExtractor ae = SciArticleExtractor.INSTANCE;
+//            String text = ae.getText(getFileAsString("/en9.html"));
+//            System.out.println(text);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
+
     @Test
-    public void shouldGetSciText5() throws IOException, URISyntaxException {
-//        http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1517-83822010000200030
+    public void shouldGetSciText10() throws IOException, URISyntaxException {
+//        http://www.microbialcellfactories.com/content/5/1/20
         try {
             final SciArticleExtractor ae = SciArticleExtractor.INSTANCE;
-            String text = ae.getText(getFileAsString("/en6.html"));
+            String text = ae.getText(getFileAsString("/en10.html"));
             System.out.println(text);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
 
     public String getFileAsString(String file) {
         InputStream stream = getClass().getResourceAsStream(file);
