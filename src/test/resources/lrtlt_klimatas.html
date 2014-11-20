@@ -1,0 +1,1695 @@
+<!doctype html>
+    <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+    <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+    <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+    <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+        <head>
+            <meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Ug8PVVBRGwAHU1hWBQI="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),u=c.length,f=i(a,o,r),d=0;u>d;d++)c[d].apply(f,n);return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={};return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(u){"stack"in u&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:18,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:18,2:19,ee:"QJf3ax",gos:"7eSDFh"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:19,2:18,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:19,2:18,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),u=s(a),f=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new f(t);try{i.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=f.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:19,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(u);if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var u=e(o);u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var f=0;c>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:9,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,u="addEventListener",f="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[u]?(c[u]("DOMContentLoaded",o,!1),s[u]("load",n,!1)):(c[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],18:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],19:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,u="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:18,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script>
+
+            <title>Klimato pokyčiai: briedžiams nerūpi, dirvožemiui kenkia - Lietuvoje - Naujienos -  LRT</title>
+
+                            <meta property="og:title" content="Klimato pokyčiai: briedžiams nerūpi, dirvožemiui kenkia - LRT"/>
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="http://www.lrt.lt/naujienos/lietuvoje/2/78585" />
+                <meta property="og:image" content="http://www.lrt.lt/mimages/News/images/78585/293/220/size4x3"/>
+                <meta property="og:site_name" content="Lietuvos Radijas ir Televizija"/>
+                <meta property="og:description" content="&amp;Scaron;ių metų &amp;scaron;iltas ruduo gali turėti reik&amp;scaron;mingesnės įtakos tik žmonių gyvenimams, o žvėrys leidžia dienas įprastu ritmu - pakeitė kailius į žieminius, bebrai žiemojimui sutvarkė savo trobeles, pasakoja gamtininkas Selemonas Paltanavičius."/>
+            
+            <meta name="keywords" content="" />
+            <meta name="description" content="&amp;Scaron;ių metų &amp;scaron;iltas ruduo gali turėti reik&amp;scaron;mingesnės įtakos tik žmonių gyvenimams, o žvėrys leidžia dienas įprastu ritmu - pakeitė kailius į žieminius, bebrai žiemojimui sutvarkė savo trobeles, pasakoja gamtininkas Selemonas Paltanavičius." />
+
+            <base href="http://www.lrt.lt/">
+
+            <link rel="alternate" type="application/rss+xml" href="http://www.lrt.lt/naujienos?rss" />	
+            <link rel="shortcut icon" href="http://www.lrt.lt/images/favicon.ico">
+            <link rel="stylesheet" href="http://www.lrt.lt/css/lrt.css">
+            <link rel="stylesheet" href="http://www.lrt.lt/css/lrt-access.css">
+            <link rel="stylesheet" href="http://www.lrt.lt/css/mediateka.css">
+            <link rel="stylesheet" href="http://www.lrt.lt/css/mediateka-access.css">
+            <link rel="stylesheet" href="http://www.lrt.lt/css/print.css" type="text/css" media="print" />
+            <link rel="stylesheet" href="http://www.lrt.lt/scripts/js/scroll/jquery.jscrollpane.css" />
+            <link rel="stylesheet" href="http://www.lrt.lt/scripts/js/thumbnailScroller/jquery.thumbnailScroller-pasivyk.css" />		
+
+            <script src="http://www.lrt.lt/scripts/js/general.js"></script>
+            <script src="http://www.lrt.lt/scripts/js/zxcScroller.js"></script>
+
+            <script type="text/javascript">
+                //<![CDATA[
+                document.cookie = 'JSEnabled=true'
+                //]]>
+            </script>
+
+            
+                <script type="text/javascript" src="//lt.adocean.pl/files/js/ado.js"></script>
+                <script type="text/javascript">
+                    if (typeof ado !== "object") {
+                        ado = {};
+                        ado.config = ado.preview = ado.placement = ado.master = ado.slave = function() {
+                        };
+                    }
+                    ado.config({mode: "old", xml: false, characterEncoding: true});
+                    ado.preview({enabled: true, emiter: "lt.adocean.pl", id: "S1dGm9eP4tXvtBrMgiCc0uZQAXLligdPTagK2FF3PP3.37"});
+                </script>
+            
+
+             
+    <!-- start master -->
+<script type="text/javascript">
+/* (c)AdOcean 2003-2014, MASTER: lrt_adm_lt.LRT_LT.Lietuvoje */
+ado.master({id: '51eV4yu97ZCFM_VrVWQsARWQMhktAf4veZ5g2zZthmn.U7', server: 'lt.adocean.pl' });
+</script>
+<!--  end master  -->
+
+
+            <script src="http://www.lrt.lt/scripts/js/libs/modernizr-2.5.3.min.js"></script>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="http://www.lrt.lt/scripts/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+            <script src="http://www.lrt.lt/scripts/js/jquery-ui-1.8.23.custom.min.js"></script>
+            <script src="http://www.lrt.lt/scripts/jquery/jquery.cookie.min.js"></script>
+
+            <script src="http://www.lrt.lt/scripts/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+        </head>
+
+            <body id="lrt-body">
+        <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+        <div id="lrt">
+            <div id="wrapper">
+                <header>
+                    <div id="top-wrapper">
+                        <div class="langs">
+                            <ul>
+                                <li><a id="access" class="glasses" href="#">Neįgaliesiems</a></li>
+                                                                        <li class="last"><a href="en">English</a></li>
+                                                                </ul>
+                        </div>
+
+                        <div class="logo">
+                            <a href="http://www.lrt.lt">
+                                <img alt="LRT Logo" src="images/mediateka/mediateka-logo.png" />
+                            </a>
+                        </div>
+                        <div class="grey-btn add-news programa">
+                            <a href="http://www.lrt.lt/televizija/tv-programa">
+                                <span class="btn">PROGRAMA</span>
+                            </a>
+                        </div>
+
+                        	
+	<div class="grey-btn temperature">
+		<p>Šiandien Vilniuje<span>-1&deg;C</span></p>
+	</div>	
+	
+
+
+                        <div class="grey-btn add-news add-event">
+                            <a href="pranesk-ivyki">
+                                <span class="btn">pranešk įvykį</span>
+                            </a>
+                        </div>
+
+                        	
+
+<script type="text/javascript"> 
+	var errors = new Array();
+	errors ['unknown'] = 'Vartotojo vardas ir/arba slaptažodis nesutampa';
+	errors ['email'] = 'Teisingai nurodykite el. pašto adresą';
+	errors ['passwd'] = 'Neužpildytas slaptažodžio laukelis';
+	errors ['all'] = 'Visus laukus privaloma užpildyti';
+
+	function validate(formData, jqForm, options) { 
+		for (var i=0; i < formData.length; i++) { 
+			if (!formData[i].value) { 
+				//alert (errors['all']);                     
+				return false; 
+			} 
+		} 
+	}
+
+	function processLogin(data) { 
+		if (data.error) alert (errors[data.error]);
+		else if (data.success) { 
+			location.href = location.href;
+			//$('#lrt .search a').css('color','red').text('ProcessLoginas');
+			$('#loginform').hide();
+			$('.add-news.login').removeClass('formopen');
+			$('.login-wrap').find('span').text('Atsijungti');
+		} 
+		else  alert (errors['unknown']);
+	}	
+
+	$(document).ready(function() {
+		   $('#UserLogin').ajaxForm({ 
+				dataType:  'json',
+				beforeSubmit: validate, 
+				success:   processLogin 
+			});
+					
+			$(".login a.login, #loginform .close").click(function(){
+				var forma = $("#top-wrapper  #loginform");
+				forma.toggle();
+				if(forma.css('display') == 'block' ){
+					$("div.login").addClass('formopen');
+				}else{
+					$("div.login").removeClass('formopen');
+				}
+			return false;	
+			});			
+			
+	});
+
+</script>
+
+<div id="fb-root"></div>
+<script type="text/javascript">
+	window.fbAsyncInit = function() { 
+		FB.init({ appId: 470743216272990, status: true, cookie: true, xfbml: true});
+		
+		FB.Event.subscribe('auth.login', function(response) {
+			login();
+		});
+		
+		FB.Event.subscribe('auth.logout', function(response) {		
+			logout();
+		});
+	};
+	
+	(function() {
+		var e = document.createElement('script');
+		e.type = 'text/javascript';
+		e.src = document.location.protocol +
+				'//connect.facebook.net/lt_LT/all.js';
+		e.async = true;
+		document.getElementById('fb-root').appendChild(e);
+	}());
+
+	function login(){
+		FB.api('/me', function(response) {                        
+			$.post("http://www.lrt.lt/login" + "?loginFrom=facebook", response );
+			//setTimeout('document.location=document.location', 2000);    
+			//$('#lrt .search a').css('color','#000000').text('Facebook loginas'); OK
+		});
+	}
+	
+	function logout(){ 
+		//alert('logged out');
+		FB.logout(); 
+	}
+
+</script>
+
+<script type="text/javascript" src="http://platform.linkedin.com/in.js">
+	api_key: 7c46fi5ef8eh;
+	authorize: true    ;
+</script>    
+
+<script type="text/javascript">
+
+	function onLinkedInAuth() {
+		IN.API.Profile("me")
+			.result( function(me) {              
+				$.post("http://www.lrt.lt/login" + "?loginFrom=linkedin", me );			  
+				setTimeout('document.location=document.location', 2000);			
+		});			
+	}		
+
+	function onLinkedLogout() {			
+		IN.User.logout();
+	}    		
+
+	$(document).ready(function() {			
+		$("#LinkedInButton").bind('click',function () { IN.User.authorize(); return false;});
+	});
+
+</script>
+  		
+
+    <div class="add-news login">
+        <div id="loginform">
+            <div id="login-form-elements-wr">
+                <div class="close"></div>
+                <form id="UserLogin" name="UserLogin" method="post">
+                    <label class="name-label">El. paštas:</label>
+                    <input type="text" name="userData[email]" class="login-name-input" />
+
+                    <label class="password-label">Slaptažodis:</label>
+                    <input type="password" name="userData[passwd]" class="password-input" />
+                    <input type="hidden" name="doLoginSubmit" value="1"> 
+                    <input type="submit" name="sbmit" class="submit" value="prisijungti"  />
+                </form>
+
+                <a href="registracija" class="reg-link">Registruotis</a>
+                <a href="registracija/pamirsau" class="remember-pass-link">Pamiršau slaptažodį</a>
+
+                <div class="loginsoc">
+                    <div class="loginsoc-wr">
+                        <span class="left">Prisijungti per: </span>
+                        <a class="fblogin" href="https://www.facebook.com/dialog/oauth?client_id=470743216272990&amp;redirect_uri=http://www.lrt.lt/naujienos/lietuvoje?loginFrom=facebook&amp;scope=email&amp;state=1416305145"></a>
+                        <span class="left">arba</span>
+                        <div id="LinkedInButton"></div>
+                        <div class="inlogin">	
+
+                            <script type="in/Login" data-onAuth="onLinkedInAuth">
+                                <a href="javascript: onLinkedLogout()">Logout</a>
+                            </script>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="login-wrap">
+                <a class="login click">
+                    <span>Prisijungti</span>
+                </a>
+            </div>
+        </div>
+    
+
+
+                        <div class="search">
+<script type="text/javascript"> 
+    $(document).ready(function() { 
+		$('#do_search').click(function() {
+			var phrase = $('#searchInput').val();
+			if (phrase == undefined || phrase == 'Paieška' || phrase == 'Įveskite paieškos žodį')  {
+				$('#searchInput').css('color','red').val('Įveskite paieškos žodį');
+				return false;			
+			}
+			else {
+				$('#search_form').submit();
+			}							
+		});
+    }); 
+</script>
+
+<div style="float:right;width:285px;">
+<a href="paieska">Išplėstinė paieška</a>
+<form id="search_form" name="search" method="post" action="paieska">
+        <input name="doSearchSubmit" type="hidden" value="1">                      
+		<input id="searchInput" class="focus" name="searchData[title]" type="text" value="Paieška">
+		<a class="click" id="do_search"></a>
+ </form>
+ </div>
+ </div>
+
+
+
+                        <div class="clear"></div>
+                        <div class="top-banner">
+                             
+    <div class="banner_wrap" align="center">
+        <!-- start slave -->
+<div id="adoceanltqkhhjjitai"></div>
+<script type="text/javascript">
+/* (c)AdOcean 2003-2014, lrt_adm_lt.LRT_LT.Lietuvoje.1000x200 */
+ado.slave('adoceanltqkhhjjitai', {myMaster: '51eV4yu97ZCFM_VrVWQsARWQMhktAf4veZ5g2zZthmn.U7' });
+</script>
+<!--  end slave  -->
+    </div>
+
+
+                        </div>
+                        <div id="top-menu">
+                            <ul>
+                                <li><a class="home" href="http://www.lrt.lt"></a></li>					
+                                    
+    
+
+<script>
+	$(document).ready(function() {
+	
+		$('.top-menu-sub').find('ul li a.active').parents('div:eq(0)').css('display','block');
+		
+		$('#top-menu a').click(function (){
+			var menuBlock = $(this).attr("id");
+			
+			$('#top-menu a').removeClass('active');
+			if ($(this).hasClass('active')){
+				$('.top-menu-sub.'+menuBlock).slideUp();
+				
+			}else{
+				$(this).addClass('active');
+				$('.top-menu-sub.'+menuBlock).show();
+			}
+
+			$('.top-menu-sub').hide();
+			$('.top-menu-sub.'+menuBlock).show();
+			$('.top-menu-sub.'+menuBlock).addClass('selected');
+			
+		});
+	
+	});
+</script>	
+	
+
+						<li ><a id="naujienos" class="active click">Naujienos</a></li>
+								<li ><a class="click" id="televizija">Televizija</a></li>
+								<li ><a class="click" id="radijas">Radijas</a></li>
+								<li class="last"><a class="click" id="apie_lrt">Apie LRT</a></li>
+							
+
+
+                            </ul>
+                            <div class="menu-right">
+                                	<ul class="menu-right-block">
+	<li class="last">
+		<a href="http://www.lrt.lt/projektai/eurovizija" target="_blank">Eurovizijos atranka</a></li>
+	<li class="last">
+		<a href="http://www.lrt.lt/naujienos/novosti">Новости </a></li>
+	<li class="last btn_mediateka">
+		<strong><a href="mediateka" target="_blank">Mediateka</a></strong></li>
+</ul>
+
+
+                            </div>						
+                        </div>						
+                        <div class="clear"></div>
+                    </div>
+                </header>	
+
+                <div id="sections">
+
+                    
+    
+					<div class="top-menu-sub naujienos" >
+				<ul>			
+															<li><a href="naujienos/visos">Visos naujienos</a></li>
+																<li >
+					<a class="active" href="naujienos/lietuvoje">Lietuvoje</a></li>
+																<li><a href="naujienos/pasaulyje">Pasaulyje</a></li>
+																<li><a href="naujienos/nuomones">Nuomonės</a></li>
+																<li><a href="naujienos/ekonomika">Ekonomika</a></li>
+																<li><a href="naujienos/sportas">Sportas</a></li>
+																<li><a href="naujienos/kultura">Kultūra</a></li>
+																<li><a href="naujienos/kalba_vilnius">Kalba Vilnius</a></li>
+																<li><a href="naujienos/Tavo_LRT">Tavo LRT</a></li>
+																<li><a href="naujienos/mokslas_ir_it">Mokslas ir IT</a></li>
+																<li><a href="naujienos/ivairenybes">Įvairenybės</a></li>
+																<li><a href="naujienos/tavo_zvilgsnis">Tavo žvilgsnis</a></li>
+																<li><a href="naujienos/news_in_english">News in English</a></li>
+																<li><a href="naujienos/novosti">Новости на русском языке</a></li>
+																<li><a href="naujienos/eurovizija_2015">Eurovizija 2015</a></li>
+											</ul>
+				<div class="clear"></div>
+			</div>	
+							<div class="top-menu-sub televizija" >
+				<ul>			
+															<li><a href="televizija/tv-programa">Programa</a></li>
+																<li><a href="televizija/laidos">Laidos</a></li>
+																<li><a href="televizija/anonsai">Anonsai</a></li>
+																<li><a href="televizija/filmai">Filmai</a></li>
+																<li><a href="televizija/serialai">Serialai</a></li>
+																<li><a href="televizija/lrt-hd">LRT HD</a></li>
+																<li><a href="televizija/lrt-lituanicos-nukreipimas">LRT Lituanica</a></li>
+																<li><a href="televizija/naujo-sezono-nukreipimas">Naujas sezonas 2014-2015</a></li>
+											</ul>
+				<div class="clear"></div>
+			</div>	
+							<div class="top-menu-sub radijas" >
+				<ul>			
+															<li><a href="radijas/programa">Programa</a></li>
+																<li><a href="radijas/laidos">Laidos</a></li>
+																<li><a href="radijas/anonsai">Anonsai</a></li>
+																<li><a href="radijas/radijo-dazniai">Radijo dažniai</a></li>
+																<li><a href="radijas/fonoteka">Fonoteka</a></li>
+											</ul>
+				<div class="clear"></div>
+			</div>	
+							<div class="top-menu-sub apie_lrt" >
+				<ul>			
+															<li><a href="apie-lrt/radijo-dazniai">Radijo dažniai</a></li>
+																<li><a href="apie-lrt/tv-pasiekiamumas">TV pasiekiamumas</a></li>
+																<li><a href="apie-lrt/LRT">Kas yra LRT?</a></li>
+																<li><a href="apie-lrt/viesieji-pirkimai">Viešieji pirkimai</a></li>
+																<li><a href="apie-lrt/skelbimai">Skelbimai</a></li>
+																<li><a href="apie-lrt/pranesimai-spaudai">Pranešimai spaudai</a></li>
+																<li><a href="apie-lrt/lrt-taryba">LRT taryba</a></li>
+																<li><a href="apie-lrt/teisine-atsakomybe">Teisinė atsakomybė</a></li>
+																<li><a href="apie-lrt/reklama">Reklama</a></li>
+																<li><a href="apie-lrt/lrt-muziejus">Nemokamos ekskursijos</a></li>
+																<li><a href="apie-lrt/LRT_HD">LRT HD</a></li>
+																<li><a href="apie-lrt/kontaktai">Kontaktai</a></li>
+																<li><a href="apie-lrt/japoniskassodas">Vilniaus japoniškas sodas</a></li>
+																<li><a href="apie-lrt/naujas_sezonas">Naujas sezonas 2014-2015</a></li>
+																<li><a href="apie-lrt/kalbek">Kalbos patarimai</a></li>
+											</ul>
+				<div class="clear"></div>
+			</div>	
+		
+
+
+                    <div class="breadcrumbs">
+                        <a href="http://www.lrt.lt">Titulinis</a>
+                                                    <a  href="http://www.lrt.lt/naujienos">Naujienos</a>
+                                                    <a class="last" href="http://www.lrt.lt/naujienos/lietuvoje">Lietuvoje</a>
+                                            </div>				
+
+                    
+
+                    <div id="left">	
+
+                        
+
+                        
+
+                        
+
+                        	
+	<link href="http://www.lrt.lt/scripts/js/timeline/accordion.css" rel="stylesheet" type="text/css" />
+	<script src="http://www.lrt.lt/scripts/js/timeline/pngFixer.js"></script>
+	<script src="http://www.lrt.lt/scripts/js/timeline/accordion.js"></script>
+	<script src="http://www.lrt.lt/scripts/js/timeline/jquery.hoverIntent.js"></script>
+	<script src="http://www.lrt.lt/scripts/js/timeline/buttons.js"></script> 
+	
+<script type="text/javascript">
+
+var messages = new Array();
+messages['verificationImage'] = 'Teisingai įveskite paveiksliuko skaičius';
+messages['comment'] = 'Užpildykite komentaro lauką';
+messages ['unknown'] = 'Unknown Error';
+messages ['success'] = 'Thanks';
+
+	$(document).ready(function($) {
+	
+				
+		$(".ngalerija a").fancybox({
+			titlePosition: 'inside',
+			overlayColor: '#0d182a',
+			overlayOpacity: '0.7',
+			'titleFormat': function(title, currentArray, currentIndex, currentOpts) {
+			return  '<div id="fancy-title-wrapper"><div id="fancy-author"><span >'+(title.length ? '' + title : '') +'</span></div><div id="fancy-count">'+   (currentIndex + 1) + ' iš ' + currentArray.length + '</div></div>';
+			}
+		});
+		
+		$('#straipsnislink').parent().addClass('active');
+		
+		$('#relatedVideolink').click( function() {
+			$('#relatedVideo').show();
+			$('#straipsnis').hide();
+			$('#komentarai').hide();
+			$(this).parent().addClass('active');
+			$('#straipsnislink').parent().removeClass('active');
+			$('#komentarailink').parent().removeClass('active');
+		});
+		
+		$('#straipsnislink').click( function() {
+			$('#relatedVideo').hide();
+			$('#straipsnis').show();
+			$('#komentarai').hide();
+			$(this).parent().addClass('active');
+			$('#relatedVideolink').parent().removeClass('active');
+			$('#komentarailink').parent().removeClass('active');
+					});	
+		
+		$('#komentarailink').click( function() {
+			$('#relatedVideo').hide();
+			$('#straipsnis').hide();
+			$('#komentarai').show();
+			
+			getComments();
+			
+			$(this).parent().addClass('active');
+			$('#straipsnislink').parent().removeClass('active');
+			$('#relatedVideolink').parent().removeClass('active');
+					});		
+		
+	   $('#postComment').ajaxForm({ 
+			dataType:  'json',
+			success:   processPost 
+		}); 	
+		
+		$('.video-block-picture a').click(function(){
+			var title = $(this).parent().parent().children('.vtitle').text();
+			var date = $(this).parent().parent().children('.vdate').text();
+			$('.main-video-block p.date').text(date); 
+			$('#relatedVideo h3').text(title);
+		});
+		
+	});
+		
+		function playVideo(){
+			$('#relatedVideo').show();
+			$('#straipsnis').hide();
+			$('#straipsnislink').parent().removeClass('active');
+			$('#relatedVideolink').parent().addClass('active');
+			$('html, body').animate({ scrollTop: 400 }, 'slow');
+                        //jwplayer().onBeforePlay(function() { playAd('http://lt.adocean.pl/ad.xml?id=4GCa_PwTo6kzLfgGw49Qr2VrE5tNEvHSzE.2fP5K_Jv.P7') });
+		}
+			
+		function getComments(){ 
+			$.get(location.href+'/comments', null,
+				function(data) {
+				$("#komentarai").html(data);
+				}, "html");
+		}
+
+		function processPost(data) { 
+			if (data.error) alert (messages[data.error]);
+			
+			else if (data.success) { 
+				$('#comment-field').val('');
+				$('#commentpost').show();
+				getComments();
+				$("#commentsCount").html(parseInt($("#commentsCount").html())+1);
+			} else  alert (messages['unknown']);
+		}
+		
+		function ping(){
+		$.getJSON("mediateka/irasas/ping/140fb41db514ab26a570fe9efd830b67", null,
+		    function(data){
+			if (data.status){
+			    setTimeout("ping()", 60000);    
+			} else {
+			    setTimeout("ping()", 60000);    
+			}    
+		    }
+		);
+	    }
+	    
+	    //ping();
+
+</script>	
+
+<section id="news-full-description">
+	<div style="height:3px;width:100%;background-color:#6CACE4"></div>
+	<div class="ctop">
+		<div class="cbot">
+			<div class="cmid">	
+				<div class="content">
+					<h1>Lietuvoje</h1>
+					
+					<h2>Klimato pokyčiai: briedžiams nerūpi, dirvožemiui kenkia
+																		<span class="gallery">&nbsp;&nbsp;</span>					</h2>
+
+					<div class="author">
+						<div>2014-11-18  /  09:43 — Vytenis Radžiūnas, LRT.lt</div>
+											</div>	
+					
+					<div class="icons">
+						  <a class="print click"></a>
+						  <!--a href="#" class="mail"></a-->			    
+					</div>										
+					<div class="news-tabs">
+						<ul>
+							<li><a id="straipsnislink" class="click">Naujiena</a></li>
+														<li><a id="komentarailink" class="click">Skaityti komentarus (<span id="commentsCount">0</span>)</a></li>
+						</ul>
+					</div>
+					<div id="straipsnis">
+					<div class="photo-main">
+					<img title="Klimato pokyčiai: briedžiams nerūpi, dirvožemiui kenkia" src="mimages/News/images/78585/645/363/size16x9" alt="A. Dumčiaus nuotr." border="0">
+						<div class="comment">A. Dumčiaus nuotr.</div>
+					</div>										
+					
+					<div class="full-text">
+												<p>
+	<strong>&Scaron;ių metų &scaron;iltas ruduo gali turėti reik&scaron;mingesnės įtakos tik žmonių gyvenimams, o žvėrys leidžia dienas įprastu ritmu &ndash; pakeitė kailius į žieminius, bebrai žiemojimui sutvarkė savo trobeles, pasakoja gamtininkas Selemonas Paltanavičius.</strong></p>
+<p>
+	Tuo metu ekologas dr. Vidas Stakėnas pažymi, jog &scaron;iltos žiemos laukia mi&scaron;ko kenkėjai, kurie gali padaryti nemažai žalos. &bdquo;&Scaron;is ruduo neypatingas, pana&scaron;ių buvo daug. Jei turėsime &scaron;altesnę žiemą, viskas bus gerai, bet jei visa žiema bus &scaron;ilta, tuomet prasidės visa grandinė įvairių dalykų.&ldquo;</p>
+<p>
+	<strong>Gamtininkas: žiemai ruo&scaron;iasi visi vienodai</strong></p>
+<p>
+	Kaip DELFI pasakojo Lietuvos hidrometeorologijos tarnybos Klimatologijos skyriaus specialistas Donatas Valiukas, pagal ilgalaikes Amerikos klimatologų eksperimentines prognozes, būsima žiema turėtų būti &scaron;iltesnė, nei įprasta, ypač gruodis ir vasaris. Vidutinė žiemos temperatūra prognozuojama auk&scaron;tesnė už daugiametę apie vieną laipsnį.</p>
+<p>
+	&bdquo;Tai tikrai nėra mažai, tai jau apčiuopiamas dydis klimatologijoje. Mūsų žiemos vidutinė temperatūra svyruoja nuo -4 laipsnių Rytų Lietuvoje iki -1 laipsnio pajūryje. Pastaraisiais metais tenka stebėti, kad žiemos i&scaron; tiesų &scaron;iltesnės. &Scaron;ilčiausias būna gruodis, o sausį ir vasarį pajūryje vidutinė temperatūra gali siekti -2, o Rytų Lietuvoje &ndash; iki -5 laipsnių. Gruodį vidutinė temperatūra svyruoja nuo -3 laipsnių Rytų Lietuvoje iki 0 pajūryje&ldquo;, &ndash; portalui DELFI kalbėjo specialistas.</p>
+<p>
+	<img alt="" src="/userfiles/images/IMGP9291_2(1).jpg" style="width: 645px; height: 427px;" /><br />
+	<strong><sub>A. Dumčiaus nuotr.</sub></strong></p>
+<p>
+	Tuo metu gamtininkas S. Paltanavičius stebisi kai kurių žmonių noru i&scaron;prana&scaron;auti būsimą žiemą, stebint gamtoje vykstančius pokyčius. &bdquo;Labai daug kas klausia, kokia bus žiema. Teisingiausias atsakymas: nežinome, kokia ji bus. Naivu manyti, kad gamtoje kažkas ją prana&scaron;auja, bando atspėti jos charakterį. To gamtoje nebūna, nes visi žiemai ruo&scaron;iasi vienodai&ldquo;, &ndash; įsitikinęs gamtininkas.</p>
+<p>
+	Vis dėlto, pasak portalo LRT.lt kalbintų pa&scaron;nekovų, &scaron;iokių tokių pokyčių ir pavojų gamtoje dėl &scaron;iltesnių orų galima įžvelgti.</p>
+<p>
+	<strong>Ar gali briedžiai patirti &scaron;iluminį stresą?</strong></p>
+<p>
+	Pasak S. Paltanavičiaus, nors aktyvioji pauk&scaron;čių migracija jau baigėsi, tačiau pauk&scaron;čiai vis dar gana aktyvūs.</p>
+<p>
+	&bdquo;Kur&scaron;ių nerijoje ir Ventės rage į žieduotojų tinklus vis dar pakliūva į pietus traukiančiųjų. Mi&scaron;kuose taip pat galima pamatyti ne tik čia likusių žiemoti pauk&scaron;čių, bet ir besiruo&scaron;iančių migruoti. Visa kita nėra kaip nors pakitę, ir to tikrai negalima laikyti kokiu nors užtrukusio &scaron;ilto rudens rezultatu&ldquo;, &ndash; portalui LRT.lt sakė gamtininkas.</p>
+<p>
+	Pasak jo, žvėrys laiku pakeitė savo kailius, bebrai sukaupė daug maisto ir sutvarkė savo trobeles žiemojimui. &bdquo;Beje, stambieji žvėrys &ndash; briedžiai, elniai &ndash; jau pasitraukė į žiemojimo vietas, pu&scaron;ynų jaunuolynus ar kur daugiau karklų. Mi&scaron;kininkams tai nėra linksma žinia&ldquo;, &ndash; tęsia S. Paltanavičius.&nbsp;</p>
+<p>
+	Yra mokslininkų, teigiančių, jog &scaron;iltas ruduo bei žiema veikia briedžius, kurie esą gali patirti &scaron;iluminį stresą, tačiau, pasak S. Paltanavičiaus, &scaron;ie mi&scaron;kų galiūnai prie skirtingų temperatūrų yra tinkamai prisitaikę.</p>
+<p>
+	&bdquo;I&scaron; tikrųjų būna metų, kai tokiu metu pradeda &scaron;alti, dengiasi ledas, didžiąją laiko dalį bebrai praleidžia nameliuose ar urvuose. Bet sunku įsivaizduoti, kokia turėtų būti temperatūra, kuri veiktų briedžius. Vasarą jie dažniau būna prie vandens, bet briedžio kailis yra ypatingas &ndash; kiekvienas plaukelis yra lyg vamzdelis, tu&scaron;čiaviduris ir nepralaidus nei kar&scaron;čiui, nei &scaron;alčiui.</p>
+<p>
+	Kiti kanopiniai žvėrys &ndash; stirnos ar elniai &ndash; dairosi guolio, kanopomis nubraukia sniegą ir kapsto žemę, kad atsigultų ant plikos žemės, o briedžiai gulasi tiesiai į sniegą. Kur stovėjo briedis, ten ir atsigulė į sniegą, gali ilgai i&scaron;būti. Jis neper&scaron;ąla, turi puikų temperatūrą saugantį sluoksnį. Gamtoje labai drasti&scaron;kų pokyčių nėra, ir žvėrys jų tikrai neturėtų jausti&ldquo;, &ndash; apibendrino S. Paltanavičius.</p>
+<table align="right" border="0" cellpadding="1" cellspacing="1" style="width: 220px;">
+	<tbody>
+		<tr>
+			<td>
+				<img alt="" src="/userfiles/images/murzius(2).jpg" style="width: 220px; height: 352px;" /></td>
+		</tr>
+		<tr>
+			<td>
+				<strong><sub>A. Dumčiaus nuotr.</sub></strong></td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	Vilniaus universiteto (VU) docentas, gamtininkas Alius Ulevičius pritaria S. Paltanavičiui, kad žvėrys yra prisitaikę tiek prie &scaron;iltesnių, tiek prie &scaron;altų žiemų. Pasak jo, &scaron;ilta žiema nebent pavojingesnė smulkiems žinduoliams, pavyzdžiui, miegapelėms.</p>
+<p>
+	&bdquo;Po sniegu, negiliai žemėje žiemoja kai kurie žinduoliai. Pavyzdžiui, miegapelės įsirausia į grunto paklotę ir ten žiemoja. Tai jų lizdai per atodrėkius yra užpilami, &scaron;ie žinduoliai tampa labiau prieinami aktyvesniems plė&scaron;rūnams. Tokių smulkių žinduolių galimybė i&scaron;gyventi krinta. Geriau, kad būtų gili žiema ir sniego danga&ldquo;, &ndash; nurodo A. Ulevičius.</p>
+<p>
+	<strong>&Scaron;ilta žiema nenaudinga ir ūkinei veiklai</strong></p>
+<p>
+	Kaip teigia Mi&scaron;kų instituto Ekologijos skyriaus vedėjas dr. V. Stakėnas, &scaron;iltesnis ruduo bei žiema didesnės įtakos žvėrims gal ir neturi,&nbsp; tačiau klimato &scaron;iltėjimas negali neatsiliepti mi&scaron;ko ekosistemai.</p>
+<p>
+	&bdquo;Ekosistema &ndash; ne tik žvėrys. Žvėrims galbūt netgi blogiau, jei sniego iki bambos yra, jiems dėl to sunkiau maitintis. Bet vabzdžiai, kenkėjai, grybinių ligų sukėlėjai kur kas geriau peržiemoja esant &scaron;iltam orui. Dėl to yra didesnė tikimybė, kad kitąmet jie padarys daugiau žalos, padidės jų populiacija.</p>
+<p>
+	Jei nėra į&scaron;alo ar pa&scaron;alo, vyksta dirvožemio procesai, į gruntinius vandenis i&scaron; dirvožemio i&scaron;plaunama daugiau visokių maisto medžiagų. Esant &scaron;iltam orui, būna aktyvesnė mikroorganizmų veikla&ldquo;, &ndash; komentuoja V. Stakėnas.</p>
+<p>
+	VU docento A. Ulevičiaus teigimu, &scaron;ilti orai gali atsiliepti ir augalams &ndash; vidury žiemos augalų pumpurai susprogsta, o pavasarį nebeatsibunda. &bdquo;Įvairūs krūmai, žoliniai augalai gali pražysti netikėtu laiku, tačiau užėję &scaron;alčiai gali jiems pakenkti&ldquo;, &ndash; pažymi gamtininkas.</p>
+<p>
+	Kaip ai&scaron;kina V. Stakėnas, &scaron;iltas ruduo bei žiema trukdo ir ūkinei veikla.</p>
+<p>
+	&bdquo;&Scaron;is ruduo niekuo nei&scaron;siskiriantis, pana&scaron;ių yra buvę daug. Visiems geriau, nes reikia mažiau pečius kūrenti. Bet jei visa žiema tokia bus, tuomet prasidės visa grandinė įvairių dalykų. Tai sukelia problemų netgi ūkinei veiklai, mi&scaron;ko kirtimams. Esant tvirtam, geram į&scaron;alui drėgnuose mi&scaron;kuose galima medieną i&scaron;vežti stipriai nepakenkus dirvožemiui.</p>
+<p>
+	Galbūt teko matyti, kaip atrodo traktorių provėžos tokiuose &scaron;lapiuose mi&scaron;kuose, kai to į&scaron;alo nėra. Taip i&scaron;niokojamas dirvožemis&ldquo;, &ndash; tikina V. Stakėnas.</p>
+<p>
+	Jo nuomone, mi&scaron;ko ekosistemai kur kas naudingiau, kai žiemą bent kurį laiką laikosi 10-15 laipsnių &scaron;altis. &bdquo;Jei &scaron;ito nebus, tikėtina, kad poveikis mi&scaron;ko ekosistemai gali būti reik&scaron;mingesnis&ldquo;, &ndash; portalui LRT.lt kalbėjo V. Stakėnas.</p>
+
+
+<script>
+$('<div id="banban"></div>').appendTo('.full-text p:nth-child(4)');
+$(document).ready(function() {
+	var baneris = $('#strban').html();
+	$('#banban').html('');
+});
+</script>		
+<div id="strban">				
+<div class='straipsnio-video-irasai'>
+<div class='video-block' style='background:none !important'>
+
+
+			
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://www.lrt.lt/openx/www/delivery/ajs.php':'http://www.lrt.lt/openx/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=6&amp;tags="+getMetaContents('keywords'));
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a href='http://www.lrt.lt/openx/www/delivery/ck.php?n=aafa6764&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://www.lrt.lt/openx/www/delivery/avw.php?zoneid=6&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=aafa6764' border='0' alt='' /></a></noscript>
+
+
+</div>	
+</div>
+</div>
+<div class="clear"></div>						
+											</div>
+					<div class="like_wrapper">
+						<div class="fb-like" data-href="http://www.lrt.lt/naujienos/lietuvoje/2/78585/klimato_pokyciai_briedziams_nerupi_dirvozemiui_kenkia" data-send="false" data-width="400" data-show-faces="false"></div>
+					</div>
+					<div class="share-buttons" style="margin-bottom:20px;">
+						<!-- AddThis Button BEGIN -->												
+						<div class="addthis_toolbox addthis_default_style ">
+						<a class="addthis_button_facebook"></a>
+						<a class="addthis_button_google_plusone_share"></a>
+						<a class="addthis_button_twitter"></a>
+						<a class="addthis_button_linkedin"></a>
+						<a class="addthis_button_mailto"></a>
+						<a class="addthis_button_favorites"></a>
+						<a class="addthis_counter addthis_bubble_style"></a>
+						</div>
+						<script type="text/javascript">var addthis_config = { "data_track_addressbar":false, "ui_language" : "lt"  };</script>
+						<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fd5eaf0328e1166"></script>
+						<!-- AddThis Button END -->
+					</div>
+					<h3 class="dalinkis">Dalinkis</h3>
+					<div class="clear"></div>	
+				
+
+															<div class="clear"></div>
+					<div class="copyright-text"><p>Griežtai draudžiama LRT paskelbtą informaciją panaudoti kitose interneto svetainėse, tradicinėse žiniasklaidos priemonėse ar kitur arba platinti LRT medžiagą kuriuo nors pavidalu be sutikimo, o jei sutikimas gautas, būtina nurodyti LRT kaip šaltinį</p>
+					</div>
+										
+					
+					<hr />
+					</div>
+	<div id="relatedVideo" style="display:none;">
+						
+	<div id='videoplayer' class="video"></div>
+	
+										
+			<div class="clear"></div>		
+	</div>
+	<div id="komentarai" style="display:none;"></div>
+	<div class="comments-form">
+				<p style="float:left;margin:0;font-weight:bold;">Komentuoti gali tik registruoti vartotojai</p>
+				<div class="clear"></div>
+	</div>
+	</div><!-- content-->
+			</div>
+		</div>
+	</div>						
+</section>
+
+
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+
+                        <section class="content-block">
+                            
+
+                            
+
+                            
+
+                                                    </section>					
+
+                        
+
+                    </div><!-- /left-->
+
+                    <div id="right">
+                        <div class="lrt-banner-right">
+                             
+    <div class="banner_wrap" align="center">
+        <!-- start slave -->
+<div id="adoceanltoprnnidpnm"></div>
+<script type="text/javascript">
+/* (c)AdOcean 2003-2014, lrt_adm_lt.LRT_LT.Lietuvoje.300x600_1 */
+ado.slave('adoceanltoprnnidpnm', {myMaster: '51eV4yu97ZCFM_VrVWQsARWQMhktAf4veZ5g2zZthmn.U7' });
+</script>
+<!--  end slave  -->
+    </div>
+
+
+                        </div>	
+
+                            <script type="text/javascript"> 
+	
+$(document).ready(function() {
+					$('.sortclips.first').addClass('active');
+		   
+		$('.sortclips.first').addClass('active');
+		$('#news-clips').show();
+		
+		$('.sortclips').click(function(){
+			var showblock = $(this).attr('href');
+			$('.sortclips').removeClass('active');
+			if (showblock == '#like-clips') {
+				$('.flink.pop').removeClass('hide');
+			}
+			else if (showblock == '#last-clips' || showblock == '#news-clips'){
+				$('.flink.pop').addClass('hide');
+			}
+			else if (showblock == '#month-clips' || showblock == '#week-clips' || showblock == '#day-clips'){
+				$('.sortclips.pops').addClass('active');
+			}			
+			
+			$(this).addClass('active');
+			$('.clipsblocks').hide();
+			$(showblock).show();
+			return false;
+		});	
+
+});
+
+    </script>
+
+<div class="block">
+    <div class="mediateka">
+            <h1>Mediateka</h1>
+            <ul>
+				<li><a class="sortclips first" href="#news-clips">Naujienos</a></li>
+				<li><a class="sortclips" href="#last-clips">Naujausi</a></li>
+				<li class="last"><a class="sortclips pops" href="#like-clips">Populiariausi</a></li>
+            </ul>
+			<ul class="flink pop hide">
+				<li><a class="sortclips" href="#month-clips">Mėnesio</a> </li>
+				<li><a class="sortclips" href="#week-clips">Savaitės</a> </li>
+				<li class="last"><a class="sortclips" href="#day-clips">Dienos</a> </li>
+			</ul>			
+			
+			<div class="clear"></div>
+			
+                        <div id="news-clips" class="clipsblocks">
+								                <div class="line">
+                    <a href="mediateka/irasas/66116/labas_rytas_lietuva._ii_dalis/9471" title="Izraelis reikalauja nutraukti derybas dėl Irano branduolinės programos">
+                        <img src="mimages/News/images/78691/77/58/size4x3" alt="LAB02406" />
+				    </a>
+                    <p class="time"><span ></span>2014-11-18</p>
+                    <a class="title" href="mediateka/irasas/66116/labas_rytas_lietuva._ii_dalis/9471">Izraelis reikalauja nutraukti derybas dėl Irano branduolinės programos</a>
+                    <div class="clear"></div>
+                </div>	
+												                <div class="line">
+                    <a href="mediateka/irasas/66116/labas_rytas_lietuva._ii_dalis/9469" title="EK teks rengti naują 2015 m. biudžeto projektą">
+                        <img src="mimages/News/images/78689/77/58/size4x3" alt="LAB02406" />
+				    </a>
+                    <p class="time"><span ></span>2014-11-18</p>
+                    <a class="title" href="mediateka/irasas/66116/labas_rytas_lietuva._ii_dalis/9469">EK teks rengti naują 2015 m. biudžeto projektą</a>
+                    <div class="clear"></div>
+                </div>	
+												                <div class="line">
+                    <a href="mediateka/irasas/66116/labas_rytas_lietuva._ii_dalis/9467" title="Palestiniečiai Jeruzalės sinagogoje nužudė keturis žmones">
+                        <img src="mimages/News/images/78719/77/58/size4x3" alt="LAB02406" />
+				    </a>
+                    <p class="time"><span ></span>2014-11-18</p>
+                    <a class="title" href="mediateka/irasas/66116/labas_rytas_lietuva._ii_dalis/9467">Palestiniečiai Jeruzalės sinagogoje nužudė keturis žmones</a>
+                    <div class="clear"></div>
+                </div>	
+												                <div class="line">
+                    <a href="mediateka/irasas/66102/orai_06_36/9465" title="Temperatūra svyruos vos apie nulį">
+                        <img src="mimages/News/images/78681/77/58/size4x3" alt="ORAI1_20141118" />
+				    </a>
+                    <p class="time"><span ></span>2014-11-18</p>
+                    <a class="title" href="mediateka/irasas/66102/orai_06_36/9465">Temperatūra svyruos vos apie nulį</a>
+                    <div class="clear"></div>
+                </div>	
+												                <div class="line">
+                    <a href="mediateka/irasas/66107/labas_rytas_lietuva._i_dalis/9463" title="Suskaičiavo, kiek Latvijoje kainos didėjo dėl apvalinimo">
+                        <img src="mimages/News/images/78625/77/58/size4x3" alt="LAB02405" />
+				    </a>
+                    <p class="time"><span ></span>2014-11-18</p>
+                    <a class="title" href="mediateka/irasas/66107/labas_rytas_lietuva._i_dalis/9463">Suskaičiavo, kiek Latvijoje kainos didėjo dėl apvalinimo</a>
+                    <div class="clear"></div>
+                </div>	
+																																																																			</div>
+                                    
+			<div id="last-clips" class="clipsblocks"
+			style="display:none">
+													<div class="line">
+					<a href="mediateka/irasas/61489/ziniasklaidos_apzvalga" title="Žiniasklaidos apžvalga">
+													<img src="mimages/Media/items/APZ_20141118/77/58/thumbnails" alt="APZ_20141118" />
+										</a>
+						<p class="time"><span >00:03:52</span>2014-11-18</p>
+							<a class="title" href="mediateka/irasas/61489/ziniasklaidos_apzvalga">Žiniasklaidos apžvalga</a>
+					<div class="clear"></div>
+					</div>	
+																	<div class="line">
+					<a href="mediateka/irasas/66101/zinios._ukraina_rusu_kalba_" title="Žinios. Ukraina (rusų kalba)">
+													<img src="mimages/Media/items/LAI21283/77/58/thumbnails" alt="LAI21283" />
+										</a>
+						<p class="time"><span >00:11:20</span>2014-11-18</p>
+							<a class="title" href="mediateka/irasas/66101/zinios._ukraina_rusu_kalba_">Žinios. Ukraina (rusų kalba)</a>
+					<div class="clear"></div>
+					</div>	
+																	<div class="line">
+					<a href="mediateka/irasas/66102/orai_06_36" title="Orai 06:36">
+													<img src="mimages/Media/items/ORAI1_20141118/77/58/thumbnails" alt="ORAI1_20141118" />
+										</a>
+						<p class="time"><span >00:00:39</span>2014-11-18</p>
+							<a class="title" href="mediateka/irasas/66102/orai_06_36">Orai 06:36</a>
+					<div class="clear"></div>
+					</div>	
+																	<div class="line">
+					<a href="mediateka/irasas/66105/zinios_07_59" title="Žinios 07:59">
+													<img src="mimages/Media/items/ZIN2_20141118/77/58/thumbnails" alt="ZIN2_20141118" />
+										</a>
+						<p class="time"><span >00:05:32</span>2014-11-18</p>
+							<a class="title" href="mediateka/irasas/66105/zinios_07_59">Žinios 07:59</a>
+					<div class="clear"></div>
+					</div>	
+																	<div class="line">
+					<a href="mediateka/irasas/66107/labas_rytas_lietuva._i_dalis" title="Labas rytas, Lietuva. I dalis">
+													<img src="mimages/Media/items/LAB02405/77/58/thumbnails" alt="LAB02405" />
+										</a>
+						<p class="time"><span >01:25:07</span>2014-11-18</p>
+							<a class="title" href="mediateka/irasas/66107/labas_rytas_lietuva._i_dalis">Labas rytas, Lietuva. I dalis</a>
+					<div class="clear"></div>
+					</div>	
+																																																																			</div>
+                        
+			<div id="like-clips" class="clipsblocks">
+				 
+								<div class="line">
+				<a href="mediateka/irasas/48729/demesio_centre" title="Dėmesio centre">
+											<img src="mimages/Media/items/LAI15546/77/58/thumbnails" alt="LAI15546" />
+								</a>
+					<p class="time"><span >00:21:06</span>2014-01-07</p>
+						<a class="title" href="mediateka/irasas/48729/demesio_centre">Dėmesio centre</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								<div class="line">
+				<a href="mediateka/irasas/25990/moksleiviu_dainu_svente_musu_vardas_lietuva._ansambliu_vakaras_tai_graziai_mane_augino_" title="Moksleivių dainų šventė: Mūsų vardas LIETUVA. Ansamblių vakaras"Tai gražiai mane augino"">
+											<img src="mimages/Media/items/MUZ02500/77/58/thumbnails" alt="MUZ02500" />
+								</a>
+					<p class="time"><span >02:06:29</span>2012-07-08</p>
+						<a class="title" href="mediateka/irasas/25990/moksleiviu_dainu_svente_musu_vardas_lietuva._ansambliu_vakaras_tai_graziai_mane_augino_">Moksleivių dainų šventė: Mūsų vardas LIETUVA. Ansamblių vakaras"Tai gražiai mane augino"</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								<div class="line">
+				<a href="mediateka/irasas/46972/demesio_centre" title="Dėmesio centre">
+											<img src="mimages/Media/items/LAI15164/77/58/thumbnails" alt="LAI15164" />
+								</a>
+					<p class="time"><span >00:13:14</span>2013-12-02</p>
+						<a class="title" href="mediateka/irasas/46972/demesio_centre">Dėmesio centre</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								<div class="line">
+				<a href="mediateka/irasas/31045/dziazo_vakaras.david_binney_jav_festivalyje_mama_jazz_2011" title="Džiazo vakaras.David Binney (JAV) festivalyje Mama Jazz 2011">
+											<img src="mimages/Media/items/S0026356/77/58/thumbnails" alt="S0026356" />
+								</a>
+					<p class="time"><span >01:02:40</span>2012-01-01</p>
+						<a class="title" href="mediateka/irasas/31045/dziazo_vakaras.david_binney_jav_festivalyje_mama_jazz_2011">Džiazo vakaras.David Binney (JAV) festivalyje Mama Jazz 2011</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								<div class="line">
+				<a href="mediateka/irasas/35884/labas_rytas_lietuva._ii_dalis" title="Labas rytas, Lietuva. II dalis">
+											<img src="mimages/Media/items/LAB01475/77/58/thumbnails" alt="LAB01475" />
+								</a>
+					<p class="time"><span >00:51:58</span>2013-04-10</p>
+						<a class="title" href="mediateka/irasas/35884/labas_rytas_lietuva._ii_dalis">Labas rytas, Lietuva. II dalis</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								 
+								 
+								 
+								 
+								 
+								 
+											</div>	
+
+			<div id="month-clips" class="clipsblocks">
+							 
+								<div class="line">
+				<a href="mediateka/irasas/64720/duokim_garo" title="Duokim garo">
+								<img src="mimages/Media/items/LAI17911/77/58/thumbnails" alt="LAI17911" />
+								</a>
+					<p class="time"><span >01:17:54</span>2014-10-24</p>
+						<a class="title" href="mediateka/irasas/64720/duokim_garo" title="Duokim garo">Duokim garo</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								<div class="line">
+				<a href="mediateka/irasas/64649/auksinis_balsas._lietuviskos_dainos" title="Auksinis balsas. Lietuviškos dainos">
+								<img src="mimages/Media/items/BAL_20141025/77/58/thumbnails" alt="BAL_20141025" />
+								</a>
+					<p class="time"><span >02:11:10</span>2014-10-25</p>
+						<a class="title" href="mediateka/irasas/64649/auksinis_balsas._lietuviskos_dainos" title="Auksinis balsas. Lietuviškos dainos">Auksinis balsas. Lietuviškos dainos</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								<div class="line">
+				<a href="mediateka/irasas/64441/emigrantai" title="Emigrantai">
+								<img src="mimages/Media/items/LAI17826/77/58/thumbnails" alt="LAI17826" />
+								</a>
+					<p class="time"><span >00:44:41</span>2014-10-21</p>
+						<a class="title" href="mediateka/irasas/64441/emigrantai" title="Emigrantai">Emigrantai</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								<div class="line">
+				<a href="mediateka/irasas/65506/auksinis_balsas._populiarioji_muzika" title="Auksinis balsas. Populiarioji muzika">
+								<img src="mimages/Media/items/BAL_20141108/77/58/thumbnails" alt="BAL_20141108" />
+								</a>
+					<p class="time"><span >02:01:59</span>2014-11-08</p>
+						<a class="title" href="mediateka/irasas/65506/auksinis_balsas._populiarioji_muzika" title="Auksinis balsas. Populiarioji muzika">Auksinis balsas. Populiarioji muzika</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								<div class="line">
+				<a href="mediateka/irasas/64933/emigrantai" title="Emigrantai">
+								<img src="mimages/Media/items/LAI17827/77/58/thumbnails" alt="LAI17827" />
+								</a>
+					<p class="time"><span >00:45:03</span>2014-10-28</p>
+						<a class="title" href="mediateka/irasas/64933/emigrantai" title="Emigrantai">Emigrantai</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								 
+								 
+								 
+								 
+								 
+								 
+															
+			</div>	
+
+			<div id="week-clips" class="clipsblocks">
+							 
+								<div class="line">
+						<a href="mediateka/irasas/65882/meile_kaip_menulis._39_s." title="Meilė kaip mėnulis. 39 s.">
+											<img src="mimages/Media/items/SER03653/77/58/thumbnails" alt="SER03653" />
+								</a>
+					<p class="time"><span >00:23:11</span>2014-11-12</p>
+						<a class="title" href="mediateka/irasas/65882/meile_kaip_menulis._39_s.">Meilė kaip mėnulis. 39 s.</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								<div class="line">
+						<a href="mediateka/irasas/65872/gyvenimas" title="Gyvenimas">
+											<img src="mimages/Media/items/LAI17879/77/58/thumbnails" alt="LAI17879" />
+								</a>
+					<p class="time"><span >00:44:19</span>2014-11-12</p>
+						<a class="title" href="mediateka/irasas/65872/gyvenimas">Gyvenimas</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								<div class="line">
+						<a href="mediateka/irasas/65810/auksinis_protas" title="Auksinis protas">
+											<img src="mimages/Media/items/AUK_20141112/77/58/thumbnails" alt="AUK_20141112" />
+								</a>
+					<p class="time"><span >01:12:34</span>2014-11-12</p>
+						<a class="title" href="mediateka/irasas/65810/auksinis_protas">Auksinis protas</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								<div class="line">
+						<a href="mediateka/irasas/66000/auksinis_balsas._pasaulio_etnine_muzika" title="Auksinis balsas. Pasaulio etninė muzika">
+											<img src="mimages/Media/items/MUZ04426/77/58/thumbnails" alt="MUZ04426" />
+								</a>
+					<p class="time"><span >02:01:05</span>2014-11-16</p>
+						<a class="title" href="mediateka/irasas/66000/auksinis_balsas._pasaulio_etnine_muzika">Auksinis balsas. Pasaulio etninė muzika</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								<div class="line">
+						<a href="mediateka/irasas/65766/lietuviu_autoriu_knygos._atrask_ir_didziuokis" title="Lietuvių autorių knygos. Atrask ir didžiuokis">
+											<img src="mimages/Media/items/LAI21134/77/58/thumbnails" alt="LAI21134" />
+								</a>
+					<p class="time"><span >00:41:07</span>2014-11-16</p>
+						<a class="title" href="mediateka/irasas/65766/lietuviu_autoriu_knygos._atrask_ir_didziuokis">Lietuvių autorių knygos. Atrask ir didžiuokis</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								 
+								 
+								 
+								 
+								 
+								 
+															
+			</div>	
+
+			<div id="day-clips" class="clipsblocks">
+							 
+								<div class="line">
+						<a href="mediateka/irasas/66101/zinios._ukraina_rusu_kalba_" title="Žinios. Ukraina (rusų kalba)">
+											<img src="mimages/Media/items/LAI21283/77/58/thumbnails" alt="LAI21283" />
+								</a>
+					<p class="time"><span >00:11:20</span>2014-11-18</p>
+						<a class="title" href="mediateka/irasas/66101/zinios._ukraina_rusu_kalba_">Žinios. Ukraina (rusų kalba)</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								<div class="line">
+						<a href="mediateka/irasas/66107/labas_rytas_lietuva._i_dalis" title="Labas rytas, Lietuva. I dalis">
+											<img src="mimages/Media/items/LAB02405/77/58/thumbnails" alt="LAB02405" />
+								</a>
+					<p class="time"><span >01:25:07</span>2014-11-18</p>
+						<a class="title" href="mediateka/irasas/66107/labas_rytas_lietuva._i_dalis">Labas rytas, Lietuva. I dalis</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								<div class="line">
+						<a href="mediateka/irasas/66105/zinios_07_59" title="Žinios 07:59">
+											<img src="mimages/Media/items/ZIN2_20141118/77/58/thumbnails" alt="ZIN2_20141118" />
+								</a>
+					<p class="time"><span >00:05:32</span>2014-11-18</p>
+						<a class="title" href="mediateka/irasas/66105/zinios_07_59">Žinios 07:59</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								<div class="line">
+						<a href="mediateka/irasas/61489/ziniasklaidos_apzvalga" title="Žiniasklaidos apžvalga">
+											<img src="mimages/Media/items/APZ_20141118/77/58/thumbnails" alt="APZ_20141118" />
+								</a>
+					<p class="time"><span >00:03:52</span>2014-11-18</p>
+						<a class="title" href="mediateka/irasas/61489/ziniasklaidos_apzvalga">Žiniasklaidos apžvalga</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								<div class="line">
+						<a href="mediateka/irasas/66102/orai_06_36" title="Orai 06:36">
+											<img src="mimages/Media/items/ORAI1_20141118/77/58/thumbnails" alt="ORAI1_20141118" />
+								</a>
+					<p class="time"><span >00:00:39</span>2014-11-18</p>
+						<a class="title" href="mediateka/irasas/66102/orai_06_36">Orai 06:36</a>
+				<div class="clear"></div>
+				</div>	
+								 
+								 
+								 
+														</div>				
+    </div>
+    <div class="clear"></div>
+</div>
+
+
+                        <div class="lrt-banner-right">
+                             
+    <div class="banner_wrap" align="center">
+        <!-- start slave -->
+<div id="adoceanltmemeciokhq"></div>
+<script type="text/javascript">
+/* (c)AdOcean 2003-2014, lrt_adm_lt.LRT_LT.Lietuvoje.300x600_2 */
+ado.slave('adoceanltmemeciokhq', {myMaster: '51eV4yu97ZCFM_VrVWQsARWQMhktAf4veZ5g2zZthmn.U7' });
+</script>
+<!--  end slave  -->
+    </div>
+
+
+                        </div>					
+
+                        <div class="block">
+	<div class="survey">
+		<h1>Apklausa</h1>
+					<p>Ar jaučiate priklausomybę miltiniams gaminiams? </p>
+				<p><a href="apklausa">Dalyvauti apklausoje</a></p>
+	</div>
+<div class="clear"></div>
+</div>
+
+
+
+                        <div class="lrt-banner-right">
+                             
+    <div class="banner_wrap" align="center">
+        <!-- start slave -->
+<div id="adoceanltukeinrmpok"></div>
+<script type="text/javascript">
+/* (c)AdOcean 2003-2014, lrt_adm_lt.LRT_LT.Lietuvoje.315x400_1 */
+ado.slave('adoceanltukeinrmpok', {myMaster: '51eV4yu97ZCFM_VrVWQsARWQMhktAf4veZ5g2zZthmn.U7' });
+</script>
+<!--  end slave  -->
+    </div>
+
+
+                        </div>	
+
+                        
+
+<script>
+	$(document).ready(function() {
+		var containerWidth = $('#slider2 .project').length * 315;
+		//var containerWidth = 315;
+		var canclick = 1;
+		var BlockSize = 315;
+		$('#slider2').css('width',containerWidth);
+		$('#slider2').css('display', 'block');
+		if (containerWidth>BlockSize){
+				
+				$('#nextslide2').click(function(){
+					var position = $('#slider2').position();
+					var move = containerWidth + position.left;
+					if (move > BlockSize){
+					if (canclick == 1) {
+					canclick = 0;					
+					$('#slider2').animate({
+						left: '-='+BlockSize
+						},  500, function() { canclick = 1;});
+					}
+					}
+				});
+				$('#prevslide2').click(function(){
+					var position = $('#slider2').position();
+					if (position.left < 0){	
+					if (canclick == 1) {
+					canclick = 0;					
+					$('#slider2').stop().animate({
+						left: '+='+BlockSize
+						}, 500, function() { canclick = 1;});
+					}
+					}
+				});	
+		};
+	});
+
+</script>
+
+	<div class="block slider">
+		<h1>Projektai</h1>
+		<div id="slider2" style="position:absolute; display:none;">
+						<div class="project">
+				<a href="http://metuknygosrinkimai.skaitymometai.lt/ " target="_blank">
+				<img src="mimages/Projects/images/1532/287/216/text" alt="Metų knygos rinkimai" />
+				Metų knygos rinkimai</a>
+			</div>
+						<div class="project">
+				<a href="http://www.lrt.lt/projektai/eurovizija" target="_blank">
+				<img src="mimages/Projects/images/950/287/216/text" alt="Eurovizija 2015" />
+				Eurovizija 2015</a>
+			</div>
+						<div class="project">
+				<a href="http://www.lrt.lt/projektai/nepriklausomybes-sasiuviniai" target="_blank">
+				<img src="mimages/Projects/images/4034/287/216/text" alt="Nepriklausomybės sąsiuviniai" />
+				Nepriklausomybės sąsiuviniai</a>
+			</div>
+						<div class="project">
+				<a href="http://www.ambravox.lt/" target="_blank">
+				<img src="mimages/Projects/images/1149/287/216/text" alt="KONCERTAI UŽUTRAKYJE" />
+				KONCERTAI UŽUTRAKYJE</a>
+			</div>
+						<div class="project">
+				<a href="http://www.lrt.lt/baltijoskelias" target="_blank">
+				<img src="mimages/Projects/images/14853/287/216/text" alt="Baltijos keliui - 25-eri" />
+				Baltijos keliui - 25-eri</a>
+			</div>
+					<div class="clearfix"></div>
+		</div>
+	<a id="prevslide2" class="left click"></a>
+	<a id="nextslide2" class="right click"></a>
+	</div>	
+
+
+<script src="http://www.lrt.lt/scripts/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.lrt.lt/scripts/js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+<script>
+	$(document).ready(function() {
+		var containerWidth = $('#slider .project').length * 315;
+		var canclick = 1;
+		var BlockSize = 315;
+		$('#slider').css('width',containerWidth);
+		$('#slider').css('display', 'block');
+		if (containerWidth>BlockSize){
+				
+				$('#nextslide').click(function(){
+					var position = $('#slider').position();
+					var move = containerWidth + position.left;
+					if (move > BlockSize){
+					if (canclick == 1) {
+					canclick = 0;					
+					$('#slider').animate({
+						left: '-='+BlockSize
+						},  500, function() { canclick = 1;});
+					}
+					}
+				});
+				$('#prevslide').click(function(){
+					var position = $('#slider').position();
+					if (position.left < 0){	
+					if (canclick == 1) {
+					canclick = 0;					
+					$('#slider').stop().animate({
+						left: '+='+BlockSize
+						}, 500, function() { canclick = 1;});
+					}
+					}
+				});	
+		};
+		
+		$("#slider a").fancybox({
+					titlePosition: 'inside',
+					overlayColor: '#0d182a',
+					overlayOpacity: '0.7',
+					'titleFormat': function(title, currentArray, currentIndex, currentOpts) {
+					return  '<div id="fancy-title-wrapper"><div id="fancy-title"><span>'+(title.length ? '' + title : '') +'</span></div><div id="fancy-count">'+   (currentIndex + 1) + ' iš ' + currentArray.length + '</div></div>';
+					}
+							
+				});
+		});
+
+</script>
+
+	<div class="block slider">
+		<h1>Dienos akimirka</h1>
+		<div id="slider" style="position:absolute; display:none;">
+						<div class="project">
+				<a rel="dienos_foto" title="Liūtė su jaunikliais zoologijos sode Prancūzijoje. Lapkričio 17 d., AFP/Scanpix nuotr." href="mimages/Projects/images/18871/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18871/287/216/list" alt="Liūtė su jaunikliais zoologijos sode Prancūzijoje. Lapkričio 17 d., AFP/Scanpix nuotr." />
+				<span>Liūtė su jaunikliais zoologijos sode Prancūzijoje. Lapkričio 17 d., AFP/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Dramblys su jaunikliu, Indonezija. Lapkričio 17 d., AFP/Scanpix nuotr." href="mimages/Projects/images/18869/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18869/287/216/list" alt="Dramblys su jaunikliu, Indonezija. Lapkričio 17 d., AFP/Scanpix nuotr." />
+				<span>Dramblys su jaunikliu, Indonezija. Lapkričio 17 d., AFP/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Darbuotojas gamykloje neša įkaitintą geležies gabalą, Indija. Lapkričio 17 d., Reuters/Scanpix nuotr." href="mimages/Projects/images/18867/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18867/287/216/list" alt="Darbuotojas gamykloje neša įkaitintą geležies gabalą, Indija. Lapkričio 17 d., Reuters/Scanpix nuotr." />
+				<span>Darbuotojas gamykloje neša įkaitintą geležies gabalą, Indija. Lapkričio 17 d., Reuters/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Kurdų vaikai pabėgėlių stovykloje. Lapkričio 17 d., Reuters/Scanpix nuotr." href="mimages/Projects/images/18865/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18865/287/216/list" alt="Kurdų vaikai pabėgėlių stovykloje. Lapkričio 17 d., Reuters/Scanpix nuotr." />
+				<span>Kurdų vaikai pabėgėlių stovykloje. Lapkričio 17 d., Reuters/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Honkonge sukabinti maži popieriniai skėčiai – protestų už demokratiją simbolis. Lapkričio 17 d., AFP/Scanpix nuotr." href="mimages/Projects/images/18861/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18861/287/216/list" alt="Honkonge sukabinti maži popieriniai skėčiai – protestų už demokratiją simbolis. Lapkričio 17 d., AFP/Scanpix nuotr." />
+				<span>Honkonge sukabinti maži popieriniai skėčiai – protestų už demokratiją simbolis. Lapkričio 17 d., AFP/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Susirinkime G-20 dalyvaujantys valstybių vadovai žiūri „Sveiki atvykę į šalį“ (angl. „Welcome to Country“) kultūrinį pasirodymą, lapkričio 15 d. Reuters/Scanpix nuotr." href="mimages/Projects/images/18793/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18793/287/216/list" alt="Susirinkime G-20 dalyvaujantys valstybių vadovai žiūri „Sveiki atvykę į šalį“ (angl. „Welcome to Country“) kultūrinį pasirodymą, lapkričio 15 d. Reuters/Scanpix nuotr." />
+				<span>Susirinkime G-20 dalyvaujantys valstybių vadovai žiūri „Sveiki atvykę į šalį“ (angl. „Welcome to Country“) kultūrinį pasirodymą, lapkričio 15 d. Reuters/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Moterys sėdi po sušaudyta sieną, po šaudynių Chinagam kaime. Nuotrauka publikuota lapkričio 14 d. Reuters/Scanpix nuotr." href="mimages/Projects/images/18791/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18791/287/216/list" alt="Moterys sėdi po sušaudyta sieną, po šaudynių Chinagam kaime. Nuotrauka publikuota lapkričio 14 d. Reuters/Scanpix nuotr." />
+				<span>Moterys sėdi po sušaudyta sieną, po šaudynių Chinagam kaime. Nuotrauka publikuota lapkričio 14 d. Reuters/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="JAV prezidentas Barakas Obama šypsosi, sakydamas kalbą Queenslando universitete Brisbane, lapkričio 15 d. Reuter/Scanpix nuotr." href="mimages/Projects/images/18787/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18787/287/216/list" alt="JAV prezidentas Barakas Obama šypsosi, sakydamas kalbą Queenslando universitete Brisbane, lapkričio 15 d. Reuter/Scanpix nuotr." />
+				<span>JAV prezidentas Barakas Obama šypsosi, sakydamas kalbą Queenslando universitete Brisbane, lapkričio 15 d. Reuter/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Aktorius Jackas O`Connellas priima „Hollywood Film Award“ apdovanojimą už savo vaidmenį filme „Unbroken“ ir lenkiasi apdvanojimą įteikusiai filmo režisierei Angelinai Jolie, lapkričio 15 d., Reuters/Scanpix nuotr." href="mimages/Projects/images/18785/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18785/287/216/list" alt="Aktorius Jackas O`Connellas priima „Hollywood Film Award“ apdovanojimą už savo vaidmenį filme „Unbroken“ ir lenkiasi apdvanojimą įteikusiai filmo režisierei Angelinai Jolie, lapkričio 15 d., Reuters/Scanpix nuotr." />
+				<span>Aktorius Jackas O`Connellas priima „Hollywood Film Award“ apdovanojimą už savo vaidmenį filme „Unbroken“ ir lenkiasi apdvanojimą įteikusiai filmo režisierei Angelinai Jolie, lapkričio 15 d., Reuters/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="JAV prezidentas Barackas Obama ir Mianmaro opozicijos lyderė Augn San Suu Kyi išeina po spaudos konferencijos Jangone (Mianmaras) lapkričio 14 d., Reuters/Scanpix nuotr." href="mimages/Projects/images/18737/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18737/287/216/list" alt="JAV prezidentas Barackas Obama ir Mianmaro opozicijos lyderė Augn San Suu Kyi išeina po spaudos konferencijos Jangone (Mianmaras) lapkričio 14 d., Reuters/Scanpix nuotr." />
+				<span>JAV prezidentas Barackas Obama ir Mianmaro opozicijos lyderė Augn San Suu Kyi išeina po spaudos konferencijos Jangone (Mianmaras) lapkričio 14 d., Reuters/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title=" Los Andželo rajonas Venecija, visuomet buvusi gyvybinga ir kultūriškai įvairialypė miesto dalis, iš „lūšnyno prie jūros“ pastaraisiais metais tapo „silicio paplūdimiu“ dėl čia įsikrausčiusių IT pramonės gigantų. Nuotrauka daryta lapkričio 7 d., Reuters/S" href="mimages/Projects/images/18735/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18735/287/216/list" alt=" Los Andželo rajonas Venecija, visuomet buvusi gyvybinga ir kultūriškai įvairialypė miesto dalis, iš „lūšnyno prie jūros“ pastaraisiais metais tapo „silicio paplūdimiu“ dėl čia įsikrausčiusių IT pramonės gigantų. Nuotrauka daryta lapkričio 7 d., Reuters/S" />
+				<span> Los Andželo rajonas Venecija, visuomet buvusi gyvybinga ir kultūriškai įvairialypė miesto dalis, iš „lūšnyno prie jūros“ pastaraisiais metais tapo „silicio paplūdimiu“ dėl čia įsikrausčiusių IT pramonės gigantų. Nuotrauka daryta lapkričio 7 d., Reuters/S</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Britas Andy Murray`us servuoja mače su šveicaru Roger Federeriu „ATP World Tour“ finaluose Londone lapkričio 13 d., Reuters/Scanpix nuotr." href="mimages/Projects/images/18733/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18733/287/216/list" alt="Britas Andy Murray`us servuoja mače su šveicaru Roger Federeriu „ATP World Tour“ finaluose Londone lapkričio 13 d., Reuters/Scanpix nuotr." />
+				<span>Britas Andy Murray`us servuoja mače su šveicaru Roger Federeriu „ATP World Tour“ finaluose Londone lapkričio 13 d., Reuters/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Dešimties metų Pietų Afrikos liūtų pora Haldiras (k) ir Jawa Bratislavos (Slovakija) zoologijos sode lapkričio 13 d., AFP/Scanpix nuotr." href="mimages/Projects/images/18731/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18731/287/216/list" alt="Dešimties metų Pietų Afrikos liūtų pora Haldiras (k) ir Jawa Bratislavos (Slovakija) zoologijos sode lapkričio 13 d., AFP/Scanpix nuotr." />
+				<span>Dešimties metų Pietų Afrikos liūtų pora Haldiras (k) ir Jawa Bratislavos (Slovakija) zoologijos sode lapkričio 13 d., AFP/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Mokiniai per žemės drebėjimo pratybas Santiage (Čilė) lapkričio 13 d., Reutrers/Scanpix nuotr." href="mimages/Projects/images/18729/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18729/287/216/list" alt="Mokiniai per žemės drebėjimo pratybas Santiage (Čilė) lapkričio 13 d., Reutrers/Scanpix nuotr." />
+				<span>Mokiniai per žemės drebėjimo pratybas Santiage (Čilė) lapkričio 13 d., Reutrers/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Grupės „Metallica“ koncertas JAV karininkams Veteranų dienos proga. Lapkričio 11 d., REUTERS/Scanpix nuotr." href="mimages/Projects/images/18647/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18647/287/216/list" alt="Grupės „Metallica“ koncertas JAV karininkams Veteranų dienos proga. Lapkričio 11 d., REUTERS/Scanpix nuotr." />
+				<span>Grupės „Metallica“ koncertas JAV karininkams Veteranų dienos proga. Lapkričio 11 d., REUTERS/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="JAV Karo akademijos kadetai žygiuoja parade Niujorke. Lapkričio 11d. , REUTERS/Scanpix nuotr." href="mimages/Projects/images/18645/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18645/287/216/list" alt="JAV Karo akademijos kadetai žygiuoja parade Niujorke. Lapkričio 11d. , REUTERS/Scanpix nuotr." />
+				<span>JAV Karo akademijos kadetai žygiuoja parade Niujorke. Lapkričio 11d. , REUTERS/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Oro pajėgų kariai Veteranų dienos parade San Diege. Lapkričio 11 d., REUTERS/Scanpix nuotr." href="mimages/Projects/images/18643/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18643/287/216/list" alt="Oro pajėgų kariai Veteranų dienos parade San Diege. Lapkričio 11 d., REUTERS/Scanpix nuotr." />
+				<span>Oro pajėgų kariai Veteranų dienos parade San Diege. Lapkričio 11 d., REUTERS/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Nukentėjęs JAV veteranas žygiuoja Veteranų dienos parade San Diege. Lapkričio 11 d., REUTERS/Scanpix nuotr." href="mimages/Projects/images/18641/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18641/287/216/list" alt="Nukentėjęs JAV veteranas žygiuoja Veteranų dienos parade San Diege. Lapkričio 11 d., REUTERS/Scanpix nuotr." />
+				<span>Nukentėjęs JAV veteranas žygiuoja Veteranų dienos parade San Diege. Lapkričio 11 d., REUTERS/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Baltojo tigro jauniklis žiūri į musę, Graikija. Lapkričio 11 d., AFP/Scanpix nuotr." href="mimages/Projects/images/18605/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18605/287/216/list" alt="Baltojo tigro jauniklis žiūri į musę, Graikija. Lapkričio 11 d., AFP/Scanpix nuotr." />
+				<span>Baltojo tigro jauniklis žiūri į musę, Graikija. Lapkričio 11 d., AFP/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Mianmare mergina laisto gėles. Lapkričio 11 d., Reuters/Scanpix nuotr." href="mimages/Projects/images/18603/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18603/287/216/list" alt="Mianmare mergina laisto gėles. Lapkričio 11 d., Reuters/Scanpix nuotr." />
+				<span>Mianmare mergina laisto gėles. Lapkričio 11 d., Reuters/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Policininkas stovi po spalvotu skėčiu Mianmare. Lapkričio 11 d., Reuters/Scanpix nuotr." href="mimages/Projects/images/18601/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18601/287/216/list" alt="Policininkas stovi po spalvotu skėčiu Mianmare. Lapkričio 11 d., Reuters/Scanpix nuotr." />
+				<span>Policininkas stovi po spalvotu skėčiu Mianmare. Lapkričio 11 d., Reuters/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Palestinietės mergaitės uždega žvakutes prie lyderio Yassero Arafato kapo. Lapkričio 11 d., Reuters/Scanpix nuotr." href="mimages/Projects/images/18599/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18599/287/216/list" alt="Palestinietės mergaitės uždega žvakutes prie lyderio Yassero Arafato kapo. Lapkričio 11 d., Reuters/Scanpix nuotr." />
+				<span>Palestinietės mergaitės uždega žvakutes prie lyderio Yassero Arafato kapo. Lapkričio 11 d., Reuters/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Didysis pilkasis garnys, JAV. Lapkričio 11 d., Reuters/Scanpix nuotr." href="mimages/Projects/images/18597/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18597/287/216/list" alt="Didysis pilkasis garnys, JAV. Lapkričio 11 d., Reuters/Scanpix nuotr." />
+				<span>Didysis pilkasis garnys, JAV. Lapkričio 11 d., Reuters/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Turkijos policija panaudojo vandens patranką, kad išvaikytų studentus, kurie protestavo prieš vyriausybės ir Aukštojo mokslo tarybos politiką. Lapkričio 8 d., AFP/Scanpix nuotr. " href="mimages/Projects/images/18501/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18501/287/216/list" alt="Turkijos policija panaudojo vandens patranką, kad išvaikytų studentus, kurie protestavo prieš vyriausybės ir Aukštojo mokslo tarybos politiką. Lapkričio 8 d., AFP/Scanpix nuotr. " />
+				<span>Turkijos policija panaudojo vandens patranką, kad išvaikytų studentus, kurie protestavo prieš vyriausybės ir Aukštojo mokslo tarybos politiką. Lapkričio 8 d., AFP/Scanpix nuotr. </span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Per apšilimą prieš Kinijos „Grand Prix“ vyrų dailiojo čiuožimo laisvąją programą susidūrė japonas  Yuzuru Hanyu (d.) ir kinas Yan Han. Lapkričio 8 d., AFP/Scanpix nuotr. " href="mimages/Projects/images/18499/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18499/287/216/list" alt="Per apšilimą prieš Kinijos „Grand Prix“ vyrų dailiojo čiuožimo laisvąją programą susidūrė japonas  Yuzuru Hanyu (d.) ir kinas Yan Han. Lapkričio 8 d., AFP/Scanpix nuotr. " />
+				<span>Per apšilimą prieš Kinijos „Grand Prix“ vyrų dailiojo čiuožimo laisvąją programą susidūrė japonas  Yuzuru Hanyu (d.) ir kinas Yan Han. Lapkričio 8 d., AFP/Scanpix nuotr. </span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Paukščiai ir mėnesiena Šiaurės Kazachstane. Lapkričio 8 d., Reuters/Scanpix nuotr.  " href="mimages/Projects/images/18497/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18497/287/216/list" alt="Paukščiai ir mėnesiena Šiaurės Kazachstane. Lapkričio 8 d., Reuters/Scanpix nuotr.  " />
+				<span>Paukščiai ir mėnesiena Šiaurės Kazachstane. Lapkričio 8 d., Reuters/Scanpix nuotr.  </span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Graeme McDowellas pasiima savo kamuoliuką „WGC-HSBC Champions“ golfo turnyre Šanchajuje (Kinija) lapkričio 7 d., AFP/Scanpix nuotr." href="mimages/Projects/images/18449/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18449/287/216/list" alt="Graeme McDowellas pasiima savo kamuoliuką „WGC-HSBC Champions“ golfo turnyre Šanchajuje (Kinija) lapkričio 7 d., AFP/Scanpix nuotr." />
+				<span>Graeme McDowellas pasiima savo kamuoliuką „WGC-HSBC Champions“ golfo turnyre Šanchajuje (Kinija) lapkričio 7 d., AFP/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Berlyno sienos maršrutą atkartojanti instaliacija „Šviesos siena“ (Lichtgrenze“) lapkričio 7 d., Reuters/Scanpix nuotr." href="mimages/Projects/images/18447/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18447/287/216/list" alt="Berlyno sienos maršrutą atkartojanti instaliacija „Šviesos siena“ (Lichtgrenze“) lapkričio 7 d., Reuters/Scanpix nuotr." />
+				<span>Berlyno sienos maršrutą atkartojanti instaliacija „Šviesos siena“ (Lichtgrenze“) lapkričio 7 d., Reuters/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="Didžiulis prezervatyvas, užmautas obelisko Sidnėjaus (Australija) Haid parke siekiant atkreipti dėmesį į ŽIV plitimą. Lapkričio 7 d., AFP/Scanpix nuotr." href="mimages/Projects/images/18445/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18445/287/216/list" alt="Didžiulis prezervatyvas, užmautas obelisko Sidnėjaus (Australija) Haid parke siekiant atkreipti dėmesį į ŽIV plitimą. Lapkričio 7 d., AFP/Scanpix nuotr." />
+				<span>Didžiulis prezervatyvas, užmautas obelisko Sidnėjaus (Australija) Haid parke siekiant atkreipti dėmesį į ŽIV plitimą. Lapkričio 7 d., AFP/Scanpix nuotr.</span></a>
+			</div>
+						<div class="project">
+				<a rel="dienos_foto" title="„Besiktas“ žaidėjas Demba Ba UEFA Europos lygos mače prieš „Partizan“ lapkričio 6 d. Stambule (Turkija), AFP/Scanpix nuotr." href="mimages/Projects/images/18443/800/600/text/pic.jpg">
+				<img src="mimages/Projects/images/18443/287/216/list" alt="„Besiktas“ žaidėjas Demba Ba UEFA Europos lygos mače prieš „Partizan“ lapkričio 6 d. Stambule (Turkija), AFP/Scanpix nuotr." />
+				<span>„Besiktas“ žaidėjas Demba Ba UEFA Europos lygos mače prieš „Partizan“ lapkričio 6 d. Stambule (Turkija), AFP/Scanpix nuotr.</span></a>
+			</div>
+					<div class="clearfix"></div>
+		</div>
+	<a id="prevslide" class="left click"></a>
+	<a id="nextslide" class="right click"></a>
+	</div>	
+
+
+                        
+                        <div class="lrt-banner-right">
+                             
+    <div class="banner_wrap" align="center">
+        <!-- start slave -->
+<div id="adoceanltrlloqoguyf"></div>
+<script type="text/javascript">
+/* (c)AdOcean 2003-2014, lrt_adm_lt.LRT_LT.Lietuvoje.315x400_2 */
+ado.slave('adoceanltrlloqoguyf', {myMaster: '51eV4yu97ZCFM_VrVWQsARWQMhktAf4veZ5g2zZthmn.U7' });
+</script>
+<!--  end slave  -->
+    </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="push"></div>
+        </div>
+        <footer id="lrt-footer">
+            <div id="footer-inner">
+                <span class="follow">Sekite mus</span>
+                <ul id="top">
+                    <li><a href="http://www.youtube.com/LRTinklas" target="_blank" class="youtube">YouTube</a></li>
+                    <li><a href="http://www.facebook.com/LRT.LT" target="_blank" class="facebook">Facebook</a></li>
+                    <li><a href="http://twitter.com/LRT_LT" target="_blank" class="twitter">Twitter</a></li>
+                    <li><a href="rss" class="rss">RSS</a></li>
+                    <li class="last"><a href="apie-lrt/programeles" class="apps">Programėlės</a></li>
+                </ul>
+                <div class="clear"></div>
+                <nav class="cols">
+                    <h2>Naujienos</h2>
+                    
+    
+					<div class="col">
+																										<a href="naujienos/visos">Visos naujienos</a>
+																<a href="naujienos/lietuvoje">Lietuvoje</a>
+																<a href="naujienos/pasaulyje">Pasaulyje</a>
+																<a href="naujienos/nuomones">Nuomonės</a>
+																<a href="naujienos/ekonomika">Ekonomika</a>
+																<a href="naujienos/sportas">Sportas</a>
+																<a href="naujienos/kultura">Kultūra</a>
+																<a href="naujienos/kalba_vilnius">Kalba Vilnius</a>
+															</div>
+					<div class="col">
+											<a href="naujienos/Tavo_LRT">Tavo LRT</a>
+																<a href="naujienos/mokslas_ir_it">Mokslas ir IT</a>
+																<a href="naujienos/ivairenybes">Įvairenybės</a>
+																<a href="naujienos/tavo_zvilgsnis">Tavo žvilgsnis</a>
+																<a href="naujienos/news_in_english">News in English</a>
+																<a href="naujienos/novosti">Новости на русском языке</a>
+																<a href="naujienos/eurovizija_2015">Eurovizija 2015</a>
+										</div>				
+
+		
+                </nav>
+                <nav class="cols">
+                    <h2>Naršyk</h2>
+                    	<div class="col">
+	<a href="mediateka">Mediateka</a> <a href="mediateka/tiesiogiai">Tiesiogiai</a> <a href="radijas">Radijas</a> <a href="televizija/Apie">Televizija</a></div>
+<div class="col">
+	<a href="http://www.lrt.lt/televizija/tv-programa">Programų gidas</a> <a href="apie-lrt/programeles">LRT programėlės</a> <a href="http://www.lrt.lt/rss">RSS naujienos</a></div>
+
+				
+                </nav>
+                <nav class="cols last">
+                    <h2>Apie LRT</h2>
+                    
+    
+					<div class="col">
+																										<a href="apie-lrt/radijo-dazniai">Radijo dažniai</a>
+																<a href="apie-lrt/tv-pasiekiamumas">TV pasiekiamumas</a>
+																<a href="apie-lrt/LRT">Kas yra LRT?</a>
+																<a href="apie-lrt/viesieji-pirkimai">Viešieji pirkimai</a>
+																<a href="apie-lrt/skelbimai">Skelbimai</a>
+																<a href="apie-lrt/pranesimai-spaudai">Pranešimai spaudai</a>
+																<a href="apie-lrt/lrt-taryba">LRT taryba</a>
+																<a href="apie-lrt/teisine-atsakomybe">Teisinė atsakomybė</a>
+															</div>
+					<div class="col">
+											<a href="apie-lrt/reklama">Reklama</a>
+																<a href="apie-lrt/lrt-muziejus">Nemokamos ekskursijos</a>
+																<a href="apie-lrt/LRT_HD">LRT HD</a>
+																<a href="apie-lrt/kontaktai">Kontaktai</a>
+																<a href="apie-lrt/japoniskassodas">Vilniaus japoniškas sodas</a>
+																<a href="apie-lrt/naujas_sezonas">Naujas sezonas 2014-2015</a>
+																<a href="apie-lrt/kalbek">Kalbos patarimai</a>
+										</div>				
+
+					
+                </nav>	
+                <div class="clear"></div>
+                <p class="copy">© Lietuvos nacionalinis radijas ir televizija 2014. Visos teisės saugomos</p>
+                <p class="citrus">Sprendimas: <a href="http://www.citrus.lt" target="_blank">CITRUS</a></p>
+            </div>
+        </footer>	
+
+            <div class="banner_wrap" align="center">
+        <!-- start slave -->
+<div id="adoceanltykribkrlnm"></div>
+<script type="text/javascript">
+/* (c)AdOcean 2003-2014, lrt_adm_lt.LRT_LT.Lietuvoje.800x60 */
+ado.slave('adoceanltykribkrlnm', {myMaster: '51eV4yu97ZCFM_VrVWQsARWQMhktAf4veZ5g2zZthmn.U7' });
+</script>
+<!--  end slave  -->
+    </div>
+
+ 
+<!-- (C)2000-2014 Gemius SA - gemiusAudience / pp.lrt.lt / Naujienos -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var pp_gemius_identifier = '.X1F.W7YfbCXbxjdU_sbZLcf.fM8IC_wGI5oEaX38pP.o7';
+// lines below shouldn't be edited
+function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+(function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+gt.setAttribute('defer','defer'); gt.src=l+'://galt.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+//--><!]]>
+</script>
+
+    
+
+
+
+     	
+
+
+    <!-- scripts concatenated and minified via build script -->
+    <script src="http://www.lrt.lt/scripts/js/plugins.js"></script>
+    <script src="http://www.lrt.lt/scripts/js/script.js"></script>
+    <script src="http://www.lrt.lt/scripts/jquery/jquery.form.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://www.lrt.lt/scripts/js/fancybox/fancybox-lrt.css" media="screen" />
+
+    <script src="http://www.lrt.lt/scripts/js/thumbnailScroller/jquery.thumbnailScroller.js"></script>
+
+
+    <script>
+                        $(document).ready(function() {
+
+
+                            $("#gallery-images a").fancybox({
+                                titlePosition: 'inside',
+                                overlayColor: '#0d182a',
+                                overlayOpacity: '0.7',
+                                'titleFormat': function(title, currentArray, currentIndex, currentOpts) {
+                                    return  '<div id="fancy-title-wrapper"><div id="fancy-title"><span>' + (title.length ? '' + title : '') + '</span></div><div id="fancy-count">' + (currentIndex + 1) + ' iš ' + currentArray.length + '</div></div>';
+                                }
+                            });
+                            $("a.fancy").fancybox({
+                                overlayColor: '#0d182a',
+                                overlayOpacity: '0.7',
+                                'transitionIn': 'none',
+                                'transitionOut': 'none'
+                            });
+                            $("#lrt #tv-anonsai .content .anons-wrapper .link-txt, #lrt #radijo-anonsai .content .anons-wrapper .link-txt").each(function(index) {
+                                var top = 156; // default
+                                var min_height = 38;
+                                var title = $(this).find("span.title");
+                                var date = $(this).find("span.date");
+                                var sum = title.height() + date.height();
+                                //alert(sum);
+
+                                if (sum > min_height) {
+                                    var diff = sum - min_height;
+                                    var top = top - diff;
+                                    $(this).css("top", top + "px");
+                                }
+                            });
+                            $("#lrt #tv-anonsai .content .anons-wrapper a, #lrt #radijo-anonsai .content .anons-wrapper a").hover(
+                                    function() {
+
+                                        var texblock = $(this).find("span.link-txt");
+                                        var to_top = 212 - texblock.height() - 20;
+                                        //alert(to_top);
+                                        texblock.stop().animate({
+                                            top: to_top + 'px'
+                                        }, 100);
+                                    },
+                                    function() {
+
+                                        var top = 156; // default
+                                        var min_height = 38;
+                                        var title = $(this).find("span.title");
+                                        var date = $(this).find("span.date");
+                                        var sum = title.height() + date.height();
+                                        if (sum > min_height) {
+                                            var diff = sum - min_height;
+                                            top = top - diff;
+                                        }
+
+                                        var texblock = $(this).find("span.link-txt");
+                                        texblock.stop().animate({
+                                            top: top + "px"
+                                        }, 100);
+                                    }
+                            );
+                        });</script>	
+
+    <!-- end scripts -->
+
+
+    <script>
+        var _gaq = [['_setAccount', 'UA-32330301-1'], ['_trackPageview']];
+        (function(d, t) {
+            var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g, s)
+        }(document, 'script'));
+    </script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-4.newrelic.com","licenseKey":"6e4a555e10","applicationID":"3779423","transactionName":"Y1RabERXC0JSAURaW1oebUpfGQxfVwdIHURcQQ==","queueTime":0,"applicationTime":372,"ttGuid":"","agentToken":"","atts":"TxNZGgxNGEw=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></body>
+</html>
