@@ -85,7 +85,6 @@
       <distributionManagement>
         <repository>
           <id>tm.repo</id>
-          <url>http://79.98.31.5:8000/repository/dev</url>
         </repository>
       </distributionManagement>
 </project>
