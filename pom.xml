@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>de.l3s.boilerpipe</groupId>
+    <groupId>tokenmill</groupId>
     <artifactId>boilerpipe-core</artifactId>
     <version>1.2.3</version>
     <name>boilerpipe</name>
@@ -72,14 +72,20 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.4</version>
-            <scope>test</scope>
+          <groupId>commons-io</groupId>
+          <artifactId>commons-io</artifactId>
+          <version>2.4</version>
+          <scope>test</scope>
         </dependency>
-    </dependencies>
-    <issueManagement>
+      </dependencies>
+      <issueManagement>
         <url>https://github.com/Netbreeze-GmbH/boilerpipe/issues</url>
         <system>Github</system>
-    </issueManagement>
+      </issueManagement>
+      <distributionManagement>
+        <repository>
+          <id>tm.repo</id>
+          <url>http://79.98.31.5:8000/repository/dev</url>
+        </repository>
+      </distributionManagement>
 </project>
