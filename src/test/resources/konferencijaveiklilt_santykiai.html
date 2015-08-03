@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>konferencijaveikli.lt</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+		
+  		<meta name="creator" content="Markas Krasovskis (support@itgroup.lt // ITGroup.lt)"/>
+		<meta name="author" content="Markas Krasovskis (support@itgroup.lt // ITGroup.lt)"/>
+		<meta name="copyright" content="Markas Krasovskis (support@itgroup.lt // ITGroup.lt)"/>
+		<meta name="subject" content="QuickClick"/>
+		
+		<meta name="description" content="konferencijaveikli.lt"/>
+		<meta name="keywords" content="konferencijaveikli.lt"/>
+		<meta name="category" content="Internet"/>
+		
+		<meta name="rating" content="General"/>
+		<meta name="robots" content="ALL"/>
+		<meta name="revisit" content="3 days"/>
+		<meta name="revisit-after" content="3 days"/>
+		
+		<meta http-equiv="imagetoolbar" content="no"/>	
+		<meta name="verify-v1" content="" >
+		
+		<base href="http://www.konferencijaveikli.lt/"/>	
+		
+		<link rel="shortcut icon" href="http://www.konferencijaveikli.lt/favicon.ico" type="image/x-icon"/>
+		<link type="text/css" rel="stylesheet" href="http://www.konferencijaveikli.lt/system/template/default.css"/>	
+		
+		<script src="http://www.konferencijaveikli.lt/system/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="http://www.konferencijaveikli.lt/system/js/tools.js"/></script>
+		
+		
+        <link rel="stylesheet" href="http://www.konferencijaveikli.lt/system/template/kv_web.template/css/normalize.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://www.konferencijaveikli.lt/system/template/kv_web.template/style.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="http://www.konferencijaveikli.lt/system/template/kv_web.template/js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+        
+		<script type="text/javascript" src="http://www.konferencijaveikli.lt/system/tools/highslide/highslide/highslide.js"></script>
+		<script type="text/javascript"> 
+		hs.graphicsDir = 'system/tools/highslide/highslide/graphics/';
+		hs.outlineType = null;
+		</script>
+		
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <div id="imageGallery" style="display: none;">
+
+            <table border="0" width="100%" height="100%" cellspacing="0" cellpadding="0" style="position: absolute; top: 0px; left: 0px; z-index: 99; width: 100%; height: 100%; background-color: #333328; -moz-opacity: 0.99; opacity:.99; filter: alpha(opacity=99);">
+                <tr>
+                    <td align="left">
+
+                        &nbsp;
+
+                    </td>
+                </tr>
+            </table>
+
+            <div align="center" style="width: 100%; position: absolute; top: 60px; left: 0px; z-index: 9999;">
+
+                <table border="0" width="10%">
+                    <tr>
+                        <td align="left" valign="middle" rowspan="3" style="padding-right: 5px;">
+
+                            <a href="#" onclick="showBack(); return false;"><img src="http://www.pabukimekartu.lt/system/template/pabuk_web.template/images/content_gallery_left.png" alt="" border="0" id="leftButton"></a>
+
+                        </td>
+                        <td align="right" valign="top">
+
+                            <div style="position: relative; height: 1px; width: 1px;">
+
+                                <a href="#" onclick="closeBig(); return false;"><img src="http://www.pabukimekartu.lt/system/template/pabuk_web.template/images/content_gallery_close.png" alt="" border="0" style="display: block; position: absolute; left: -15px; top: -12px;"></a>
+
+                            </div>
+
+                        </td>
+                        <td align="right" valign="middle" rowspan="3" style="padding-left: 5px;">
+
+                            <a href="#" onclick="showNext(); return false;"><img src="http://www.pabukimekartu.lt/system/template/pabuk_web.template/images/content_gallery_right.png" alt="" border="0" id="rightButton"></a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top">
+
+                            <a href="#" onclick="showNext(); return false;"><img id="bigImage" src="" alt="" border="0"></a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top" id="bigImage_title" style="color: white;">
+
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+
+		<div id="all">
+			<div class="wrap">
+				<div id="header">
+					<div id="blockFirst">
+						<span class="divider"></span>
+						<a href="http://www.konferencijaveikli.lt/" id="logo"><img src="http://www.konferencijaveikli.lt/system/template/kv_web.template/img/logo.png" alt="VEIKLI - Lietuvos moterų konferencija"/></a>
+					</div>
+					<div id="blockSecond">Dvi dienos įkvepiančių pranešimų harmoningam gyvenimui!</div>
+					<div id="blockThird" style="color: #CCC;">
+                        
+
+            	<!-- Inner block (itg_tinymce_3), begin -->
+
+            	2015 m. rugsėjo 18-19 d.<br />LITEXPO - Lietuvos parodų<br />ir kongresų centras Vilniuje
+
+            	<!-- Inner block (itg_tinymce_3), end -->
+
+            	                    <div class="dividerWrap"><span class="divider"></span></div></div>
+					<div class="clear"></div>
+				</div>
+				<div id="wide">
+					
+
+            	<!-- Inner block (horeca_banners), begin -->
+
+            	<div class="bannerHTML" style=""><a target="_blank" href="http://www.konferencijaveikli.lt/naujienos/ar-mokame-kurti-santykius-14/goB.16"><img src="http://www.konferencijaveikli.lt/data/temp/image_cache/kv_module_banners/16/original_image.png" width="940" height="100" alt="" style="border: none;"></a></div>
+
+            	<!-- Inner block (horeca_banners), end -->
+
+            					</div>
+				<div id="body">
+					<div id="aside">
+						<ul id="navigation">
+							<li  class="active" ><a href="">Naujienos</a></li><li ><a href="http://www.konferencijaveikli.lt/apie-rengini">Apie renginį</a></li><li ><a href="http://www.konferencijaveikli.lt/programa">Programa</a></li><li ><a href="http://www.konferencijaveikli.lt/pranesejai">Pranešėjai</a></li><li ><a href="http://www.konferencijaveikli.lt/galerija">Galerija</a></li><li ><a href="http://www.konferencijaveikli.lt/archyvas">Archyvas</a></li><li ><a href="http://www.konferencijaveikli.lt/partneriai">Partneriai</a></li><li ><a href="http://www.konferencijaveikli.lt/kontaktai">Kontaktai</a></li>						</ul>
+					</div>
+					<div id="content">
+						<p>
+
+            	<!-- Inner block (cemp_news), begin -->
+
+            	
+		<a href="http://www.konferencijaveikli.lt/naujienos"><img align="right" style="border-radius: 5px 5px 5px 5px; margin: 5px; margin-right: 12px;" src="http://www.konferencijaveikli.lt/data/temp/images/2014_09_02/14_57_04_729/veiklilogo_copyThumb_200x300_lw_copyThumb_400x500_lw.png"></a>
+		<div style="font-size: 12px;">Harmoningi santykiai &ndash; kiekvienos poros ir &scaron;eimos siekiamybė. Kaip teigia darnias &scaron;eimas sukūrę ir savirealizacija besidomintys žmonės, laimingų santykių pagrindas &ndash; aktyvios pastangos, įsigilinant į save, atskleidžiant savo tikrąjį &bdquo;A&scaron;&ldquo; ir priimant jo asmenybę.<br /><br/><br/><strong>Santykiai &ndash; laimingi, o ne sėkmingi<span class="text_exposed_hide">...</span></strong><span class="text_exposed_show"><br /><br />&bdquo;Moters Magijos Mokyklos&ldquo; bendraįkūrėjo, emocinio ir dvasinio intelektų lavinimo specialisto Rimvydo Židžiūno teigimu, svarbu suvokti, žodžio &bdquo;sėkmė&ldquo; santykinumą.<br /><br />&bdquo;Svarbu suprasti, jog santykiai negali būti &bdquo;sėkmingi&ldquo;, jie gali būti &bdquo;laimingi&ldquo;. Sėkmingi santykiai reik&scaron;tų, kad man tiesiog pasisekė atrasti idealų mylimąjį. Ką tokiu atveju reikėtų daryti su jau daugybę metų pažįstamu savimi, kuris, kaip puikiai žinome, yra ne tobulas? Tai rei&scaron;kia, jog idealus žmogus negarantuoja idealių santykių. Santykių kokybė priklauso nuo to ar žmonės moka duoti ir priimti meilę. Vienas svarbiausių aspektų &ndash; sutikti tokį žmogų, kuris i&scaron; santykių nori to paties, kaip ir tu. Tada harmoningai gerinant santykių kokybę galima nuveikti labai daug&ldquo;, - pasakoja R. Židžiūnas. <br /><br /> Platesnį tarpasmeninių santykių apibrėžimą pateikia Andrė Pabarčiūtė, &bdquo;Moters Magijos Mokyklos&ldquo; bendraįkūrėja, knygos tokiu pat pavadinimu autorė. <br /><br />&bdquo;Visi santykiai mus moko vienintelio dalyko - meilės. Jei suvokiame &scaron;ią pamoką ir nuo&scaron;irdžiai jos mokomės, santykiai dovanos džiaugsmą, atsivėrimą, pažinimą, gilų susiliejimą su kitu žmogumi. Tokius santykius pavadinčiau darniais. Jeigu kiekvieną kartą prisiminsime, kad visos santykiuose susiklostančios situacijos, tiek pozityvios, tiek negatyvios, moko meilės, suvoksime kiekviename santykyje slypintį savą stebuklą, dovaną&ldquo;, - sako specialistė, visas praktikas, kurių moko, taikanti asmeniniame gyvenime.<br /> Pasak žurnalo moterims &bdquo;Tapati&ldquo; vyriausiosios redaktorės Au&scaron;rinės &Scaron;ečkuvienės, santykiai rūpi abiems lytims. Moterims santykiai yra esminė dalis, padedanti i&scaron;reik&scaron;ti save kaip asmenybę. Tuo tarpu vyrai save apibūdina vadovaudamiesi individualiais pasiekimais. <br /><br />&bdquo;Jeigu moteriai nesiseka santykiuose, ji nesijaus laiminga, net jeigu visuomenė ją laiko itin sėkminga asmenybe. Kalbant apie meilę, tiek vyrai, tiek moterys natūraliai mylėti nemoka, tam reikia pastangų ir Dievo pagalbos. Meilė yra pasirinkimas ir veiksmų virtinė, progresuojanti dėl valios pastangų, lydima jausmų. Žmogus, galvojantis, jog jausmas santykiuose turi &bdquo;keliauti&ldquo; anksčiau nei veiksmas labai klysta ir anksčiau ar vėliau nusivilia&ldquo;, - nurodo pa&scaron;nekovė. <br /><br />Analizuodami santykius, abu &bdquo;Moters Magijos Mokyklos&ldquo; įkūrėjai tvirtina, jog poros amžius neturi reik&scaron;mės santykių pasisekimui. Žmogus &ndash; socialinė būtybė, santykius besimokanti kurti ir puoselėti visą gyvenimą. I&scaron; pradžių tai vyksta su tėvais, vėliau su bendraamžiais ir prie&scaron;inga lytimi, po to &ndash; su savo vaikais, i&scaron;skirti galima nebent dėl lyčių susiformuojančius skirtumus. <br /><br />&bdquo;Vyri&scaron;kas ir moteri&scaron;kas santykių suvokimas yra labai plati tema, jos neįmanoma vienareik&scaron;mi&scaron;kai vertinti. Santykius abu suvokia ir skirtingai, ir vienodai, todėl vyro ir moters santykiai yra menas, kurį galima tobulinti visą gyvenimą. &Scaron;ioje sąveikoje egzistuoja sunkiai suderinami prigimtiniai dalykai. Jų pagrindu kuriant santykius vyks nuolatinė lyčių kova, kurioje, i&scaron; tiesų, pralaimi abu. Tačiau tiek vyro, tiek moters prigimtyje yra ir vienas kitą papildantys elementai. Jais remiantis auginami santykiai padeda sukurti nuostabų bendrą gyvenimą. Taigi, santykių menas yra puoselėti papildančius elementus ir i&scaron;mintingai elgtis su konfliktinės prigimties momentais&ldquo;, - teigia knygos &bdquo;Gyvenimo kūrėjas&ldquo; autorius R. Židžiūnas. <br /><br /><strong>&Scaron;eimoje i&scaron;mokstama mylėti</strong><br /><br /> Santykiai prasideda nuo mylimojo ir mylimosios, progresuojančių į vyrą ir žmoną, tėtį ir mamą. Tai &ndash; skirtingos santykių kokybės forma. Kiekviena jų turi sau būdingus bruožus ir sukelia skirtingus jausmus. Tapus vyru ir žmona, mama ir tėčiu poros privalo neužmir&scaron;ti, jog pirmiausia jie yra mylimieji, atrasti laiko pabūti dviese ir nuolat puoselėti jausmus.<br /><br />&bdquo;&Scaron;eima visų pirma prasideda nuo poros &ndash; žmonių, susitariančių vienas kitą mylėti nepaisant jokių negandų. Tai - sandora. &Scaron;eima nėra žmogaus sugalvota institucija, ji &ndash; Dievo sukurtas slėpinys, kurį žmonės ne visada suvokia ar suvokia pernelyg supaprastintai. Kainą, kurią turime sumokėti siekdami darnos &scaron;eimoje ir jos tolimesnio egzistavimo, suvokiame tik po kelerių metų. Man pačiai &scaron;eima yra augimas ir i&scaron;mokimas mylėti. Nereikia tikėtis, jog į &scaron;eimą ateiname mokėdami mylėti savo partnerius. Santykiai prasideda įsimylėjus &ndash; dėl romanti&scaron;kų jausmų, vėliau &ndash; tai tampa didžiule pastanga ir kasdien ką nors naujo i&scaron;mokančia mokykla&ldquo;, &ndash; įžvalgomis dalinasi žurnalo &bdquo;Tapati&ldquo; redaktorė. <br /><br />Savęs pažinimas &ndash; būtinas santykių elementas taip pat reikia i&scaron;manyti prie&scaron;ingos lyties prigimties dėsnius, subtilybes, tačiau ir tai neapsaugo nuo kylančių konfliktų. <br /><br />&bdquo;Jeigu santykiuose i&scaron;kyla konfliktinė situacija, reikia sau ir partneriui nuo&scaron;irdžiai papasakoti, kokio bendro gyvenimo abu ie&scaron;kote, kas jus santykiuose daro laimingais, o kas skaudina. Mylimasis taip pat turėtų pateikti nuo&scaron;irdžius savo atsakymus. Jeigu pavyksta atvirai pasikalbėti &ndash; reikia surasti abiems priimtiną ir laimingą i&scaron;vardintų skirtumų suderinimo sprendimą, kurio realizavimas padėtų susidoroti su visais sunkumais. Neradus tinkamo sprendimo - kai norėdamas užglaistyti situaciją vienas i&scaron; jų vis vien turi nusileisti ar prisitaikyti, problema netampa i&scaron;spręsta, jos sprendimas &ndash; atidėtas vėlesniam laikui. Atėjus naujam barniui, pradės suktis uždaras ratas, problemų sprendimas tik sudėtingės&ldquo;, - informuoja R. Židžiūnas. <br /><br />&bdquo;&Scaron;eima &ndash; didžiausias pasiekimas mano gyvenime, tačiau gyvenimo nepie&scaron;iu vien tik rožinėmis spalvomis.<br /><br /> Jeigu &scaron;eima ar pora sako, kad nekonfliktuoja &ndash; arba jie meluoja, arba jų santykiai yra mirę. Žmogui augti, bręsti konfliktas ir susirėmimas, mokantis keistis būtinas. Žinoma, mano santykiuose buvo situacijų, kai galvojau, ar priimdama sprendimus nesuklydau, ar elgiuosi teisingai. &Scaron;alia esantis žmogus tikrai nėra tobulas ir norint i&scaron;mokti jį mylėti tokį, koks yra, o ne mano nusipie&scaron;tą trok&scaron;tamą ir geidžiamą, reikėjo tikrai gerai supaprastėti pačiai, daugeliu atvejų pakeisti suvokimą, nusilenkti Dievo valiai ir priimti jį tokį, koks sukurtas. Kartu esame jau dvide&scaron;imt dvejus metus ir galiu tvirtai pasakyti, jog dabar viskas žymiai lengviau nei buvo i&scaron; pradžių&ldquo;, &ndash; pasakoja A. &Scaron;ečkuvienė. <br /><br />&bdquo;Gyvenant nereikia ie&scaron;koti to &bdquo;vienintelio&ldquo;, su turimu mylimuoju reikia gyventi kaip su vieninteliu, nes jis būtent toks ir yra&ldquo;, - užbaigia R. Židžiūnas.<br /><span> __________________________</span><span class="word_break"></span>__________________________<br /> Santykiai poroje ir &scaron;eimyninis gyvenimas, harmonijos santykiuose paie&scaron;kos, meilė sau ir &scaron;alia esantiems žmonėms &ndash; tik kelios temos, kurias i&scaron;girs moterims skirtos konferencijos VEIKLI dalyvės. Rugsėjo 25 &ndash; 26 dienomis vyksiančios konferencijos metu prane&scaron;imus drauge su A. Pabarčiūte, R. Židžiūnu, A. &Scaron;ečkuviene, skaitys žurnalistė Juventa Mudėnienė, laidų vedėjos Asta Sta&scaron;aitytė - Masalskienė, Livija Gradauskienė, žaliosios mitybos specialistė Gražina Gum, jogos trenerė Eva Tombak, kapitonas ir lektorius Paulius Kovas, paskaitų klubo &bdquo;Bambuko klubas&ldquo; vadovė Gintarė Davainienė, gyvenimo koučingo trenerės Ilona Tamo, Au&scaron;ra Bijaminienė ir kiti. Visa konferencijos programa <a rel="nofollow nofollow" href="http://www.konferencijaveikli.lt/" target="_blank">www.konferencijaveikli.lt</a> (c)</span></div><div style="clear: both;"></div><br/>
+		<a style="text-decoration: none; color: black; font-weight: normal;" href="http://www.konferencijaveikli.lt/naujienos"><- Grįžti į sąrašą</a>
+
+            	<!-- Inner block (cemp_news), end -->
+
+            	</p>
+					</div>
+					<div id="sidebar">
+						<div class="widget">
+							<div class="widgetBody">
+								<form action="#" id="newsletter" method="post">
+									<div class="title">Naujienlaiškio prenumerata</div>
+									<input type="text" name="newsletterInput" id="newsletterInput" placeholder="Įveskite savo el. pašto adresą"/><input id="newsletterSubmit" type="submit" name="newsletterSubmit" value=""/>
+									<div class="clear"></div>
+								</form>
+							</div>
+						</div>
+						<div class="widget">
+							<div class="widgetBody">
+								<a href="https://www.facebook.com/pages/Konferencija-Veikli/514217961931630" id="facebook"><img src="http://www.konferencijaveikli.lt/system/template/kv_web.template/img/facebook.png" alt="Facebook"/></a>
+							</div>
+						</div>
+						<div class="widget">
+							<div class="widgetBody">
+                                
+
+            	<!-- Inner block (horeca_banners), begin -->
+
+            	<div class="bannerHTML" style=""><a target="_blank" href="http://www.konferencijaveikli.lt/naujienos/ar-mokame-kurti-santykius-14/goB.15"><img src="http://www.konferencijaveikli.lt/data/temp/image_cache/kv_module_banners/15/original_image.png" width="120" height="300" alt="" style="border: none;"></a></div>
+
+            	<!-- Inner block (horeca_banners), end -->
+
+            								</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div id="footer">
+					<div id="clients">
+                        
+
+            	<!-- Inner block (itg_tinymce_3), begin -->
+
+            	<img title="apatineEiluteVeikli2015_2_2.jpg" src="http://www.konferencijaveikli.lt/data/apatineEiluteVeikli2015_2_2.jpg" alt="apatineEiluteVeikli2015_2_2.jpg" width="978" height="157" /><br />
+<div class="clientsBox fRight width299">
+<div class="title width130 fLeft" style="width: 78px; height: 4px;">&nbsp;<br /><br /></div>
+</div>
+
+            	<!-- Inner block (itg_tinymce_3), end -->
+
+            							<div class="clear"></div>
+					</div>
+					<div id="footerDescription" style="background: none repeat scroll 0 0 #ED1C24; height: 17px;">
+                        <div style="float: left; padding-top: 3px;">
+                            Visos teisės saugomos. VšĮ "Sumani" (c) 2015.
+                        </div>
+                        <div style="float: right; padding-top: 3px;">
+                           Interneto svetainių kūrimas: <a title="Interneto svetainių kūrimas" style="color: white; " href="http://www.itgroup.lt" target="_blank">ITGroup.lt</a>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+
+        <script>window.jQuery || document.write('<script src="http://www.konferencijaveikli.lt/system/template/kv_web.template/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+		
+		<div id="keywords"/>
+			
+		</div>
+			
+        <script src="http://www.konferencijaveikli.lt/system/template/kv_web.template/js/plugins.js"></script>
+        <script src="http://www.konferencijaveikli.lt/system/template/kv_web.template/js/main.js"></script>
+    </body>
+</html>
+
+
+<!-- System: QuickClick CMS, version: 2.8.0 -->
+
+<!-- Cache: False -->
+
+<!-- SQL: 28 -->
+
+<!-- MySQL time: 0.02 s. -->
+<!-- PHP time: 0.085 s. -->
+<!-- All time: 0.105 s. -->
+
+<!-- Client IP: 77.241.196.222 --> 

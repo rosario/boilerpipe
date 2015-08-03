@@ -32,8 +32,13 @@ import de.l3s.boilerpipe.labels.DefaultLabels;
  * @author Christian Kohlschütter
  */
 public final class ExpandTitleToContentFilter implements BoilerpipeFilter {
-    public static final ExpandTitleToContentFilter INSTANCE = new ExpandTitleToContentFilter();
+    public static final ExpandTitleToContentFilter INSTANCE = new ExpandTitleToContentFilter(false);
+    public static final ExpandTitleToContentFilter INSTANCE_SKIP_TITLE = new ExpandTitleToContentFilter(true);
 
+    private boolean skipTitle = false;
+    public ExpandTitleToContentFilter(boolean skipTitle){
+        this.skipTitle = skipTitle;
+    }
     /**
      * Returns the singleton instance for ExpandTitleToContentFilter.
      */
@@ -62,7 +67,7 @@ public final class ExpandTitleToContentFilter implements BoilerpipeFilter {
             return false;
         }
         boolean changes = false;
-        for (TextBlock tb : doc.getTextBlocks().subList(title, contentStart)) {
+        for (TextBlock tb : doc.getTextBlocks().subList(title+(skipTitle?1:0), contentStart)) {
             if (tb.hasLabel(DefaultLabels.MIGHT_BE_CONTENT)) {
                 changes = tb.setIsContent(true) | changes;
             }

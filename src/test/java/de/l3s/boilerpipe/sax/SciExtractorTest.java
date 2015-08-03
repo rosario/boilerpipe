@@ -137,12 +137,23 @@ public class SciExtractorTest {
 //        }
 //    }
 
+//    @Test
+//    public void shouldGetSciText10() throws IOException, URISyntaxException {
+////        http://www.microbialcellfactories.com/content/5/1/20
+//        try {
+//            final SciArticleExtractor ae = SciArticleExtractor.INSTANCE;
+//            String text = ae.getText(getFileAsString("/en10.html"));
+//            System.out.println(text);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
+
     @Test
     public void shouldGetSciText10() throws IOException, URISyntaxException {
-//        http://www.microbialcellfactories.com/content/5/1/20
         try {
             final SciArticleExtractor ae = SciArticleExtractor.INSTANCE;
-            String text = ae.getText(getFileAsString("/en10.html"));
+            String text = ae.getText(getFileAsString("/en11.html"));
             System.out.println(text);
         } catch (Exception e) {
             e.printStackTrace();

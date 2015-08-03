@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Emigrantai ir jų tipai | Protokolai</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://protokolai.com/wp-content/themes/imbalance2/style.css" />
+<link rel="pingback" href="http://protokolai.com/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="Protokolai &raquo; Feed" href="http://protokolai.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Protokolai &raquo; Comments Feed" href="http://protokolai.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Protokolai &raquo; Emigrantai ir jų tipai Comments Feed" href="http://protokolai.com/2015/07/19/emigrantai-ir-ju-tipai/feed/" />
+<script type='text/javascript' src='http://protokolai.com/wp-content/themes/imbalance2/libs/jquery-1.6.1.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='http://protokolai.com/wp-content/themes/imbalance2/libs/jquery.masonry.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='http://protokolai.com/wp-content/themes/imbalance2/libs/jquery-ui.custom.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='http://protokolai.com/wp-includes/js/comment-reply.js?ver=3.4.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://protokolai.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://protokolai.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Kaip Britanijoje dešinieji laikraščiai iš kairiųjų tyčiojasi' href='http://protokolai.com/2015/07/18/kaip-britanijoje-desinieji-laikrasciai-is-kairiuju-tyciojasi/' />
+<link rel='next' title='Rokiškis Rabinovičius, žiurkėnas radijo laidoje' href='http://protokolai.com/2015/07/20/rokiskis-rabinovicius-ziurkenas-radijo-laidoje/' />
+<meta name="generator" content="WordPress 3.4.2" />
+<link rel='canonical' href='http://protokolai.com/2015/07/19/emigrantai-ir-ju-tipai/' />
+<link rel='shortlink' href='http://protokolai.com/?p=5720' />
+
+<style type="text/css">
+/* color from theme options */
+body, input, textarea { font-family: Georgia, "Times New Roman", Serif; }
+a, .menu a:hover, #nav-above a:hover, #footer a:hover, .entry-meta a:hover { color: #ff555d; }
+.fetch:hover { background: #ff555d; }
+blockquote { border-color: #ff555d; }
+.menu ul .current-menu-item a { color: #ff555d; }
+#respond .form-submit input { background: #ff555d; }
+
+/* fluid grid */
+.wrapper { width: 990px; margin: 0 auto; }
+
+.box .texts { border: 10px solid #ff555d; background: #ff555d;  }
+.box .categories { padding-top: 15px; }
+</style>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	// shortcodes
+	$('.wide').detach().appendTo('#wides');
+	$('.aside').detach().appendTo('.entry-aside');
+
+	// fluid grid
+	
+	// search
+	$(document).ready(function() {
+		$('#s').val('Search');
+	});
+
+	$('#s').bind('focus', function() {
+		$(this).css('border-color', '#ff555d');
+		if ($(this).val() == 'Search') $(this).val('');
+	});
+
+	$('#s').bind('blur', function() {
+		$(this).css('border-color', '#DEDFE0');
+		if ($(this).val() == '') $(this).val('Search');
+	});
+
+	// grid
+	$('#boxes').masonry({
+		itemSelector: '.box',
+		columnWidth: 210,
+		gutterWidth: 20
+	});
+
+	$('#related').masonry({
+		itemSelector: '.box',
+		columnWidth: 210,
+		gutterWidth: 20
+	});
+	
+	$('.texts').live({
+		'mouseenter': function() {
+			if ($(this).height() < $(this).find('.abs').height()) {
+				$(this).height($(this).find('.abs').height());
+			}
+			$(this).stop(true, true).animate({
+				'opacity': '1',
+				'filter': 'alpha(opacity=100)'
+			}, 0);
+		},
+		'mouseleave': function() {
+			$(this).stop(true, true).animate({
+				'opacity': '0',
+				'filter': 'alpha(opacity=0)'
+			}, 0);
+		}
+	});
+
+	// comments
+	$('.comment-form-author label').hide();
+	$('.comment-form-author span').hide();
+	$('.comment-form-email label').hide();
+	$('.comment-form-email span').hide();
+	$('.comment-form-url label').hide();
+	$('.comment-form-comment label').hide();
+
+	if ($('.comment-form-author input').val() == '')
+	{
+		$('.comment-form-author input').val('Name (required)');
+	}
+	if ($('.comment-form-email input').val() == '')
+	{
+		$('.comment-form-email input').val('Email (required)');
+	}
+	if ($('.comment-form-url input').val() == '')
+	{
+		$('.comment-form-url input').val('URL');
+	}
+	if ($('.comment-form-comment textarea').html() == '')
+	{
+		$('.comment-form-comment textarea').html('Your message');
+	}
+	
+	$('.comment-form-author input').bind('focus', function() {
+		$(this).css('border-color', '#ff555d').css('color', '#333');
+		if ($(this).val() == 'Name (required)') $(this).val('');
+	});
+	$('.comment-form-author input').bind('blur', function() {
+		$(this).css('border-color', '#ccc').css('color', '#6b6b6b');
+		if ($(this).val().trim() == '') $(this).val('Name (required)');
+	});
+	$('.comment-form-email input').bind('focus', function() {
+		$(this).css('border-color', '#ff555d').css('color', '#333');
+		if ($(this).val() == 'Email (required)') $(this).val('');
+	});
+	$('.comment-form-email input').bind('blur', function() {
+		$(this).css('border-color', '#ccc').css('color', '#6b6b6b');
+		if ($(this).val().trim() == '') $(this).val('Email (required)');
+	});
+	$('.comment-form-url input').bind('focus', function() {
+		$(this).css('border-color', '#ff555d').css('color', '#333');
+		if ($(this).val() == 'URL') $(this).val('');
+	});
+	$('.comment-form-url input').bind('blur', function() {
+		$(this).css('border-color', '#ccc').css('color', '#6b6b6b');
+		if ($(this).val().trim() == '') $(this).val('URL');
+	});
+	$('.comment-form-comment textarea').bind('focus', function() {
+		$(this).css('border-color', '#ff555d').css('color', '#333');
+		if ($(this).val() == 'Your message') $(this).val('');
+	});
+	$('.comment-form-comment textarea').bind('blur', function() {
+		$(this).css('border-color', '#ccc').css('color', '#6b6b6b');
+		if ($(this).val().trim() == '') $(this).val('Your message');
+	});
+	$('#commentform').bind('submit', function(e) {
+		if ($('.comment-form-author input').val() == 'Name (required)')
+		{
+			$('.comment-form-author input').val('');
+		}
+		if ($('.comment-form-email input').val() == 'Email (required)')
+		{
+			$('.comment-form-email input').val('');
+		}
+		if ($('.comment-form-url input').val() == 'URL')
+		{
+			$('.comment-form-url input').val('');
+		}
+		if ($('.comment-form-comment textarea').val() == 'Your message')
+		{
+			$('.comment-form-comment textarea').val('');
+		}
+	})
+
+	$('.commentlist li div').bind('mouseover', function() {
+		var reply = $(this).find('.reply')[0];
+		$(reply).find('.comment-reply-link').show();
+	});
+
+	$('.commentlist li div').bind('mouseout', function() {
+		var reply = $(this).find('.reply')[0];
+		$(reply).find('.comment-reply-link').hide();
+	});
+});
+</script>
+
+<link rel="shortcut icon" href="http://protokolai.com/wp-content/themes/imbalance2/favico.ico" /></head>
+
+<body class="single single-post postid-5720 single-format-standard">
+
+<div class="wrapper">
+    <!-- iBILLBOARD Ad Server one2many Position: go.adlt.bbelements.com laukineszasys.lt(19379) / Visa Aplinka(1) / 750x100(1) / 750x100(1)-->
+    <div id='bmone2n-19380.1.1.1'></div>
+    <!-- iBILLBOARD Ad Server one2many Position: go.adlt.bbelements.com laukineszasys.lt(19379) / Visa Aplinka(1) / Pixel(1) / Pixel(2)-->
+    <div id='bmone2n-19380.1.1.2'></div>
+
+	<div id="header">
+		
+		<div id="site-title">
+			<a href="http://protokolai.com/" title="Protokolai">Protokolai</a>
+		</div>
+		
+		<div id="header-center"><ul><li class="page_item page-item-2820"><a href="http://protokolai.com/apie-andriu-uzkalni/">Apie Andrių Užkalnį</a></li>
+<li class="page_item page-item-2817"><a href="http://protokolai.com/apie-zurnalisto-andriaus-uzkalnio-protokolus-ir-laukines-zasis/">Apie Protokolus ir Laukines Žąsis</a></li>
+</ul></div>
+		<div id="search">
+			<form role="search" method="get" id="searchform" action="http://protokolai.com/" >
+	<div><label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" value="" name="s" id="s" />
+	<input type="submit" id="searchsubmit" value="Search" />
+	</div>
+	</form>			<div id="header-right"><div class="menu"><ul><li id="menu-item-2820" class="menu-item-2820"><a></a></li><li id="menu-item-2817" class="menu-item-2817"><a></a></li></ul></div>
+</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="main">
+
+		<div id="content" style='position: relative;'>
+                
+                
+                
+		
+<div class="post_title">
+	<div id="nav-above" class="navigation">
+		<div class="nav-previous">
+					<a href="http://protokolai.com/2015/07/18/kaip-britanijoje-desinieji-laikrasciai-is-kairiuju-tyciojasi/" rel="prev">« Previous</a>				</div>
+		<span class="main_separator">/</span>
+		<div class="nav-next">
+					<a href="http://protokolai.com/2015/07/20/rokiskis-rabinovicius-ziurkenas-radijo-laidoje/" rel="next">Next »</a>				</div>
+	</div><!-- #nav-above -->					
+	<div class="clear"></div>
+	<h1 class="entry-title">Emigrantai ir jų tipai</h1>
+
+					
+
+					<div class="entry-meta">
+						<span class="meta-sep">By</span> <a href="http://protokolai.com/author/andrius-uzkalnis/" title="View all posts by Andrius Uzkalnis">Andrius Uzkalnis</a>						<span class="main_separator">/</span>
+						<span class="entry-date">July 19, 2015</span>						<span class="main_separator">/</span>
+						<a href="http://protokolai.com/category/miesto-kronikos/" title="View all posts in Miesto Kronikos" rel="category tag">Miesto Kronikos</a>						<span class="main_separator">/</span>
+							<a href="#comments">12 Comments</a>
+						</div><!-- .entry-meta -->
+				</div>
+
+				<div id="wides"></div>
+
+				<table id="post-5720" class="post-5720 post type-post status-publish format-standard hentry category-miesto-kronikos tag-coffee-inn tag-emigrantai">
+					<tr>
+
+						<td class="entry-content">
+							<p><a href="http://protokolai.com/wp-content/uploads/2015/07/Emigrantai.jpg"><img class="alignnone  wp-image-5721" title="Emigrantai" src="http://protokolai.com/wp-content/uploads/2015/07/Emigrantai.jpg" alt="" width="551" height="340" /></a></p>
+<p>Dažnas man vis pasako, kad, šaipydamasis iš emigrantų, neteisingai juos visus apibendrinu, lyg jie visi būtų vienodi. Jie nėra vienodi. Kaip šuniukai būna skirtingų veislių, o klinikoje ligoniai vis su kitu susirgimu, bet pagal ligų tipą sugrupuoti į skyrius, taip ir žmonės būna lengvai į lentynėles sudėliojami.</p>
+<p><strong>Ištekėjusi už anglo<br />
+</strong>Ši jau nebe paties šviežiausio amžiaus Genovaitė gali būti ištekėjusi ir už airio, ir už škoto, bet vis tiek „už anglo“, nes kaip lietuvis nesiskiria nuo ruso, o rusas – nuo ukrainiečio, taip ir tie visi anglai yra vienodi (išskyrus babą kaime, kuri visus užsieniečius vadina „amerikonais“).</p>
+<p>Genovaitei jos naujasis gyvenimo draugas Brianas yra jau nebe pirmoji santuoka – buvo ištekėjusi Kuršėnuose ir iš to nieko gero nebuvo, reklamavosi pažinčių portaluose, fotografuodamasi prie veidrodžio, ir gavo rezultatą. Brianas už ją vyresnis bent dešimtmečiu ir irgi nusivylęs ankstesniais santykiais, dirba negudrų darbą ir gyvena 1976 m. statybos namelyje iš kartono. Jie kasmet važiuoja į Turkiją, kur Brianas geria itin daug alaus. Alų jis geria ir namie.</p>
+<p>Genovaitė Brown labai myli naująją Tėvynę ir per dieną 20 kartų rašo Feisbuke, kad Lietuvoje niekam nėra darbų, viską valdžia atima ir labai daug korupcijos. Internete mėgsta rusiškas demotyvacijas, Mergaitę Mašenką ir juvenalinės justicijos grupes. Lietuvoje lankosi itin retai.</p>
+<p><strong>Dirbu ofise<br />
+</strong>Gintautas (jį darbe visi vadina „Ghin“, taip trumpiau) dirba varžteliu labai dideliame biure draudimo bendrovėje ir nekenčia, kai jį gretina su lietuviais buduliais, kurie skina salotas arba pakuoja gatavus pietus fabrikuose. Kelis kartus buvo pobrangiuose restoranuose per kompanijos vakarėlius ir todėl jaučiasi matęs gerą gyvenimą. Daug laiko leidžia lietuviškuose internetuose ir prie bet kokio straipsnio apie užsienį, keliones, kurortus ar gerą gyvenimą rašo komentarus „buvęs ir geresnėse vietose, matęs ir geriau, bet kažkodėl apie tai nerašau“. Taip pat buvęs motyvaciniuose apmokymuose ir ten išmoko pardavimo metodikų, apie kurias pasakoja draugams apsilankęs Lietuvoje, kaip apie stebuklą.</p>
+<p>Lietuvoje lankosi kartą per metus ir mėgsta parduotuvėse, restoranuose ir kitur sakyti „o pas mus“.</p>
+<p><strong>Normalus budulis<br />
+</strong>Atvyko į Angliją mikriuku, darbą susirado ten pat, kur ir kartu keliavę draugeliai: „agentūroje“, per kurią samdosi nekvalifikuotus darbuotojus fermos, statybvietės ir maisto pakavimo fabrikai. Agentūroje vadybininkas Valera jam parūpino ir gyvenamą vietą, kur viename name gyvena aštuoniese. Galėtų gyventi erdviau ir pigiau, bet pats nieko nemoka susitarti ir nežino kur eiti. Žino visas artimiausias sporto prekių parduotuves. Kartais iškrovinėja kontrabandines cigaretes ir gauna už tai £20 ir cigarečių. Internete rašo retai, bet kai rašo, tai be didžiųjų raidžių ir be kablelių. Turi įsikėlęs BMW nuotrauką. Tas BMW kainuoja tiek, kiek jis uždirba per 20 metų.</p>
+<p><strong>Emigrantas Norvegijoje<br />
+</strong>Žodžio „Norvegija“ jis nėra sakęs nuo mokyklos laikų. Visada tik „Norgė“ ir niekaip kitaip. Šalyje taip brangu, kad jis niekada neleidžia pinigų niekam, viską taupo ir maitinasi oru ir kerpėmis. Vieną kartą buvo picerijoje (gal ne pats, gal jo draugas buvo), ir ligi šiol visiems pasakoja apie picą už 55 eurus. Tos picos pats nevalgė, bet matė ją meniu. Pats valgė picą, kurios kaina buvo 19 eurų, kas irgi brangu.</p>
+<p><strong>Statybininkas-specialistas<br />
+</strong>Labai pyksta, kai jį painioja su juodadarbiais leiboriais (tai ne leiboristų partijos atstovai, o <em>labourers</em>, nekvalifikuoti statybų darbininkai). Paprastai uždirba ne daugiau 80 svarų per dieną, jei viskas gerai sekasi, bet vieną kartą buvo pasamdytas labai skubiam projektui už 40 svarų per valandą, todėl visada Lietuvoje pabrėžia, kad gauna „500 funtų per dieną“, nors tiek nė karto gyvenime nėra uždirbęs. Visada lygindamas su Lietuva, Britanijos svarą verčia į litus kursu 7:1, nors toks kursas paskutinį kartą buvo prieš 18 metų ir lito jau nebėra. Todėl tas dienos uždarbis buvęs 3500 litų. O ką pasiekei gyvenime tu?</p>
+<p>Yra pakankamai integravęsis, orientuojasi, kokią travelką (Travel Card)<strong> </strong>nusipirkti ir gal net turi kredito kortelę ir įsigijęs automobilį, kuris yra draustas ir praėjęs techninę apžiūrą. Atvykęs Lietuvon, būtinai lankosi Palangoje. Turi nusipirkęs video kamerą, filmuoja visus gimines Raseiniuose. Tos medžiagos niekas niekada nežiūri.</p>
+							
+									<div class="clear"></div>
+
+							<div class="entry-utility">
+								<div class="entry-tags"><span>Tags:</span> <a href="http://protokolai.com/tag/coffee-inn/" rel="tag">Coffee Inn</a>, <a href="http://protokolai.com/tag/emigrantai/" rel="tag">emigrantai</a></div>															</div><!-- .entry-utility -->
+
+							<div id="social">
+								<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a>
+								<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+								<div id="fb-root"></div>
+								<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+								<fb:like href="http://protokolai.com/2015/07/19/emigrantai-ir-ju-tipai/" send="true" width="450" show_faces="false" font=""></fb:like>
+							</div>
+						</td>
+
+						<td class="entry-aside">
+							<div><!-- iBILLBOARD Ad Server one2many Position: go.adlt.bbelements.com protokolai.com(19380) / Visa Aplinka(1) / 300x250(1) / 300x250(3)-->
+<div id='bmone2n-19380.1.1.3'></div>
+
+<!-- iBILLBOARD Ad Server one2many code -->
+<script type='text/javascript' charset='utf-8' src='http://go.adlt.bbelements.com/bb/bb_one2n.js'></script>
+<script type='text/javascript'>/* <![CDATA[ */ 
+if(typeof bbkeywords == "undefined") var bbkeywords=''; //fill in page keywords separated by ';' e.g. 'audi;ford;fiat'
+bmone2n.addPosition('19380.1.1.3','');
+bmone2n.addPosition('19380.1.1.1','');
+bmone2n.addPosition('19380.1.1.2','');
+bmone2n.getAd('go.adlt.bbelements.com',bbkeywords,''+(typeof(bburlparam)=='string'?'&'+bburlparam:''),'utf-8');
+/* ]]> */</script>
+<div id='bmone2t-19380.1.1.3' style='display:none'><script type='text/javascript'>/* <![CDATA[ */ bmone2n.makeAd('19380.1.1.3'); /* ]]> */</script></div>
+<div id='bmone2t-19380.1.1.1' style='display:none'><script type='text/javascript'>/* <![CDATA[ */ bmone2n.makeAd('19380.1.1.1'); /* ]]> */</script></div>
+<div id='bmone2t-19380.1.1.2' style='display:none'><script type='text/javascript'>/* <![CDATA[ */ bmone2n.makeAd('19380.1.1.2'); /* ]]> */</script></div>
+<script type='text/javascript'>/* <![CDATA[ */ bmone2n.moveAd(); /* ]]> */</script>
+<!-- iBILLBOARD Ad Server one2many code END --></div>
+						</td>
+					</tr>
+				</table><!-- #post-## -->
+
+							<div id="comments">
+
+			<h3 id="comments-title">12 Comments</h3>
+
+
+			<ol class="commentlist">
+					<li class="comment even thread-even depth-1" id="li-comment-168444">
+		<div id="comment-168444">
+			<div class="comment-avatar">
+				<img alt='' src='http://1.gravatar.com/avatar/b0f6b9688ef25d973bb0b9bc169a5d4f?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />			</div>
+				
+			<div class="comment-author">
+				<cite class="fn">Ragavęs tos duonos</cite>			</div>
+
+			<div class="comment-meta commentmetadata">
+				July 19, 2015 at 18:55			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2015/07/19/emigrantai-ir-ju-tipai/?replytocom=168444#respond' onclick='return addComment.moveForm("comment-168444", "168444", "respond", "5720")'>Reply</a>			</div><!-- .reply -->
+
+			<div class="comment-body"><p>Dar yra Aurėja (vietiniai taria &#8220;Aurėja&#8221;, nes jie visi lietuviai) iš Kvėdarnos, kuri dirba vištinyke netoli Belfasto. Atvažiavo čia vos sulaukusi pilnametystės, kad namie likusi ir bibliotekininke dirbanti motina neknistų proto dėl mokslo ar darbo. Nepatyrusią kiaunikę čia greitai užpelengavo Edma iš Prienų, papūtė arabų ir užtaisė vaiką bei ragus. Privalumas &#8211; skirtas socialinis būstas, trūkumas &#8211; Edma pabėgo ir nemoka alimentų. Todėl teko rinktis &#8211; grįžti namo ar atsivežti mamą. Mama atvažiavo ir po pusės metų jau pusėtinai ėmė graibytis anglų kalboje, ko pasekoje gavo darbą vietos socialinės rūpybos skyriuje. Aurėja kaip ir norėtų grįžti į Lietuvą, bet mama, sumokėjusi komunalinius ir nusipirkusi mėnesiui maisto, pamatė, kad lieka pinigų tiek, kad galima pagalvoti apie visiškai kitokį gyvenimą, todėl kategoriškai atsisako grįžti (&#8220;Negaliu palikti tų visų žmonių be socialinės pagalbos&#8221;). Kitais metais planuoja visgi grįžti trumpų atostogų ir tuo pačiu palėkti iki Šventosios. (Tipažams įkvėpė laida &#8220;Emigrantai&#8221;).</p>
+</div>
+		</div><!-- #comment-##  -->
+
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-168474">
+		<div id="comment-168474">
+			<div class="comment-avatar">
+				<img alt='' src='http://0.gravatar.com/avatar/42a0ff32ec50b6b6d46ac9e8227b0811?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />			</div>
+				
+			<div class="comment-author">
+				<cite class="fn">Peliksiuks</cite>			</div>
+
+			<div class="comment-meta commentmetadata">
+				July 19, 2015 at 21:15			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2015/07/19/emigrantai-ir-ju-tipai/?replytocom=168474#respond' onclick='return addComment.moveForm("comment-168474", "168474", "respond", "5720")'>Reply</a>			</div><!-- .reply -->
+
+			<div class="comment-body"><p>Verkiu. Ir nuo straipsnio, ir nuo komentaro.</p>
+</div>
+		</div><!-- #comment-##  -->
+
+	</li>
+	<li class="comment even thread-even depth-1" id="li-comment-168571">
+		<div id="comment-168571">
+			<div class="comment-avatar">
+				<img alt='' src='http://0.gravatar.com/avatar/ab485e1621bfb0c52ed44b1203c10687?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />			</div>
+				
+			<div class="comment-author">
+				<cite class="fn">modul</cite>			</div>
+
+			<div class="comment-meta commentmetadata">
+				July 20, 2015 at 05:12			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2015/07/19/emigrantai-ir-ju-tipai/?replytocom=168571#respond' onclick='return addComment.moveForm("comment-168571", "168571", "respond", "5720")'>Reply</a>			</div><!-- .reply -->
+
+			<div class="comment-body"><p>apie amerikes emigrantus ka nors,please! chikagos mamytes pasiruoshe <img src='http://protokolai.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /><br />
+labai jautriai reagavo i prieshpaskutini ,apie durnius emigrantus.</p>
+</div>
+		</div><!-- #comment-##  -->
+
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-168578">
+		<div id="comment-168578">
+			<div class="comment-avatar">
+				<img alt='' src='http://1.gravatar.com/avatar/d54e6f88ca21b6a8357bc72a169d0887?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />			</div>
+				
+			<div class="comment-author">
+				<cite class="fn">Supermama</cite>			</div>
+
+			<div class="comment-meta commentmetadata">
+				July 20, 2015 at 05:45			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2015/07/19/emigrantai-ir-ju-tipai/?replytocom=168578#respond' onclick='return addComment.moveForm("comment-168578", "168578", "respond", "5720")'>Reply</a>			</div><!-- .reply -->
+
+			<div class="comment-body"><p>Kreipsymes i ipatingas instancijas, jog sustabditi sita neteisibe!!!</p>
+</div>
+		</div><!-- #comment-##  -->
+
+	</li>
+	<li class="comment even thread-even depth-1" id="li-comment-168589">
+		<div id="comment-168589">
+			<div class="comment-avatar">
+				<img alt='' src='http://0.gravatar.com/avatar/a1e3dcd010bd32006033d25c5e4fc14b?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />			</div>
+				
+			<div class="comment-author">
+				<cite class="fn">kosmosumas</cite>			</div>
+
+			<div class="comment-meta commentmetadata">
+				July 20, 2015 at 06:34			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2015/07/19/emigrantai-ir-ju-tipai/?replytocom=168589#respond' onclick='return addComment.moveForm("comment-168589", "168589", "respond", "5720")'>Reply</a>			</div><!-- .reply -->
+
+			<div class="comment-body"><p>Trūksta dar pseudointelektualo amžinojo studento baigusio viena ar du universitetus Lietuvoje ir tuomet išvažiavusio mokytis (aišku ne už savo pinigus) dar į Vakarus (arba Pietus), kur šilčiau arba ten kur priima nemokamai. Lietuvoje beveik nesilanko ir neplanuoja grįžt, nes nelygis ir „kaimas“, pragyvena iš stipendijos, geriausiu atveju dėsto etikos lygio discipliną kokiame ketvirtarūšiame koledže normalių budulių vaikams.</p>
+</div>
+		</div><!-- #comment-##  -->
+
+	<ul class='children'>
+	<li class="comment odd alt depth-2" id="li-comment-168598">
+		<div id="comment-168598">
+			<div class="comment-avatar">
+				<img alt='' src='http://0.gravatar.com/avatar/e27f883a2387632be9591d4f645a3fb3?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />			</div>
+				
+			<div class="comment-author">
+				<cite class="fn"><a href='http://www.andraika.net' rel='external nofollow' class='url'>Andraika</a></cite>			</div>
+
+			<div class="comment-meta commentmetadata">
+				July 20, 2015 at 07:22			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2015/07/19/emigrantai-ir-ju-tipai/?replytocom=168598#respond' onclick='return addComment.moveForm("comment-168598", "168598", "respond", "5720")'>Reply</a>			</div><!-- .reply -->
+
+			<div class="comment-body"><p>o to neamžino studento, kur sėkmingai baigė ir dirba gerą, širdžiai mielą darbą, kaip ir netrūksta, nes pasijaustum prastesniu? <img src='http://protokolai.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> )</p>
+</div>
+		</div><!-- #comment-##  -->
+
+	<ul class='children'>
+	<li class="comment even depth-3" id="li-comment-168638">
+		<div id="comment-168638">
+			<div class="comment-avatar">
+				<img alt='' src='http://0.gravatar.com/avatar/a1e3dcd010bd32006033d25c5e4fc14b?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />			</div>
+				
+			<div class="comment-author">
+				<cite class="fn">kosmosumas</cite>			</div>
+
+			<div class="comment-meta commentmetadata">
+				July 20, 2015 at 09:41			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2015/07/19/emigrantai-ir-ju-tipai/?replytocom=168638#respond' onclick='return addComment.moveForm("comment-168638", "168638", "respond", "5720")'>Reply</a>			</div><!-- .reply -->
+
+			<div class="comment-body"><p>Tai čia tas žr. straipsnyje „dirba ofise“.</p>
+</div>
+		</div><!-- #comment-##  -->
+
+	<ul class='children'>
+	<li class="comment odd alt depth-4" id="li-comment-168701">
+		<div id="comment-168701">
+			<div class="comment-avatar">
+				<img alt='' src='http://1.gravatar.com/avatar/3ed0a5b5ae1bfc65afd1b987613cc8a8?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />			</div>
+				
+			<div class="comment-author">
+				<cite class="fn">mustangas</cite>			</div>
+
+			<div class="comment-meta commentmetadata">
+				July 20, 2015 at 13:47			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2015/07/19/emigrantai-ir-ju-tipai/?replytocom=168701#respond' onclick='return addComment.moveForm("comment-168701", "168701", "respond", "5720")'>Reply</a>			</div><!-- .reply -->
+
+			<div class="comment-body"><p>Ne, amžinojo studento tipažas dramatiškai kitoks nei dirbančiojo ofise. Aš pats pažįstu tokius tris, galvojau lengvai išmesiu komentarą kaip <b>Ragavęs tos duonos</b>. Pakibau kaip abiturientas per egzaminą gavęs temą &#8220;Seksualinių fantazijų užuominos Žemaitės kūryboje&#8221;. Bet tai tie amžini studentai visi tokie skirtingi ?!</p>
+</div>
+		</div><!-- #comment-##  -->
+
+	<ul class='children'>
+	<li class="comment even depth-5" id="li-comment-169121">
+		<div id="comment-169121">
+			<div class="comment-avatar">
+				<img alt='' src='http://0.gravatar.com/avatar/e27f883a2387632be9591d4f645a3fb3?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />			</div>
+				
+			<div class="comment-author">
+				<cite class="fn"><a href='http://www.andraika.net' rel='external nofollow' class='url'>Andraika</a></cite>			</div>
+
+			<div class="comment-meta commentmetadata">
+				July 21, 2015 at 21:27			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+
+			<div class="comment-body"><p>nepavyko, kad tik tokius tesutikot <img src='http://protokolai.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' />  bet ne kožnam sekasi.</p>
+</div>
+		</div><!-- #comment-##  -->
+
+	</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-168596">
+		<div id="comment-168596">
+			<div class="comment-avatar">
+				<img alt='' src='http://1.gravatar.com/avatar/fa5afee313b9d0e70b57ede60e87b91f?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />			</div>
+				
+			<div class="comment-author">
+				<cite class="fn">A</cite>			</div>
+
+			<div class="comment-meta commentmetadata">
+				July 20, 2015 at 07:16			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2015/07/19/emigrantai-ir-ju-tipai/?replytocom=168596#respond' onclick='return addComment.moveForm("comment-168596", "168596", "respond", "5720")'>Reply</a>			</div><!-- .reply -->
+
+			<div class="comment-body"><p>Yra įdomus semantinis niuansas: išsilavinę persikėlėliai paprastai nevadina savęs nei emigrantais, nei imigrantais. Jiems priimtinesnis žodis &#8220;expat&#8221; (tipo ekspatrijantas). Jiems pervažiuoti į kitą valstybę tai maždaug tas pats, kaip persikelti į kitą miesto rajoną.</p>
+</div>
+		</div><!-- #comment-##  -->
+
+	</li>
+	<li class="comment even thread-even depth-1" id="li-comment-168702">
+		<div id="comment-168702">
+			<div class="comment-avatar">
+				<img alt='' src='http://1.gravatar.com/avatar/94a266610348d77dd66311eeb0ceb719?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />			</div>
+				
+			<div class="comment-author">
+				<cite class="fn">Tomas</cite>			</div>
+
+			<div class="comment-meta commentmetadata">
+				July 20, 2015 at 13:48			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2015/07/19/emigrantai-ir-ju-tipai/?replytocom=168702#respond' onclick='return addComment.moveForm("comment-168702", "168702", "respond", "5720")'>Reply</a>			</div><!-- .reply -->
+
+			<div class="comment-body"><p>Pamirstas dar vienas tipas. Artimieji atsiunčia pinigų lėktuvo bilietui, vėliau duoda kišenpinigių, o žmogelis pasakoje kaip pas juos viskas puiku. O tie kurie sugeba susitaupyti kelionei namo ir dar turi išlaidoms Lietuvoje &#8211; yra daug pasiekę ir jų pilna Basanvičiaus gatvė.</p>
+</div>
+		</div><!-- #comment-##  -->
+
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-169496">
+		<div id="comment-169496">
+			<div class="comment-avatar">
+				<img alt='' src='http://1.gravatar.com/avatar/9711227ead4b59fa81500d928090d3de?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />			</div>
+				
+			<div class="comment-author">
+				<cite class="fn"><a href='#' rel='external nofollow' class='url'>mz</a></cite>			</div>
+
+			<div class="comment-meta commentmetadata">
+				July 23, 2015 at 14:03			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2015/07/19/emigrantai-ir-ju-tipai/?replytocom=169496#respond' onclick='return addComment.moveForm("comment-169496", "169496", "respond", "5720")'>Reply</a>			</div><!-- .reply -->
+
+			<div class="comment-body"><p>straipsnio dar neskaiciau, bet jau juokinga <img src='http://protokolai.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+</div>
+		</div><!-- #comment-##  -->
+
+	</li>
+			</ol>
+
+
+
+								<div id="respond">
+				<h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2015/07/19/emigrantai-ir-ju-tipai/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://protokolai.com/wp-comments-post.php" method="post" id="commentform">
+																										<p class="comment-form-author"><label for="author">Name</label> <span class="required">*</span><input id="author" name="author" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-email"><label for="email">Email</label> <span class="required">*</span><input id="email" name="email" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-url"><label for="url">Website</label><input id="url" name="url" type="text" value="" size="30" /></p>
+												<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>												<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='5720' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d86e1ad0f1" /></p>					</form>
+							</div><!-- #respond -->
+						
+</div><!-- #comments -->
+
+
+
+		</div><!-- #content -->
+
+	</div><!-- #main -->
+	
+	<div id="footer">
+		<div id="site-info">
+			© 2012 <a href="/">Protokolai</a><br />
+			
+		</div><!-- #site-info -->
+		<div id="footer-right"><div class="menu"><ul><li class="menu-item-2820"><a></a></li><li class="menu-item-2817"><a></a></li></ul></div>
+</div>
+		<div id="footer-left"><div class="menu"><ul><li class="menu-item-2820"><a></a></li><li class="menu-item-2817"><a></a></li></ul></div>
+</div>
+		<div class="clear"></div>
+	</div><!-- #footer -->
+
+</div><!-- .wrapper -->
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37344190-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

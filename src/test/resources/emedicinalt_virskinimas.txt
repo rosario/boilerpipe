@@ -1,0 +1,20 @@
+LSMU Medicinos akademija
+
+Dispepsijos terminas vartojamas apibūdinti nemaloniems viršutinio virškinamojo trakto simptomams: viršutinės pilvo dalies skausmui, viršutinės pilvo dalies diskomfortui, pilvo pūtimui, ankstyvam sotumo, pilnumo jausmui, rėmeniui, raugėjimui, regurgitacijai. Šiuos simptomus jaučia per 30 proc. populiacijos ir tik 40 proc. iš jų dėl to kreipiasi į pirminės sveikatos priežiūros gydytojus bei gydytojus gastroenterologus. Įvairių autorių duomenimis, apie 8 proc. visų vizitų pas bendrosios praktikos gydytojus yra susiję su dispepsijos simptomais.
+
+Viršutinio virškinamojo trakto (VVT) endoskopinis tyrimas yra laikomas aukso standartu nustatant viršutinio pilvo aukšto skausmų priežastį. Dispepsijos priežastimi gali būti tiek gerybinės, tiek piktybinės ligos, tačiau daugiau nei pusei dispepsijos simptomus jaučiančių pacientų nerandama jokių struktūrinių VVT pakitimų. Tada, remiantis Romos III kriterijais, diagnozuojama funkcinė dispepsija. Romos III kriterijai apibrėžia, kad funkcinė dispepsija diagnozuojama tada, kai nerandama jokių organinių pakitimų VVT, tačiau per pastaruosius pusę metų, bent 3 mėnesius, pacientą vargina ankstyvas sotumo, nemalonus sotumo jausmas po įprasto maisto arba skausmas epigastriumo srityje.
+
+2004 metais publikuotos The National Institute for Health and Care Excellence(NICE) gairės pabrėžia, jog VVT endoskopinis tyrimas turi būti atliekamas pacientams, vyresniems nei 55 metų, kuriuos vargina dispepsijos simptomai, bei pacientams, turintiems aliarmo simptomų. Nors tai patogi strategija dispepsijos priežasčiai nustatyti, praktiniu požiūriu endoskopiniai tyrimai ne visada yra atliekami remiantis šiomis gairėmis. Taigi vis dažniau taikomi VVT endoskopiniai tyrimai ir mažėjantis jų prieinamumas (dėl didelio tiriamųjų skaičiaus) kelia klausimą, ar tikslingai skiriamas šis diagnostinis tyrimas ir kokia jo svarba diagnozuojant dispepsijos priežastis?
+
+
+
+Dispepsijos diagnostikos ir gydymo taktikos
+
+
+
+Yra keletas dispepsijos diagnostikos ir gydymo taktikų, įskaitant: empirinį gydymą protonų siurblio inhibitoriais (PSI), H. pylori test and treat gydymą ir endoskopinį paciento tyrimą. Yra atlikti tyrimai, siekiant išsiaiškinti, kuri strategija yra tinkamiausia dispepsijos diagnostikai ir gydymui, ir nustatyta, kad ekonomiškai optimaliausia taktika regionuose, kuriuose yra nedidelis H. pylori dažnis, buvo test and treat gydymas. Tačiau, laikantis šios taktikos, prarandama galimybė diagnozuoti organinius VVT pakitimus, svarbiausia – ankstyvą piktybinį naviką. Taip pat ši strategija gali būti nepraktiška šalyse, kur yra didelis H. pylori paplitimas. Tokiu atveju VVT endoskopija yra brangus, tačiau efektyvus tyrimas siekiant dispepsijos simptomų priežasčiai nustatyti.
+
+NICE gairės, publikuotos 2004 metais, pabrėžia, jog rutininiai endoskopiniai tyrimai neturėtų būti atliekami pacientams, turintiems dispepsijos požymių, nebent jie yra vyresni nei 55 metų ir simptomai tęsiasi nepriklausomai nuo skiriamo gydymo. O pacientai, kurie turi aliarmo simptomų (1 lentelė), nepaisant jų amžiaus, turėtų būti skubiai (angl. fast-track) nukreipti VVT endoskopiniam tyrimui piktybinei ligai paneigti.
+
+Visgi pastebima, kad net ir esant aliarmo simptomams, navikinė patologija aptinkama palyginti retai. 2006 metais JAV buvo atlikta metaanalizė, kuria siekta įvertinti prognozinę aliarmo simptomų naudą diagnozuojant piktybinius VVT darinius. Buvo išanalizuota 2600 tyrimų, įtraukiant 57 363 pacientus. Buvo įrodyta, kad diagnozės nustatymas, remiantis aliarmo simptomais, yra labai specifiškas (97–98 proc.), tačiau mažai jautrus (11–53 proc.). Tai parodė, kad reikalingi išsamesni tyrimai, tobulinant aliarmo simptomų pritaikymą VVT piktybiniams dariniams nustatyti.
+

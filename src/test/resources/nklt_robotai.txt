@@ -1,0 +1,27 @@
+Japonija ir robotai — tai tas pat, kas Lietuva ir lazeriai. Na, bent jau mūsų akimis. Tad nors daug kas ir tikėjosi, kad pirmąjį namudinį robotą (angl. domestic robot) pristatys „Google“ (juk ji neveltui supirko visus vertingesnius robotikos ir dirbtinio intelekto startupus), tas faktas, kad tai pirmieji padarė japonai, labai nestebina.
+
+Ponai, ponios (ir gerbiamas DI, jei kartais jau skaitote) — susipažinkite su Pepper. Kol kas tebuvo pagaminta vos 1000 jo egzempliorių ir visi jau išparduoti. Vieneto kaina — 1600 JAV dolerių, bet jei norite garantijos, kas mėnesį teks mokėti dar po 200 JAV dol.
+
+Roboto kūrėjai — Japonijos telekomunikacijų korporacija „SoftBank“ ir nemažą įdirbį robotikoje jau turintys prancūzai „Aldebaran“, pasaulyje jau neblogai žinomi dėl mielo robotuko Nao.
+
+Ir, panašiai kaip ir Nao, Pepper dirbtiniame intelekte skiriama daug dėmesio emocijoms. Pepper ne tik reaguoja į tokius žmogaus jausmus, kaip džiaugsmą, nustebimą, pyktį, abejones ar liūdesį, bet ir pats turi savo nuotaiką, kurią lemia tokie veiksniai, kaip lietingi orai, prastos naujienos interneto portaluose (todėl gerai, kad niekas nenupirko ir neatvežė į Lietuvą, čia jis turbūt sugestų iš depresijos), tamsa ir pan. Tuo tarpu teigiama, kad roboto nuotaiką turėtų pakelti saulėtas oras, jam sakomi komplimentai ir roboto kūrėjų remiamos beisbolo komandos pergalės.
+
+Be to, kuo labiau kils roboto „laimės lygis“, tuo daugiau jis visko darys — šoks, mokys anglų kalbos ir panašiai.
+
+
+Įdomiausia tai, kad kūrėjų teigimu, Pepper sugeba skaityti ir suprasti žmogaus kūno kalbą, veido išraiškas, o iš žodinės kalbos — perprasti žmogaus nuotaiką. Na ir žinoma, jei robotas identifikuos, kad jo šeimininkas yra liūdnas, stengsis jį visaip pralinksminti — kad ir pagroti jo mėgstamą dainą.
+
+Gana akivaizdu, kad robotas iš tiesų kreipiamas į vyresnio amžiaus vartotojų rinką, o šis amžiaus segmentas Japonijoje yra problematiškas: senjorų gausėja, ir dauguma jų susiduria tiek su fizinėmis, tiek su psichologinėmis problemomis, tad tikimasi, kad Pepper bent kažkiek padės tai spręsti — tiek padėdamas paprasčiausiuose kasdieniuose darbuose, tiek paprasčiausiai sudarydamas kompaniją vienišesniems senjorams.
+
+Dėl savo mielos išvaizdos ir naujovės statuso Pepper bandomas paversti ir prekybos agentu: Šveicarijos kompanija „Nestle" (na žinote, „Nescafe“, „Nestea“, „Maggi“, „KitKat“ ir t.t.) užsisakė 20 tokių Pepper robotų, su kurių pagalba bandys Japonijoje pardavinėti savo kavos aparatus. Iki metų pabaigos šveicarai žada įdarbinti po vieną tokį robotą 1000-yje savo parduotuvių Kylančios Saulės šalyje.
+
+Vis dėlto „pirmasis“ nebūtinai reiškia „sėkmingas“, ir Pepper ateitis dar nėra labai užtikrinta. Atrodo, „SoftBank“ santykiai su „Aldebaran“ šąla ir japonai ima dairytis į „Alibaba“ bei „Foxconn“, o ir išankstinių užsakymų gausa lyg nedžiugina. Bet patys „SoftBank“ stengiasi išlaikyti optimizmą: „Geriausi laikai dar tik priekyje. Be to, ko gi jūs norite — juk Pepper dar tik vieneri!” — teigia korporacijos vadovas Masayoshi Son.
+
+
+O kol „Google“ tyli, tenka rankiotis informaciją apie kitus planuojamus namudinius robotus. Ir vienu iš tokių žada tapti robotas-virėjas, kuris rinkoje turėtų būti pristatytas 2017-aisiais. Sakoma, toks virtuvės šefas — kuris iš tiesų bus tik dvi mechaninės rankos, įtaisytos į virtuvės sieną — mokės pagaminti 2000 patiekalų. Bėda tik, jis neturės skonio juslės, todėl jei Jūsų virtuvėje cukrus ir druska laikoma panašiuose indeliuose, o kartais kas nors juos dar ir apkeičia vietomis... na, jūs supratote.
+
+Įdomi detalė — robotas-virėjas (kurio vardas, beje, yra Moley) buvo kurtas premijuotam Didžiosios Britanijos virėjui Timui Andersonui dėvint specialias pirštines, kurios 3D erdvėje registravo virėjo rankų darbą.
+
+Žinoma, kūrėjai žada įdiegti ir sistemą, leidžiančią pačiam savininkui apmokyti savo robotą gaminti tai, kas labiausiai patinka šeimininkui, tad robotiškai sukurtų cepelinų galimybės nederėtų atmesti.
+
+Sakoma, kad robotą galima bus valdyti per aplikaciją, tad vakarienę galėsite pradėti ruošti dar net neišėję iš biuro ar jau įstrigę transporto kamštyje, pakeliui namo. Vis dėlto išmaniosios rankytės (kurios, žadama, dar sugebės operuoti ir šaldytuvu bei indaplove) kainuos ne taip jau ir mažai — 15 000 JAV dol., o papildomus receptus dar gali tekti pirktis ir atskirai.

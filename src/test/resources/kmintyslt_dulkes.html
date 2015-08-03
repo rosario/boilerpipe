@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Kupiškėnų mintys</title>
+<link rel='icon' href='km.ico'>
+<link href='km_stiliai.css' type='text/css' rel='stylesheet'>
+<script type='text/javascript' src='fun.js'></script>
+<script type='text/javascript' src='spausdinti.js'></script>
+</head>
+
+<body class='fonas'>
+<div id='neaktyvus_fonas' onclick='NormalusVaizdas()'></div>
+<div id='isdidinimo_langas'>
+	<table style='width:100%; border:0px solid #F00; border-collapse:collapse; border-spacing:0'>
+		<tr>
+			<td style='width:100%; vertical-align:middle'><div id='skaitliukas' style='display:none'></div></td>
+			<td style='width:20px; text-align:right; vertical-align:middle; position:relative; top:-4px'><img id='uzdaryti_isdidinimo_langa' src='www_pav/uzdaryti.png' alt='' title='Uždaryti' onclick='NormalusVaizdas()'></td>
+	</table>
+	<p style='text-align:center'><img id='laukti' src='www_pav/laukti.gif' alt='' style='margin:60px 0 40px 0'><img id='paveiksliukas' style='display:none' src='' alt='' onload="VaizduotiPaveiksliuka()"></p>
+	<p id='pavadinimas' style='text-align:center; margin:5px 0 5px 0'></p>
+</div>
+<div class='pagr_remas' id='pagr_remas' style='width:990px'>
+
+<table style='width:inherit; border:0px solid #F00; border-collapse:collapse; border-spacing:0'>
+	<tr>
+		<td style='width:330px;text-align:center; vertical-align:middle; background-color:#FFF'>
+			<!-- <p class='laikrascio_paskirtis'>Laikraštis Kupiškio krašto visuomenei.</p>
+			<p class='laikrascio_pradzia'>Leidžiamas nuo 1946 m. spalio 22 d.</p>  !-->
+			<p><img src='www_pav/km.png' title='Kupiškėnų mintys' alt='Kupiškėnų mintys'></p>
+			<p class='siandien'>2015&nbsp;m.&nbsp;liepos&nbsp;31&nbsp;d.,&nbsp;penktadienis</p>
+		</td>
+		<td style='width:100%; text-align:right; vertical-align:top'>
+			<p class='km_info_txt'><a href='?psl=reklamos_kainos'>Reklama</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href='?psl=prenumerata'>Prenumerata</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href='?'>Naujienos</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href='?psl=archyvas'>Archyvas</a></p>
+			<p class='info_txt_tarpas'>&nbsp;</p>
+			<form id='paieskos_forma' method='post' action='?psl=paieska'>
+				<p><input type='hidden' name='nauja_paieska' id='nauja_paieska' value='2'>
+				<input name='straipsnio_tekstas' id='straipsnio_tekstas' type='text' style='width:150px; font-size:8pt; font-family:Arial,sans-serif; margin:0'>&nbsp;<a href='javascript:document.getElementById("paieskos_forma").submit()'><img src='www_pav/paieska.gif' title='Ieškoti straipsniuose' alt='Ieškoti' style='position:relative; top:6px; border:0'></a></p>
+			</form>
+		</td>
+	</tr>
+</table>
+
+<div style='width:inherit; margin:0 0 6px 0'>
+	<script type='text/javascript'>
+		BegantiEilute('be', '<b><font color="FFFFFF">As<font color="FFFFFF">meninis skelbimas savaitei puslapyje www.kmintys.lt - </font></font></b><b><font color="#ffff00">tik&nbsp;</font></b><b><font color="FFFFFF"><font color="FFFFFF"><font color="FFFF00"> </font></font></font><font color="FFFFFF"><font color="FFFFFF"><font color="FFFF00">0,87 </font></font></font></b><font color="FFFFFF"><font color="FFFFFF"><font color="FFFF00"><font color="FFFFFF"><font color="FFFFFF"><i><font color="FFFF00"><b>€</b> </font></i></font></font>/ </font></font></font><font color="FFFFFF"><font color="FFFFFF"><font color="FFFF00"><font color="#ffff00">3 L</font><b><font color="#ffff00">t</font></b>&nbsp;</font><i></i></font></font><b><font color="FFFFFF"><font color="FFFFFF">!<br></font></font></b>', '015070', 2);
+	</script>
+</div>
+
+<div style='width:inherit; margin:0 0 6px 0; padding:0; display:table'>
+<table style='width:inherit; border:0px solid #F00; border-collapse:collapse; border-spacing:0'>
+	<tr>
+		<td style='width:120px; vertical-align:top; padding:0'>
+<div class='meniu' style='width:120px'>
+<div class='meniu_pavadinimas'>Naujienos</div><div class='meniu_vidus'>
+<p><a class='meniu_punktas' href='?psl=-1'>Visos&nbsp;naujienos</a></p>
+<hr class='hr_meniu' />
+<p><a class='meniu_punktas' href='?psl=1psl'>Aktualijos</a></p>
+<p><a class='meniu_punktas' href='?psl=gamta_ir_mes'>Gamta ir mes</a></p>
+<p><a class='meniu_punktas' href='?psl=sveikata'>Sveikata</a></p>
+<p><a class='meniu_punktas' href='?psl=verinys'>Vėrinys</a></p>
+<p><a class='meniu_punktas' href='?psl=nuomones'>Nuomonės</a></p>
+<p><a class='meniu_punktas' href='?psl=gyvenimo_ratas'>Gyvenimo ratas</a></p>
+<p><a class='meniu_punktas' href='?psl=savi_tarp_kupiskenu'>Savi tarp kupiškėnų</a></p>
+</div></div>
+<div class='meniu' style='width:120px'>
+<div class='meniu_pavadinimas'>Informacija</div><div class='meniu_vidus'>
+<p><a class='meniu_punktas' href='?psl=skelbimai'>Skelbimai</a><span class='meniu_punkto_info'>&nbsp; (5)</span></p>
+<p><a class='meniu_punktas' href='?psl=atsiliepimai'>Atsiliepimai</a><span class='meniu_punkto_info'>&nbsp; (54291)</span></p>
+<p><a class='meniu_punktas' href='?psl=redakcija'>Redakcija</a></p>
+</div></div>
+<div class='meniu' style='width:120px'>
+<div class='meniu_pavadinimas'>Įkainiai</div><div class='meniu_vidus'>
+<p><a class='meniu_punktas' href='?psl=prenumerata'>Prenumerata</a></p>
+<p><a class='meniu_punktas' href='?psl=reklamos_kainos'>Reklama</a></p>
+</div></div>
+<p style='text-align:center; margin:18px 0 18px 0'><img src='www_pav/rek_po.gif' alt='' style='border:0' /></p>
+<div style='text-align:center;width:120px;overflow:hidden;'><a href="http://www.nrmlla.lt/" target="_blank" title="http://www.nrmlla.lt/"><img src="pav/rek/176.jpg" style="border:0; width:120px;" alt=""></a></div>
+<p class="rek_tarpas">&nbsp;</p>
+<div style='text-align:center;width:120px;overflow:hidden;'><a href="http://www.sveikatossodas.lt" target="_blank" title="http://www.sveikatossodas.lt"><img src="pav/rek/188.jpg" style="border:0; width:120px;" alt=""></a></div>
+<p class="rek_tarpas">&nbsp;</p>
+<div style='text-align:center;width:120px;overflow:hidden;'><a href="http://studijos.panko.lt/ " target="_blank"><img src="pav/rek/335.jpg" style="border:0 solid #000000;"></a></div>
+<p style='text-align:center; margin:18px 0 18px 0'><img src='www_pav/rek_virs.gif' alt='' style='border:0' /></p>
+		</td>
+		<td style='width:6px; vertical-align:top; font-size:1px; padding:0'>&nbsp;</td>
+		<td style='vertical-align:top; padding:0'>
+			<div class='remelis' style='height:auto; overflow:auto'>
+<div name='siusti_forma' id='siusti_forma' style='display:none'>
+<p style='text-align:right'><img src='www_pav/uzdaryti.png' title='Uždaryti' alt='Uždaryti' style='cursor:pointer' border='0' onclick='document.getElementById("siusti_forma").style.display="none"' /></p>
+<p style='margin:8px 0 12px 0'><b>Nusiųsk šio straipsnio nuorodą draugui</b></p>
+<form method='post' name='forma_siusti' onsubmit='return Ar_geri_duomenys(this);' action='siusti_nuoroda.php' style='margin-bottom:0; margin-top:0'>
+<table style='width:99%; border:0px solid #F00; border-collapse:collapse; border-spacing:0'>
+	<tr>
+		<td style='text-align:right; vertical-align:middle'>Draugo el.&nbsp;paštas:</td>
+		<td style='text-align:left; vertical-align:middle;'><input type='text' name='gavejo_adresas' id='gavejo_adresas' size='33' class='input' />&nbsp;(būtinas)</td>
+	</tr>
+	<tr>
+		<td style='text-align:right; vertical-align:middle; font-size:3px'>&nbsp;</td>
+		<td style='text-align:left; vertical-align:middle; font-size:3px'>&nbsp;</td>
+	</tr>
+	<tr>
+		<td style='text-align:right; vertical-align:middle'>Jūsų vardas:</td>
+		<td style='text-align:left; vertical-align:middle'><input type='text' name='siuntejo_vardas' id='siuntejo_vardas' size='33' class='input' />&nbsp;(būtinas)</td>
+	</tr>
+	<tr>
+		<td style='text-align:right; vertical-align:middle'>Jūsų el.&nbsp;paštas:</td>
+		<td style='text-align:left; vertical-align:middle;'><input type='text' name='siuntejo_adresas' id='siuntejo_adresas' size='33' class='input' />&nbsp;(būtinas)</td>
+	</tr>
+	<tr>
+		<td style='text-align:right; vertical-align:top'>Jūsų komentaras:</td>
+		<td style='text-align:left'><textarea name='komentarai' rows='' cols='' class='input' style='width:300px; height:60px; resize:none'></textarea></td>
+	</tr>
+</table>
+<p class='tik_del_masininio_formos_pildymo'>Šį lauką palikite neužpildytą: <input name='ar_masina' type='text' id='ar_masina' class='tik_del_masininio_formos_pildymo' /></p>
+<p style='text-align:center; padding:6px 0 12px 0'><input type='submit' value='Siųsti nuorodą' /></p>
+<input type='hidden' name='str_pav' value='Palėvenės kelias skandina dulkėse' />
+<input type='hidden' name='str_adresas' value='www.kmintys.lt/?psl=1psl&id=4246' />
+</form>
+<hr/>
+</div><div id='straipsnis_4246_14383543607269' style='text-align:justify; border:0px solid #F00; position:relative; overflow:auto; '>
+<p class='Straipsnio_pavadinimas'>PALĖVENĖS KELIAS SKANDINA DULKĖSE</p>
+<table style='width:100%; border:0px solid #F00; border-collapse:collapse; border-spacing:0'>
+<tr>
+	<td style='vertical-align:middle;'><p class='autorius'>Ingrida NAGROCKIENĖ</p></td>
+	<td style='width:100px; text-align:right; vertical-align:top'><p class='straipsnio_data'>2015&#8722;07&#8722;30</p><div id='mygtukai_4246_14383543607269'><a href='?psl=komentarai&amp;lent=1psl&amp;id=4246' class='komentaru_sk_min'><img src='www_pav/komentarai.png' style='border:0' alt='Komentarai' title='Skaityti komentarus' /><span style='position: relative; top:-6px; left:-12px'>8</span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='javascript:SpausdintiDiv("4246_14383543607269", "www_pav/");' style='text-decoration: none'><img src='www_pav/spausdinti.png' style='border:0' alt='Paruošti spausdinimui' title='Paruošti spausdinimui' /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='javascript:Rodyti_nuorodos_siuntimo_forma()'><img src='www_pav/laiskas.png' style='border:0' alt='Nusiųsk šio straipsnio nuorodą draugui' title='Nusiųsk šio straipsnio nuorodą draugui' /></a></div></td>
+</tr>
+</table>
+<p><div style="display:inline-block; float:right; margin:5px 0 5px 10px; width:240px; height:auto; overflow:auto;"><p><img id="pav1438173625843" src="pav/1psl/2015/4246.jpg" title="Išdidinti" onclick="Isdidinti(1438173625843,0)" style="border:0"></p><div class="pav_txt"><div id="pavp1438173625843" style="margin:0; pading:0"><div align="justify">Bronius (priekyje) ir Raimundas Kriaučiukai ne pirmus metus prašo išasfaltuoti kelią šalia jų namo.<br /></div><div align="right"><i>Autorės nuotrauka</i><br /></div></div></div></div><b>Palėvenę, puikiai žino šios vietos slidumą. Dėl tokių eismo sąlygų į nuokalnę slydo ne vienas autobusas ir automobilis. Šį kelią išasfaltuoti nuolat prašo ir šalia jo gyvenantys Kriaučiukai, kuriems vasarą tenka springti nuo žvyrkelio dulkių. Tačiau šie reikalai iš vietos nejuda.</b><br /><br /><b>Neužvažiuoja mokyklinis autobusiukas<br /><br /></b>Praėjusią savaitę „Kupiškėnų mintys“ kartu su Noriūnų seniūnu Audronijumi Zulonu leidosi į ekskursiją po jo valdas. Važiuojant per Palėvenės kaimą Noriūnų seniūnijos vadovas parodė namelį, kuris neva trukdo nutiesti asfaltą į šią gyvenvietę. Pasak pašnekovo, stati įkalnė žiemą trukdo pakilti į kaimą transporto priemonėms – neužvažiuoja mokinius į mokyklą vežiojantis autobusiukas.<br />Pavasarį tirpstantis sniegas, vasarą zliaukiantis lietus ardo žvyro dangą ir kelyje įsirėžia gilios duobės.<br /><br />„Šį kelią reikia tvarkyti. Bet niekaip nesusitariame su šalikelėje gyvenančiais žmonėmis. Jų namas prie pat eismo juostos ir trukdytų remonto darbams. Gyventojams siūlyta keisti gyvenamąją vietą – persikraustyti į butą. Bet jie nesutiko. Dabar lyg ir sutinka...“, – pasakojo Noriūnų seniūnas.<br /><b><br />Nuo dulkių girgžda dantys<br /><br /></b>O prie minėto kelio gyvena Bronislovas Kriaučiukas ir jo sūnus Raimundas. Jų namas senelių statytas dar 1930 metais. Gana stačioje kalno papėdėje įsikūrusi sodyba šeimai – itin brangi. Seniau  šulinį, sodą, daržą, pirtį tekdavo pasiekti gana ekstremaliai, dabar šeimininkai naudojasi patogesnėmis gyvenimo sąlygomis.<br /><br /><i>Plačiau skaitykite "Kupiškėnų mintyse"</i></p>
+</div>
+<hr />
+<p style='text-align:right;'><a href='?psl=komentarai&amp;lent=1psl&amp;id=4246'>Skaityti komentarus (<b>8</b>)</a></p>
+<p>&nbsp;</p><p class='koment_info'>Redakcija už komentarų turinį neatsako ir pasilieka teisę pašalinti tuos<br />skaitytojų komentarus, kurie yra nekultūringi, reklamuoja ar pažeidžia įstatymus.<br />&nbsp;</p><p>&nbsp;</p>
+<form method='post' id='forma'  name='forma' onsubmit='if ( forma.Tekstas.value == "" ) { alert("Būtina užpildyti komentarų laukelį."); return false; } return true;' action='saugoti_komentara.php' style='margin-bottom:0; margin-top:0'>
+<table style='width:99%; border:0px solid #F00; border-collapse:collapse; border-spacing:0'>
+	<tr>
+		<td style='text-align:right; vertical-align:middle'>Vardas:</td>
+		<td style='text-align:left; vertical-align:middle'><input type='text' name='Siuntejas' size='30' class='input' />&nbsp;(nebūtinas)</td>
+	</tr>
+	<tr>
+		<td style='text-align:right; vertical-align:middle'>El.&nbsp;paštas:</td>
+		<td style='text-align:left; vertical-align:middle;'><input type='text' name='Adresas' size='30' class='input' />&nbsp;(nebūtinas)</td>
+	</tr>
+	<tr>
+		<td style='text-align:right; vertical-align:top'>Komentarai:</td>
+		<td style='text-align:left'><textarea name='Tekstas' rows='' cols='' class='input' style='width:300px; height:100px; resize:none'></textarea></td>
+	</tr>
+</table>
+<p class='tik_del_masininio_formos_pildymo'>Šį lauką palikite neužpildytą: <input name='ar_masina' type='text' id='ar_masina' class='tik_del_masininio_formos_pildymo' /></p>
+<p style='text-align:center; padding-top:6px'><input type='submit' value='Siųsti komentarą' /></p>
+<input type='hidden' name='psl' value='1psl' />
+
+<input type='hidden' name='id' value='4246' />
+
+</form><p>&nbsp;</p>
+<p class='koment_info' style='text-align:justify'> &nbsp;Gali praeiti šiek tiek laiko, kol komentaras bus matomas.</p>			</div>
+		</td>
+		<td style='width:6px; vertical-align:top; font-size:1px; padding:0'>&nbsp;</td>
+		<td style='width:135px; vertical-align:top; padding:0'>
+<div class='info' style='width:135px'><div class='info_vidus'>
+<p class='info_pavadinimas'>Skalsu kalbos</p>
+<p class='info_txt'><a href='?psl=skalsu_kalbos'>Nemokantiems baudų - ribojimai</a></p>
+</div></div>
+<div class='info' style='width:135px'><div class='info_vidus'>
+<p class='info_pavadinimas'>Skaitomiausi</p>
+<p style='text-align:center'><a href='?psl=1psl&amp;id=4242'><img src='pav/1psl/2015/4242.jpg' alt='' style='margin:0; border:1px solid #000; width:108px;' /></a></p>
+<div style='overflow:auto; height:100%; padding:2px 0 0 0;'><p class='info_txt' style='text-align:center'>Aktualijos. <a href='?psl=1psl&amp;id=4242'>Puotauti susiruošusioms vagilėms sutrukdė pareigūnai</a></p></div>
+<p class='info_txt'>&nbsp;</p>
+<p style='text-align:center'><a href='?psl=1psl&amp;id=4240'><img src='pav/1psl/2015/4240.jpg' alt='' style='margin:0; border:1px solid #000; width:108px;' /></a></p>
+<div style='overflow:auto; height:100%; padding:2px 0 0 0;'><p class='info_txt' style='text-align:center'>Aktualijos. <a href='?psl=1psl&amp;id=4240'>Taupymo politika pasiekė ir biblioteką</a></p></div>
+<p class='info_txt'>&nbsp;</p>
+<p style='text-align:center'><a href='?psl=1psl&amp;id=4243'><img src='pav/1psl/2015/4243.jpg' alt='' style='margin:0; border:1px solid #000; width:108px;' /></a></p>
+<div style='overflow:auto; height:100%; padding:2px 0 0 0;'><p class='info_txt' style='text-align:center'>Aktualijos. <a href='?psl=1psl&amp;id=4243'>Rudilių pastatai – į statybines atliekas</a></p></div>
+<p class='info_txt'>&nbsp;</p>
+<p style='text-align:center'><a href='?psl=1psl&amp;id=4241'><img src='pav/1psl/2015/4241.jpg' alt='' style='margin:0; border:1px solid #000; width:108px;' /></a></p>
+<div style='overflow:auto; height:100%; padding:2px 0 0 0;'><p class='info_txt' style='text-align:center'>Aktualijos. <a href='?psl=1psl&amp;id=4241'>Kupiškio apylinkės teisme – naujas teisėjas</a></p></div>
+<p class='info_txt'>&nbsp;</p>
+<p style='text-align:center'><a href='?psl=gamta_ir_mes&amp;id=331'><img src='pav/gamta_ir_mes/2015/331.jpg' alt='' style='margin:0; border:1px solid #000; width:108px;' /></a></p>
+<div style='overflow:auto; height:100%; padding:2px 0 0 0;'><p class='info_txt' style='text-align:center'>Gamta ir mes. <a href='?psl=gamta_ir_mes&amp;id=331'>Vėžių neprišaukė ir šventė</a></p></div>
+</div></div>
+<div class='info' style='width:135px'><div class='info_vidus'>
+  <p class='info_pavadinimas'>Savaitės klausimas</p>
+<form method='post' target='_self' action='saugoti_ats_i_sav_klausima.php?psl=1psl&id=4246' style='margin-bottom:0; margin-top:0'>
+	<input type='hidden' name='klausimoID' value='456' />
+	<p class='info_txt' style='text-align:center'><b><i>Ar reikia leisti šauliams laikyti automatinius ginklus namuose?</i></b></p>
+    <table style='width:100%; border:0px solid #F00; border-collapse:collapse; border-spacing:0'>
+      <tr>
+        <td style='vertical-align:top; padding:6px 0 0 0;'><input type='radio' value='0' id='sav_kl_0' name='Ats' />&nbsp;</td>
+        <td style='vertical-align:top; padding:8px 0 0 0; width:100%'><label for='sav_kl_0' class='info_txt'>Taip, bet tik laikantis griežtų jų laikymo taisyklių.</label></td>
+    </tr>
+      <tr>
+        <td style='vertical-align:top; padding:6px 0 0 0;'><input type='radio' value='1' id='sav_kl_1' name='Ats' />&nbsp;</td>
+        <td style='vertical-align:top; padding:8px 0 0 0; width:100%'><label for='sav_kl_1' class='info_txt'>Toks leidimas bet kokiu atveju būtų per drąsus.</label></td>
+    </tr>
+      <tr>
+        <td style='vertical-align:top; padding:6px 0 0 0;'><input type='radio' value='2' id='sav_kl_2' name='Ats' />&nbsp;</td>
+        <td style='vertical-align:top; padding:8px 0 0 0; width:100%'><label for='sav_kl_2' class='info_txt'>Ne, tai keltų pavojų visuomenės saugumui.</label></td>
+    </tr>
+      <tr>
+        <td style='vertical-align:top; padding:6px 0 0 0;'><input type='radio' value='3' id='sav_kl_3' name='Ats' />&nbsp;</td>
+        <td style='vertical-align:top; padding:8px 0 0 0; width:100%'><label for='sav_kl_3' class='info_txt'>Nežinau.</label></td>
+    </tr>
+    </table>
+    <p style='margin:6px 0 6px 0; text-align:center'><input type='submit' value='Balsuoti' /></p>
+  </form>
+</div></div>
+		</td>
+		<td style='width:6px; vertical-align:top; font-size:1px; padding:0'>&nbsp;</td>
+		<td style='width:210px; vertical-align:top; padding:0;'>
+<div class='info' style='width:210px'><div class='info_vidus'>
+<p class='info_pavadinimas'>Vardadieniai</p>
+<p class='info_txt'>Elena, Ignacas, Ignacija, Ignacijus, Ignas, Ignė, Ignotas, Leta, Letas, Leticija, Sangina, Sanginas, Sangirda, Sangirdas, Sigitas, Vykintė.</p>
+</div></div>
+<div class='info' style='width:210px'><div class='info_vidus'>
+<p class='info_txt'><div align="center"><a href="mailto:mailto:kupmin@takas.lt?subject=Pranešk%20naujieną%20į%20www.kmintys.lt" target="_blank"><img src="pav/skydeliu_pav/5.gif" style="border:0"></a>
+</div></p>
+</div></div>
+<p style='text-align:center; margin:18px 0 18px 0'><img src='www_pav/rek_po.gif' alt='' style='border:0' /></p>
+<div style='text-align:center;width:210px;overflow:hidden;'><a href="http://www.laudenta.lt" target="_blank" title="www.laudenta.lt"><img src="pav/rek/337.gif" style="border:0 solid #000000; width:210px"></a></div>
+<p class="rek_tarpas">&nbsp;</p>
+<div style='text-align:center;width:210px;overflow:hidden;'><a href="http://www.amalkerosleidyba.lt" target="_blank" title="http://www.amalkerosleidyba.lt"><img src="pav/rek/95.jpg" style="border:0; width:180px;" alt=""></a></div>
+<p class="rek_tarpas">&nbsp;</p>
+<div style='text-align:center;width:210px;overflow:hidden;'><a href="http://www.bernardinai.lt" target="_blank" title="http://www.bernardinai.lt"><img src="pav/rek/115.jpg" style="border:0; width:210px;" alt=""></a></div>
+<p class="rek_tarpas">&nbsp;</p>
+<div style='text-align:center;width:210px;overflow:hidden;'><a href="http://www.kupiskis.lt" target="_blank" title="http://www.kupiskis.lt"><img src="pav/rek/119.jpg" style="border:0; width:210px;" alt=""></a></div>
+<p class="rek_tarpas">&nbsp;</p>
+<div style='text-align:center;width:210px;overflow:hidden;'><a href="http://www.airijaonline.lt" target="_blank" title="http://www.airijaonline.lt"><img src="pav/rek/134.jpg" style="border:0; width:210px;" alt=""></a></div>
+<p class="rek_tarpas">&nbsp;</p>
+<div style='text-align:center;width:210px;overflow:hidden;'><a href="http://www.orai.biz" target="_blank" title="http://www.orai.biz"><img src="pav/rek/184.jpg" style="border:0; width:194px;" alt=""></a></div>
+<p class="rek_tarpas">&nbsp;</p>
+<div style='text-align:center;width:210px;overflow:hidden;'><a href="http://www.info.kupiskis.lt/" target="_blank"><img src="pav/rek/250.gif" style="border:0 solid #000000;"></a></div>
+<p class="rek_tarpas">&nbsp;</p>
+<div style='text-align:center;width:210px;overflow:hidden;'><a href="http://www.facebook.com/pages/Kupi%C5%A1k%C4%97n%C5%B3-mintys/213637898707032?ref=hl" target="_blank"><img src="pav/rek/284.jpg" style="border:0 solid #000000;"></a></div>
+<p class="rek_tarpas">&nbsp;</p>
+<div style='text-align:center;width:210px;overflow:hidden;'><a href="http://www.srtfondas.lt/" target="_blank"><img src="pav/rek/303.jpg" style="border:0 solid #000000;"></a></div>
+<p style='text-align:center; margin:18px 0 18px 0'><img src='www_pav/rek_virs.gif' alt='' style='border:0' /></p>
+		</td>
+	</tr>
+</table>
+</div>
+
+<div class='apie' id='apie'>
+<table style='width:inherit; border:0px solid #F00; border-collapse:collapse;  border-spacing:0'>
+	<tr>
+		<td style='width:100%'>
+			<table style='width:inherit; border:0px solid #F00; border-collapse:collapse;  border-spacing:0'>
+				<tr>
+					<td style='vertical-align:top; text-align:right; padding:0px 6px 6px 10px'><b>Naujienos:</b></td>
+					<td style='vertical-align:top; text-align:left; padding:0px 0px 6px  0px; width:100%'><a class='a_apie' href='?psl=-1'>Visos&nbsp;naujienos</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=1psl'>Aktualijos</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=gamta_ir_mes'>Gamta ir mes</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=sveikata'>Sveikata</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=verinys'>Vėrinys</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=nuomones'>Nuomonės</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=gyvenimo_ratas'>Gyvenimo&nbsp;ratas</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=savi_tarp_kupiskenu'>Savi&nbsp;tarp&nbsp;kupiškėnų</a></td>
+				</tr>
+				<tr>
+					<td style='vertical-align:top; text-align:right; padding:0px 6px 6px 10px'><b>Informacija:</b></td>
+					<td style='vertical-align:top; text-align:left; padding:0px 0px 6px  0px; width:100%'><a class='a_apie' href='?psl=skelbimai'>Skelbimai</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=atsiliepimai'>Atsiliepimai</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=redakcija'>Redakcija</a></td>
+				</tr>
+				<tr>
+					<td style='vertical-align:top; text-align:right; padding:0px 6px 6px 10px'><b>Įkainiai:</b></td>
+					<td style='vertical-align:top; text-align:left; padding:0px 0px 6px  0px; width:100%'><a class='a_apie' href='?psl=prenumerata'>Prenumerata</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=reklamos_kainos'>Reklama</a></td>
+				</tr>
+				<tr>
+					<td style='vertical-align:top; text-align:right; padding:0px 6px 6px 10px'><b>Archyvas:</b></td>
+					<td style='vertical-align:top; text-align:left; padding:0px 0px 6px  0px'><a class='a_apie' href='?psl=amatu_gijos'>Amatų gijos</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=aukstaiciu_krastas'>Aukštaičių kraštas</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=bendruomene'>Bendruomenė</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=kamara'>Kamara</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=is_esmes'>Iš ESmės</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=poziuris'>Požiūris</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=sugrizimai'>Sugrįžimai</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=ulycia'>Ulyčia</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=amziu'>Amžių&nbsp;sandūroje</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=_pasikalbosykim'>„Pasikalbosykim“</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=laiko_rastas'>Laiko&nbsp;raštas</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=talalojus'>Talalojus</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=pasikalbosykim'>Pasikalbosykim</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=musu_zmonas'>Mūsų&nbsp;žmonas</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=likimai'>Likimai</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=kupiskenu_kertala'>Kupiškėnų&nbsp;kertala</a>&nbsp;&nbsp;|&nbsp; <a class='a_apie' href='?psl=horizontai'>Horizontai</a></td>
+				</tr>
+			</table>
+		</td>
+		<td style='vertical-align:middle; text-align:center; padding-right:10px; white-space:nowrap;'>
+			<p class='skaitliuko_tekstas'>Jūs esate</p>
+			<p class='skaitliukas'>6<span style="font-size:0.7em">&nbsp;</span>199<span style="font-size:0.7em">&nbsp;</span>686</p>
+		    <p class='skaitliuko_tekstas'>šios svetainės lankytojas</p>
+		</td>
+	</tr>
+</table>
+<hr>
+<table style='width:inherit; border:0px solid #F00; border-collapse:collapse;  border-spacing:0'>
+	<tr>
+		<td style='vertical-align:middle; text-align:right; padding:10px 20px 10px 10px'></td>
+		<td style='vertical-align:middle; text-align:left; padding-left:10px; width:100%'>
+			<p>Šiame puslapyje pateiktą medžiagą kopijuoti, dauginti, platinti galima tik gavus raštišką UAB &bdquo;Kupiškėnų mintys&ldquo; sutikimą.</p>
+			<p style='font-size:3pt;'>&nbsp;</p>
+		</td>
+	</tr>
+	<tr>
+		<td style='vertical-align:middle; text-align:right; padding:10px 20px 10px 10px'><img src='www_pav/km_m.gif' alt='' style='border:0'></td>
+		<td style='vertical-align:middle; text-align:left; padding-left:10px; width:100%'>
+			<p>UAB &bdquo;Kupiškėnų mintys&ldquo;, Gedimino g. 34, 40130 Kupiškis</p>
+			<p>Tel.: (8 459) 3 54 74, tel./fax.: (8 459) 5 48 89.</p>
+			<p>Elektroninis paštas: <a href="mailto:kupmin@takas.lt">kupmin@takas.lt</a></p>
+		</td>
+	</tr>
+</table>
+</div>
+</div>
+<script type='text/javascript'>
+	PakeistasLangoDydis();
+</script>
+</body>
+</html>

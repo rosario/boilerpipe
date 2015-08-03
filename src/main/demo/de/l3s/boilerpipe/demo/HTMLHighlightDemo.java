@@ -5,6 +5,7 @@ import java.net.URL;
 
 import de.l3s.boilerpipe.BoilerpipeExtractor;
 import de.l3s.boilerpipe.extractors.CommonExtractors;
+import de.l3s.boilerpipe.extractors.LtArticleExtractor;
 import de.l3s.boilerpipe.sax.HTMLHighlighter;
 
 /**
@@ -16,15 +17,17 @@ import de.l3s.boilerpipe.sax.HTMLHighlighter;
 public class HTMLHighlightDemo {
 	public static void main(String[] args) throws Exception {
 		URL url = new URL(
-				"http://research.microsoft.com/en-us/um/people/ryenw/hcir2010/challenge.html"
+//				"http://research.microsoft.com/en-us/um/people/ryenw/hcir2010/challenge.html"
 //				"http://boilerpipe-web.appspot.com/"
+		    "http://manoukis.lt/naujienos/pasaulyje/20714-italijos-zemdirbiai-skelbia-apie-nuostolius"
 		        );
 		
 		// choose from a set of useful BoilerpipeExtractors...
-		final BoilerpipeExtractor extractor = CommonExtractors.ARTICLE_EXTRACTOR;
+//		final BoilerpipeExtractor extractor = CommonExtractors.ARTICLE_EXTRACTOR;
 //		final BoilerpipeExtractor extractor = CommonExtractors.DEFAULT_EXTRACTOR;
 //		final BoilerpipeExtractor extractor = CommonExtractors.CANOLA_EXTRACTOR;
 //		final BoilerpipeExtractor extractor = CommonExtractors.LARGEST_CONTENT_EXTRACTOR;
+		final BoilerpipeExtractor extractor = new LtArticleExtractor();
 
 		// choose the operation mode (i.e., highlighting or extraction)
 		final HTMLHighlighter hh = HTMLHighlighter.newHighlightingInstance();

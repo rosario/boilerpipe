@@ -1,0 +1,20 @@
+
+Lietuvoje pradėjo veikti nauja elektroninių paslaugų sistema, skirta administruoti fiziniams ir juridiniams asmenims paskirtas baudas.
+
+Nuo šiol administracinius pažeidimus įvykdę ir už juos nubausti asmenys, prisijungę prie Valstybinės mokesčių inspekcijos (VMI) elektroninių paslaugų srities „Mano VMI“, matys nuo 2015 m. liepos 1 d. jiems skirtas baudas – bei galės elektroniniu būdu jas sumokėti.
+Internetu bus galima sumokėti baudas už Kelių eismo taisyklių pažeidimus, važiavimą be bilieto ir bet kuriuos kitus Administracinių teisės pažeidimų kodekse nurodytus pažeidimus.
+
+„Lietuvoje baudas skiria daugiau nei 87 skirtingos institucijos ir joms pavaldžios įstaigos, bet iki šiol neturėjome vieno registro, kuriame būtų kaupiama visa informacija apie baudas, – apie galiojusią tvarką sako vidaus reikalų viceministras Julius Morkūnas. – Skirtingos institucijos taiko skirtingas baudų administravimo procedūras, baudos mokamos skirtingais įmokų kodais, pasitaikydavo klaidų ir nesusipratimų. Baudų administravimo procesas tapdavo sudėtingas ir ilgai trunkantis, institucijoms kartais kainuodavęs brangiau nei pati bauda“.
+Įgyvendinant projektą „E-bauda“ sukurtas Administracinių teisės pažeidimų registras (ATPR), kuriame pradėti kaupti visų administracinių teisės pažeidimų duomenys, o baudų už administracinius teisės pažeidimus duomenys perduodami VMI.
+
+„Dabar asmuo, padaręs pažeidimą, galės patogiai ir greitai atlikti mokėjimą, gauti visą reikiamą informaciją apie jam paskirtas baudas ir jų mokėjimo terminus, pateikti prašymus bei skundus. Visos šios e-paslaugos jam bus prieinamos VMI interneto svetainėje elektroninių paslaugų srityje „Mano VMI“ (www.vmi.lt/manovmi), naudojantis šiuolaikiškais naudotojo identifikavimo būdais“, – teigia VMI viršininko pavaduotoja Vilma Vildžiūnaitė.
+
+Jei pažeidėjas dėl baudos išdėstymo arba atidėjimo laiku nesikreips į bylą nagrinėjančią instituciją ar teismą, suėjus baudos sumokėjimo terminui tai bus galima padaryti VMI sistemoje. Asmuo matys visas jam skirtas administracines baudas ir skolas valstybei vienoje vietoje.
+
+Mokėjimai bus atliekami vienu įmokos kodu 1001, sistemoje kiekvienam pažeidimui automatiškai pateikiamas mokėjimo dokumentas su ROIK – pažeidimo identifikaciniu kodu. Asmuo, geranoriškai sumokėjęs baudą, nepatirs papildomų išlaidų dėl jos išieškojimo. Tikimasi, kad efektyviau valdant įsiskolinimus valstybei, pagerės lėšų už paskirtas baudas surinkimas į valstybės biudžetą.
+
+Policijos departamento duomenimis, iki 70 proc. mūsų šalyje skiriamų administracinių baudų sudaro policijos skiriamos baudos. „Naujoji sistema leis sumažinti administracinę naštą institucijoms, nagrinėjančioms administracinių teisės pažeidimų bylas. Jų darbuotojams nebereikės užsiimti baudų išieškojimu – šis procesas perduodamas VMI. Institucijos, skiriančios baudas už administracinius teisės pažeidimus, gaus visą reikiamą informaciją apie baudas iš vieno šaltinio – ATPR. Tokiu būdu bus taupomas laikas, mažės klaidų tikimybė, bus išvengiama nereikalingo gyventojų trikdymo“, – tvirtina Lietuvos policijos generalinio komisaro pavaduotojas Donatas Malaškevičius.
+Planuojama, kad naujoji sistema leis 10 proc. pagerinti administracinių baudų surinkimo rodiklius ir sudarys sąlygas skaidresnei, aiškesnei bei labiau centralizuotai baudų apskaitai. Įgyvendinus projektą ir optimizavus baudų administravimą tokios įstaigos kaip policija galės visus savo išteklius skirti tiesioginių pareigų vykdymui.
+
+
+Ši sistema sukurta įgyvendinant 2010 m. pradėtą „Elektroninių paslaugų informacinės sistemos, skirtos ne ginčo tvarka paskirtų baudų fiziniams ir juridiniams asmenims administravimui, sukūrimo“ projektą, kuris finansuotas Europos Sąjungos struktūrinės paramos Europos regioninės plėtros fondo lėšomis.

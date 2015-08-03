@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Miesto plėtros viziją drasko išvykstantys klaipėdiečiai - naujienos, nuorodų katalogas, straipsniai - Vakarai.LT informacinis Lietuvos portalas</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1257" />
+<meta name="robots" content="index, follow" />
+
+<meta name="description" content="Vakarų Lietuvos verslo naujienos, įmonių katalogas bei skelbimai" />
+<meta name="keywords" content="klaipėda, vakarai, įmonės, verslas, skelbimai" />
+<meta name="author" content="Tomas Padrieza" />
+
+<link rel="shortcut icon" href="http://www.vakarai.lt/favicon.ico" />
+<!--<link rel="alternate" type="application/rss+xml" href="http://example.com/?rss=1" title="Vakarai.LT (RSS)" />-->
+
+<link rel="stylesheet" href="css/display.css" media="screen,projection,print" type="text/css" />
+<!--[if gt IE 6]>
+<link rel="stylesheet" href="css/display_ie.css" media="screen,projection" type="text/css" />
+<![endif]-->
+<link rel="stylesheet" href="css/article.css" media="screen,projection,print" type="text/css" />
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-106343-4";
+urchinTracker();
+</script>
+	<script type="text/javascript">
+var xajaxRequestUri="server/comment_server.php";
+var xajaxDebug=false;
+var xajaxStatusMessages=false;
+var xajaxWaitCursor=true;
+var xajaxDefinedGet=0;
+var xajaxDefinedPost=1;
+function xajax_postComment(){return xajax.call("postComment", arguments, 1);}
+function xajax_deleteComment(){return xajax.call("deleteComment", arguments, 1);}
+function xajax_getComments(){return xajax.call("getComments", arguments, 1);}
+function xajax_clearComments(){return xajax.call("clearComments", arguments, 1);}
+</script>
+	<script type="text/javascript" src="server/xajax_js/xajax.js"></script>
+ 
+<script src="admin/scripts/fixed.js" type="text/javascript"></script>
+<script src="admin/scripts/prototype.js" type="text/javascript"></script>
+<script src="admin/scripts/scriptaculous.js" type="text/javascript"></script>
+<script type="text/javascript">
+// <![CDATA[
+function efw() {
+	fsets = document.getElementsByTagName("fieldset");
+	for(i=0;i<fsets.length;i++) {
+		var f = fsets[i];
+		/* adds an efw class to radiobutton fieldsets, so that the efw styles are only added if javascript is present */
+		if (f.className == "radio") {
+			f.className = "efw radio";
+			var labels = f.getElementsByTagName("label");
+			for(var j=0;j<labels.length;j++) {
+				var l = labels[j];
+				/* adds events to the radiobuttons label, one for real browsers and one for ie */
+				inpt = document.getElementById(l.htmlFor);
+				if (inpt.addEventListener) inpt.addEventListener("change", r_toggle, false);
+				else inpt.onclick = r_toggle;
+				/* adjusts the label classes according to the status of the radiobuttons */
+				if (!document.getElementById(l.htmlFor).checked) l.className = "";
+				else l.className = "checked";
+			}
+		}
+		/* adds an efw class to checkbox fieldsets, so that the efw styles are only added if javascript is present */
+		if (f.className == "check") {
+			f.className = "efw check";
+			var labels = f.getElementsByTagName("label");
+			for(var k=0;k<labels.length;k++) {
+				var l = labels[k];
+				/* adds events to the checkboxes label, one for real browsers and one for ie */
+				inpt = document.getElementById(l.htmlFor);
+				if (inpt.addEventListener) inpt.addEventListener("change", c_toggle, false);
+				else inpt.onclick = c_toggle;
+				/* adjusts the label classes according to the status of the checkboxes */
+				if (!inpt.checked) l.className = ""; else l.className = "checked";
+			}
+		}
+	}
+}
+
+function r_toggle() {
+	/* grabs all labels in the same fieldset as the changed input */
+	var l = this.parentNode;
+	var f = l.parentNode;
+	labels = f.getElementsByTagName("label");
+	/* unchecks all radiobuttons */
+	for(var i=0;i<labels.length;i++) labels[i].className = "";
+	/* "checks" the specified radio's label */
+	l.className = "checked";
+}
+
+function c_toggle() {
+	/* grabs the parent label of the changed input */
+	var l = this.parentNode;
+	/* checks the current status of the checkbox label, and changes states */
+	if (!this.checked) l.className = "";
+	else l.className = "checked";
+}
+
+function Querystring(qs) { // optionally pass a querystring to parse
+	this.params = new Object()
+	this.get=Querystring_get
+	
+	if (qs == null)
+		qs=location.search.substring(1,location.search.length)
+
+	if (qs.length == 0) return
+
+// Turn <plus> back to <space>
+// See: http://www.w3.org/TR/REC-html40/interact/forms.html#h-17.13.4.1
+	qs = qs.replace(/\+/g, ' ')
+	var args = qs.split('&') // parse out name/value pairs separated via &
+	
+// split out each name=value pair
+	for (var i=0;i<args.length;i++) {
+		var value;
+		var pair = args[i].split('=')
+		var name = unescape(pair[0])
+
+		if (pair.length == 2)
+			value = unescape(pair[1])
+		else
+			value = name
+		
+		this.params[name] = value
+	}
+}
+
+function Querystring_get(key, default_) {
+	// This silly looking line changes UNDEFINED to NULL
+	if (default_ == null) default_ = null;
+	
+	var value=this.params[key]
+	if (value==null) value=default_;
+	
+	return value
+}
+
+function loadding(){
+	document.getElementById('loading').style.display = 'block';
+}
+
+function loaded(){
+	document.getElementById('loading').style.display = 'none';
+}
+
+window.onload=function(){
+	efw();
+	var qs = new Querystring();
+	var item_id = qs.get("id", '');
+	if (item_id != '') {
+		loadding();
+		xajax_getComments(item_id,1);
+	}
+}
+
+function postComment(){
+	loadding();
+	xajax_postComment(xajax.getFormValues('f_comments'));
+}
+
+function deleteComment(id,item_id,comment_destination){
+	loadding();
+	xajax_deleteComment(id,item_id,comment_destination);
+}
+// ]]>
+</script>
+
+</head>
+<body>
+<div id="loading">Siunčiami duomenys...</div>
+<div id="stretch">
+	<div id="container">
+		<div id="wrapper">
+			<div id="content">
+				<div id="head">
+					<a href="http://www.vakarai.lt" title="Į pradžią"><img src="images/logo.gif" id="logo" alt="Vakarai.lt - Vakarų Lietuvos verslo portalas" /></a>
+					<div id="page_title">
+						<h1>Informacinis portalas</h1>
+						<p>Lietuvos ir užsienio naujienos</p>
+					</div>
+<!-- Start Aras 2006 11 18 d. padaraiau intarpa kad rodytu baneri pirmame puslapyje
+-->	
+  <a href="http://www.manager.lt" title="Manager.LT"><img src="images/banner/vakarai_baner.gif" id="logo" alt="Manager.LT- darbo, karjeros ir verslo portalas"></a>
+<!-- END Aras 2006 11 18 d. padaraiau intarpa kad rodytu baneri pirmame puslapyje
+-->	
+
+					<ul>
+						<li class="noline">&nbsp;</li>
+					</ul>
+<!--					<ul>
+						<li><a href="#">in english</a></li>
+						<li class="noline"><a href="#">&#1087;&#1086; &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</a></li>
+					</ul>
+					<ul>
+						<li><a href="index.php">mano vakarai</a></li>
+						<li><a href="#">reklama</a></li>
+						<li class="noline"><a href="#">apie vakarus</a></li>
+					</ul>
+					<ul>
+						<li><a href="index.php">pradžia</a></li>
+						<li><a href="#">įmonių katalogas</a></li>
+						<li class="noline"><a href="#">skelbimai</a></li>
+					</ul>
+-->				</div>
+				<div id="tools">
+					<div id="search">
+					  <form id="f_search" method="get" action="http://www.google.lt/search">
+						<fieldset class="radio">
+							<label for="google"><input name="s_item" type="radio" value="1" id="google" checked="checked" />Google</label>
+<!--							<label for="imones"><input name="s_item" type="radio" value="2" id="imones" />Įmonės</label>
+							<label for="naujienos"><input name="s_item" type="radio" value="3" id="naujienos" />Naujienos</label>
+-->						</fieldset>
+						<p class="tools-hd">
+							Paieška:<span>
+							<input type="hidden" name="hl" value="lt" />
+							<input maxlength="2048" name="q" type="text" /></span><input value="search" src="images/button-search.gif" class="button" type="image" />
+						</p>
+					  </form>
+				  </div>
+										<div id="login"><form id="f_login" method="post" action=""><p class="login-links"><a href="#">Registruotis</a> &raquo; <a href="#">Pamiršau slaptažodį</a> &raquo;</p><p class="tools-hd">Prisijunkite:<span><input name="username" type="text" size="9" /></span><span><input name="password" type="password" size="12" /></span><input value="login" src="/images/button.gif" class="button" type="image" /></p></form></div>				</div>
+				<p class="clear">&nbsp;</p>
+				<div id="menu-left">
+					<p class="menu-hd">Greitos nuorodos</p>
+					<!-- ***************************
+							Greitų nuorodų blokas
+						 *************************** -->
+					<ul><li><a href="link_category.php?id=1">Aktualijos...</a> &raquo;</li><li><a href="link_category.php?id=8">Verslas...</a> &raquo;</li><li><a href="link_category.php?id=17">Laisvalaikis...</a> &raquo;</li><li><a href="link_category.php?id=29">Karjera ir entreprenerystė...</a> &raquo;</li><li><a href="link_category.php?id=30">Technologijos...</a> &raquo;</li><li><a href="link_category.php?id=31">Tai įdomu...</a> &raquo;</li><li><a href="link_category.php?id=72">Hobi</a> &raquo;</li></ul>					<p><a href="#" class="link_rss_links" title="Nuorodos XML formatu">RSS</a></p>
+					<p class="menu-hd temos">Temos</p>
+					<!-- ***************************
+							Straipsnių kategorijų blokas
+						 *************************** -->
+					<ul><li><a href="#">Bendruomenės</a> &raquo;</li><li><a href="#">IT naujienos</a> &raquo;</li><li><a href="#">Karjera Vadyba Verslas</a> &raquo;</li><li><a href="#">Kultūra, laisvalikis</a> &raquo;</li><li><a href="#">Pramonė</a> &raquo;</li><li><a href="#">Technologijos</a> &raquo;</li><li><a href="#">Visuomenė</a> &raquo;</li></ul>					<p><a href="http://feeds.feedburner.com/vakarai" class="link_rss_news" title="Naujienos XML formatu">RSS</a></p>
+					<div id="im_news">
+						<p class="menu-hd temos">Verslo naujienos</p>
+						<!-- ***************************
+								Įmonių naujienų blokas
+							 *************************** -->
+						<ul>
+							<li>Vakarai.LT informuoja<br />2015, vasario 13, 13:49<br /><a href="news.php?id=698">Socialinis forumas: Klaipėdos verslo diena 2015</a> &raquo;</li><li>Lietuvoje<br />2012, gruodžio 28, 17:47<br /><a href="news.php?id=697">Nauja internetinė svetainė padės kooperuotis bendrai veiklai</a> &raquo;</li><li>Klaipėda<br />2011, lapkričio 25, 14:08<br /><a href="news.php?id=696">Klaipėdos politikai kreipėsi į teisėsaugą dėl apgaulės imant 7 mln. litų paskolą</a> &raquo;</li><li>Klaipėda<br />2011, rugsėjo 22, 06:45<br /><a href="news.php?id=694">Klaipėdos savivaldybės sprendimai glumina klaipėdiečius. </a> &raquo;</li><li>Kretinga<br />2011, rugsėjo 21, 16:45<br /><a href="news.php?id=693">Nugriaut nugriovė, pastatyti nepastatė!</a> &raquo;</li><li>Lietuvoje<br />2011, rugsėjo 16, 09:35<br /><a href="news.php?id=692">Evaldas Jurkevičius: „Švaistytis kaltinimais – lengva, žymiai sunkiau spręsti konkrečias problemas“</a> &raquo;</li><li>Klaipėda<br />2011, rugsėjo 08, 10:26<br /><a href="news.php?id=691">Evaldas Jurkevičius : „Klaipėdos savivaldybėje savos taisyklės“</a> &raquo;</li><li>Klaipėda<br />2011, liepos 24, 12:13<br /><a href="news.php?id=690">Teismas atšaukė savo leidimą streikuoti "Švyturio-Utenos alaus" darbuotojams</a> &raquo;</li><li>Klaipėda<br />2011, liepos 05, 15:15<br /><a href="news.php?id=689">Klaipėdos Teismas leido streikuoti UAB "Švyturys-Utenos alus" darbuotojams</a> &raquo;</li><li>Lietuvoje<br />2011, liepos 05, 09:49<br /><a href="news.php?id=688">"Šiandien išsakysime  Lietuvos Prezidentei savo pociją dėl teisingumo"</a> &raquo;</li><li>Klaipėda<br />2011, birželio 30, 11:33<br /><a href="news.php?id=687">Kieno interesus gina teismas Lietuvoje?</a> &raquo;</li><li>Klaipėda<br />2011, birželio 24, 13:26<br /><a href="news.php?id=686">Kriminalinės teisėsaugos "žygiai" Klaipėdoje (audio) </a> &raquo;</li><li>Verslo pradžia<br />2011, birželio 22, 11:35<br /><a href="news.php?id=685"> „Coffee Inn“ Šiauliuose atidarė pirmą franšizės pagrindu veikiančią kavinę. Kavinių tinklas ieškos galimybių plėstis ir kituose didžiuosiuose Lietuvo</a> &raquo;</li><li>Menas<br />2011, birželio 20, 11:53<br /><a href="news.php?id=684">Bliuzo naktų pramoginė puokštė – nuo ugnies žonglierių iki grojančių konteinerių</a> &raquo;</li><li>Menas<br />2011, birželio 20, 11:40<br /><a href="news.php?id=683">Dainuojamosios poezijos festivalyje - ryškūs ir spalvingi atlikėjai</a> &raquo;</li><li>Elektronika<br />2011, kovo 07, 11:51<br /><a href="news.php?id=682">Baltic Robot Sumo and European Robot League - great experience, great prizes</a> &raquo;</li><li>Verslo pradžia<br />2011, kovo 04, 15:04<br /><a href="news.php?id=681">Klaipėdos moksleiviai užsiima verslu</a> &raquo;</li><li>Klaipėda<br />2011, sausio 20, 07:00<br /><a href="news.php?id=680">Pirmą kartą Lietuvoje inicijuojama visuotinė dviejų savivaldybių gyventojų apklausa aplinkosaugos klausimais</a> &raquo;</li><li>Klaipėda<br />2011, sausio 05, 12:43<br /><a href="news.php?id=679">S O S Girulių giriai!</a> &raquo;</li><li>Lietuvoje<br />2011, sausio 05, 10:39<br /><a href="news.php?id=678">Asmens išsikėlimo kandidatu parėmimas</a> &raquo;</li>						</ul>
+						<p><a href="http://feeds.feedburner.com/vakarai" class="link_rss_news" title="Naujienos XML formatu">RSS</a></p>
+					</div>
+				</div>
+				<div id="content-txt">
+				<!-- ***************************
+						Straipsnio blokas
+					 *************************** -->
+				<p class="menu-hd">Visuomenė &raquo; Vakarai.LT informuoja</p><h2><a href="article.php?id=176">Miesto plėtros viziją drasko išvykstantys klaipėdiečiai</a></h2>
+			<ul class="meta">
+				<li class="author">Vakarai LT</li>
+				<li class="date">2014, lapkričio 12, 19:00</li>
+				<li class="views">2781 peržiūrėjo</li>
+				<li class="comments">0 komentavo</li>
+			</ul>
+		 
+			<ul class="a_tools">
+				<li class="a_tools_print"><a href="/article.php?id=176&amp;print">Spausdinti straipsnį</a></li>
+				<li class="a_tools_email"><a href="#">Nusiųsti kolegai</a></li>
+				<li class="a_tools_comments"><a href="javascript:void(0)" onclick="new Effect.ScrollTo('all_comments',{duration:1.0});return false;">Skaityti komentarus</a></li>
+			</ul>
+		 <img alt="Klaipėdos strategija" src="admin/upload/tn2_aras_mileska.jpg" class="inlinePhoto" /><p>Per paskutinius dešimt metų gyventojų  skaičius Klaipėdoje nuolat mažėja, kasmet prarandama milijonai litų  miesto pajamų, o tai trukdo kokybiškai  įgyvendinti strateginę miesto  viziją. Padėtį uostamiestyje dar labiau blogina nepatraukli nei  gyventojams, nei verslui socialinė ir ekonominė aplinka.</p> <p><strong>Vietoj veiksmų &ndash; ataskaitos</strong></p> <p>Uostamiesčio plėtros strateginiame plane pagrindinis darnios plėtros  rodiklis yra teigiama gyventojų skaičiaus metinė kaita. Žmonių skaičiaus  augimas mieste didžia dalimi atspindėtų Klaipėdos savivaldybės  patrauklumą gyventi ir dirbti.</p>       <p>Siekiama, jog gyventojų skaičius uostamiestyje turėtų augti vienu  arba daugiau procentų. Šio rodiklio pagrindu savivaldybės taryba formavo  miesto strategiją, apibrėžė konkrečias priemones jai įgyvendinti.</p>       <p>&quot;Savivaldybės administracijai sėkmingai įgyvendinant strateginės  plėtros planą, gyventojų skaičius turėtų bent jau nemažėti, idealiu  atveju &ndash; augti. Tačiau gilinantis į Klaipėdos miesto plėtros strateginį  planavimą, kurio ašis yra savivaldybės taryba, ir peržiūrint numatytus  tikslus, kurių įgyvendinimas pavestas administracijai, matome, jog lėšos  panaudojamos netikslingai, kasmetiniai rezultatai nedžiugina ir toli  gražu nesutampa su numatyta vizija&quot;, &ndash; susidariusią situaciją komentavo  Klaipėdos apskrities darbdavių asociacijos vadovas Aras Mileška.</p> <p><strong>Kasmet palieka stadionas žmonių</strong></p>  <p>Per 10 metų (nuo 2001 m. iki 2011 m.) Klaipėdos miestas neteko 31 690 gyventojų.</p>       <p>Gyventojų skaičiaus mažėjimas skaudžiai jaučiamas, nes vidutiniškai  per metus miestą palieka apie 2,5 tūkst. klaipėdiečių &ndash; kasmet beveik po  vieną pilną Gargždų stadioną kartu su visa futbolo komanda ir  aptarnaujančiu personalu. Per dešimtmetį iš uostamiesčio išvažiavo  beveik tiek žmonių, kiek šiandien gyvena Gargžduose (14 945 gyv.) ir  Telšiuose (24 295 gyv.) kartu sudėjus.</p>       <p>Dėl gyventojų mažėjimo Klaipėdos miesto savivaldybės biudžetas kasmet  netenka apie 123 mln. Lt pajamų ir šie nuostoliai vis auga. Dėl  gyventojų sumažėjimo Klaipėdos mieste veikiantis verslas kasmet netenka  627 mln. Lt pajamų. Lėšos, kurios jau nepateko į savivaldybės biudžetą, &ndash;  didžiulės. Jas surinkus, galėjo būti gerinama ekonominė ir socialinė  situacija mieste, gyvenimo ir mokymosi sąlygos jaunimui, prisidedama  prie verslo skatinimo.</p>       <p>&quot;Įsivaizduokime, ką buvo galima pakeisti, patobulinti ir sukurti, jei  lėšos būtų patekusios į miesto biudžetą. Panaudojus prarastus pinigus  uostamiestyje šiandien jau galėjo stovėti naujas ir modernus vandens  atrakas. Per dešimt metų Klaipėdoje galėjo atsirasti net 15  tarptautinius standartus atitinkančių 50 m ilgio baseinų, kurių  kiekvieno vertė &ndash; 40 mln. Lt! Būtų buvusi galimybė praturtinti akademinę  sferą, pagerinti studijų sąlygas &ndash; pavyzdžiui, pasikviesti ne vieną  pasaulinio lygio mokslininką skaityti paskaitas mūsų universitete ar  kitose aukštosiose mokyklose&quot;, &ndash; galimą naudą miestui vardijo A.  Mileška.</p> <p><strong>Stinga tyrimų ir aiškių atsakymų</strong></p>    <p>Gyventojų emigraciją savo ruožtu dar labiau skatina nepatraukli  socialinė ir ekonominė situacija mieste. Nemaža dalis atsakomybės dėl  susidariusios padėties tenka Klaipėdos miesto savivaldybės  administracijos vadovams, kuriems stinga kompetencijos strategiškai  valdyti miestą.</p>       <p>Nors gyventojų skaičius kasmet mažėja ir strateginės plėtros  rodiklis, vienas pagrindinių ir esminių plėtros plane, tampa  nepasiekiamas, tačiau kol kas Klaipėdos miesto savivaldybė nesiruošia  ieškoti priežasčių, kodėl taip yra. Neatliekami jokie tyrimai ir  analizės, siekiant detaliai išsiaiškinti ir įvardinti, kokios konkrečiai  priežastys verčia klaipėdiečius palikti miestą, kodėl jis jiems yra  nepatrauklus, ką reikėtų keisti. Jau kelerius metus iš eilės miesto  savivaldybės administracija ignoruoja ir ekspertų siūlomas papildomas  strategines priemones smulkaus ir vidutinio verslo skatinimui bei  plėtrai mieste.</p> <p><strong>Vystymo formulė &ndash; aiški</strong></p>    <p>Klaipėda su savo neišnaudotomis galimybėmis ir ištekliais išties gali  tapti patraukliu miestu gyventi, dirbti, kurti verslus, ilsėtis, tačiau  siekiant numatyto rezultato &ndash; teigiamo gyventojų skaičiaus mieste &ndash;  reikia diegti kitokias ilgalaikio poveikio priemones.</p>       <p>&quot;Sąmoningų klaipėdiečių ugdymas prasideda jau mokymo įstaigose,  kurios turi siekti, jog jų auklėtiniai pasiliktų studijuoti, dirbti ir  kurti verslą mieste. Dar svarbiau &ndash; gerai apmokamų darbo vietų  kūrimasis, verslo skatinimas uostamiestyje. Valdžios atstovai turėtų  užtikrinti, jog šie vidutines ir didesnes pajamas gaunantys žmonės liktų  gyventi Klaipėdoje, o ne užmiestyje, todėl uostamiesčio teritorijoje  turėtų atsirasti patrauklių gyvenamųjų būstų.</p>       <p>Taigi, įgyvendindami efektyvų darnios plėtros modelį turime siekti,  kad Klaipėdoje būtų stiprios mokyklos ir universitetas, gerai apmokamas    darbas ir patraukli gyvenamoji vieta mieste&quot;, &ndash; savo siūloma prioritetų formule pasidalijo A.Mileška.                              </p>  <p class="info_url">Šaltinis: <a href="http://Vakarai.lt">Vakarai.lt</a></p>					<a name="comments"></a>
+					<!-- ***************************
+							Komentarų blokas
+						 *************************** -->
+					<div id="all_comments" class="topline"></div>
+					<form method="post" action="" id="f_comments">
+						<input type="hidden" id="article_id" name="article_id" value="176"  />
+						<input type="hidden" id="referer_ip" name="referer_ip" value="77.241.196.222"  />
+						<input type="hidden" id="comment_destination" name="comment_destination" value="1" />
+						<h3>Įrašykite savo komentarą:</h3>
+						<p class="comments_warning">Pasiliekame teisę pašalinti nekultūringus, nesusijusius su tema, pasirašytus kito asmens vardu, pažeidžiančius įstatymus, reklaminius, kurstančius nelegaliems veiksmams komentarus. <strong>Privalome specialiosioms Lietuvos tarnyboms</strong> pateikti duomenis apie įžeidžiančių, smurtą, rasinę, tautinę, religinę ar kitokią neapykantą skatinančių komentarų autorius. Informuokite <a href="#">redaktorius</a> apie netinkamus komentarus.</p>
+						<fieldset id="comment_set">
+							<label for="name">Vardas</label>
+							<input type="text" id="name" name="name" value=""  /><br />
+							<label for="email">El. paštas</label>
+							<input type="text" name="email" id="email" value="" size="25" /><br />
+<!--
+							<label for="http">http://</label>
+							<input type="text" name="http" value="" size="25" tabindex="3" /><br />
+-->
+							<label for="comment_text">Žinutė</label>
+							<textarea name="comment_text" id="comment_text" cols="40" rows="10"></textarea>
+<!--
+							<label for="remember"><input type="checkbox" name="remember" id="remember" value="1" checked="checked" />atsiminti įvestus duomenis</label>
+-->
+							<input type="submit" name="submit" id="submit" value="Siųsti" class="button" onclick="postComment();return false;" />
+						</fieldset>
+					</form>
+								</div>
+				<br clear="all" />
+				<div id="footer">
+					<div id="foot-left">
+						<ul>
+							<li><a href="http://www.manager.lt">Siūlo darbą, darbo pasiūlymai, darbo skelbimai - www.Manager.LT</a></li>
+							<li><a href="http://akademija.manager.lt"># akademija.manager.lt mokymai, seminarai, kursai, komandos formavimo renginiai</a></li>
+						</ul>
+					</div>
+					<div id="foot-right">
+						<ul>
+							<li>Dizainas: <a href="mailto:tomas.padrieza@gmail.com" class="design">Tomas Padrieza</a></li>
+						</ul>
+					</div>
+					<div id="foot-right">
+						<ul><li>8259927 lankytojas</li>
+
+						</ul>
+						</div>
+
+				</div>
+				<p class="clear">&nbsp;</p>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-106343-4";
+urchinTracker();
+</script>
+</body>
+</html>

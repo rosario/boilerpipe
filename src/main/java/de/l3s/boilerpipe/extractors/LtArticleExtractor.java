@@ -19,11 +19,16 @@ package de.l3s.boilerpipe.extractors;
 
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
 import de.l3s.boilerpipe.document.TextDocument;
+import de.l3s.boilerpipe.filters.english.DensityRulesClassifier;
 import de.l3s.boilerpipe.filters.english.IgnoreBlocksAfterContentFilter;
+import de.l3s.boilerpipe.filters.english.MinFulltextWordsFilter;
 import de.l3s.boilerpipe.filters.english.NumWordsRulesClassifier;
-import de.l3s.boilerpipe.filters.lithuanian.TerminatingBlocksFinder;
+import de.l3s.boilerpipe.filters.lithuanian.*;
 import de.l3s.boilerpipe.filters.heuristics.*;
+import de.l3s.boilerpipe.filters.lithuanian.ArticleMetadataFilter;
 import de.l3s.boilerpipe.filters.simple.BoilerplateBlockFilter;
+import de.l3s.boilerpipe.filters.simple.LabelToBoilerplateFilter;
+import de.l3s.boilerpipe.labels.DefaultLabels;
 
 /**
  * A full-text extractor which is tuned towards news articles. In this scenario
@@ -46,17 +51,26 @@ public final class LtArticleExtractor extends ExtractorBase {
         return
 
         TerminatingBlocksFinder.INSTANCE.process(doc)
-                | new DocumentTitleMatchClassifier(doc.getTitle()).process(doc)
-                | NumWordsRulesClassifier.INSTANCE.process(doc)
-                | IgnoreBlocksAfterContentFilter.DEFAULT_INSTANCE.process(doc)
-                | TrailingHeadlineToBoilerplateFilter.INSTANCE.process(doc)
-                | BlockProximityFusion.MAX_DISTANCE_1.process(doc)
-                | BoilerplateBlockFilter.INSTANCE_KEEP_TITLE.process(doc)
-                | BlockProximityFusion.MAX_DISTANCE_1_CONTENT_ONLY_SAME_TAGLEVEL.process(doc)
-                | KeepLargestBlockFilter.INSTANCE_EXPAND_TO_SAME_TAGLEVEL_MIN_WORDS.process(doc)
-                | ExpandTitleToContentFilter.INSTANCE.process(doc)
-                | LargeBlockSameTagLevelToContentFilter.INSTANCE.process(doc)
-                | ListAtEndFilter.INSTANCE.process(doc)
+        | new DocumentTitleMatchClassifier(doc.getTitle()).process(doc)
+        | NumWordsRulesClassifier.INSTANCE.process(doc)
+        | ArticleMetadataFilter.INSTANCE.process(doc)
+        | IgnoreBlocksAfterContentFilter.DEFAULT_INSTANCE.process(doc) // gets rid of pot-end-of-content stuff
+        | TrailingHeadlineToBoilerplateFilter.INSTANCE.process(doc) // MSA: experiment with throwing away
+
+        | RemoveFirstLabelFilter.INSTANCE_TITLE.process(doc)
+
+        | ExpandTitleToContentFilter.INSTANCE_SKIP_TITLE.process(doc)
+
+        | BlockProximityFusion.MAX_DISTANCE_1_CONTENT_ONLY_SAME_TAGLEVEL.process(doc)
+
+        | BoilerplateBlockFilter.INSTANCE.process(doc)
+
+        | KeepLargestBlockFilter.INSTANCE_EXPAND_TO_SAME_TAGLEVEL_MIN_WORDS.process(doc)
+
+        | LargeBlockSameTagLevelToContentFilter.INSTANCE.process(doc)
+
+        | ListAtEndFilter.INSTANCE.process(doc)
         ;
+
     }
 }

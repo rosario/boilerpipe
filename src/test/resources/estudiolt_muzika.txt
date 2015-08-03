@@ -1,0 +1,55 @@
+SAK „MSB SELECT DAC“ (90 tūkst. eurų)
+
+Ar kompaktinis diskas (CD), kaip laikmena, negrįžtamai traukiasi iš muzikos įrašų scenos? Kokia įranga keičia CD grotuvus, kaip garso šaltinius?
+Gegužės 21 dieną Kaune įvyko karščiausio SAK (skaitmeninio-analoginio keitiklio, angl. DAC) pristatymas. Pasaulinio parodomojo turo metu (2015 m. 04–07 mėn.) naująjį „MSB SELECT DAC“ įrenginį lydi jo kūrėjai – amerikiečių bendrovės „MSB Technology Corporation“ steigėjas ir vadovas Larry Gullman bei jo sūnus įmonės inžinierius Jonathan Gullman. Šis SAK į Lietuvą atkeliavo tiesiai iš Miuncheno „High End Show“ parodos, pakeliui stabtelėjęs tik Varšuvoje. Pristatymas Kaune vyko už uždarų durų, tik kviestinei publikai. Kodėl? Apie tai kiek vėliau.
+
+
+
+Jo didenybė „MSB SELECT DAC“
+
+Taigi, prieš mus skaitmeninis-analoginis keitiklis, kurio kaina prilygsta naujam verslo klasės automobiliui, neprastam butui ar net namui – nuo 90 tūkst. eurų (su naujausiu taktinio dažnio generatoriumi „Femto 33 Clock“ – 110 tūkst. eurų). Priminsiu, kad norint klausytis muzikos dar prireiks garso kolonėlių ir stiprintuvo ar stiprintuvų. Na, žinoma, ir skaitmeninio transporto – asmeninio kompiuterio arba spec. kompiuterio, arba tinklo grotuvo, galima prijungti ir CD leistuvą (CD transportą).
+Jei jūs žinote, kas yra Hi-Fi ir High End, tai dabar susipažinkite su garso atkūrimo įrangos kategorija Ultra High End. Aukščiau – jau tik dangus ir… pomirtinis gyvenimas.
+
+Lyginam palyginam
+
+Pirmiausia apie vertinimo metodą, lyginant vieną įrenginį su kitu. Perklausos metu „MSB SELECT DAC“ palyginome su SAK „X“ (12 tūkst. eurų). Kodėl „X“? Nes pastarasis aparatas yra dalinai patobulintas.
+Beje, šis „X“ modelis (įrenginio savininko iniciatyva) pastaruosius kelerius metus buvo palygintas arba išbandytas su įvairiais žinomų gamintojų SAK, su individualiai sukurtais keitikliais ir t. t. Deja, niekas taip ir neįtiko arba neprilygo. Taip buvo iki šiol…
+Manau, kad vaizdingiausiai garso kokybės skirtumus apibūdino vienas iš perklausoje dalyvavusių žinovų. Jo žodžiais, tarp „X“ ir „MSB SELECT DAC“ aparatų skirtumas toks, kaip lyginti juodai baltą su spalvotuoju kinu (visgi nepamirškime kainų skirtumo: 12 tūkst. prieš 110 tūkst.).
+Pirmą kartą pamačius ir išgirdus MSB jaunėlį „The Analog DAC“ (8 tūkst. eurų), mano reakcija buvo: „Vau!“ Brangu, bet kaip natūraliai skamba, kokia raiška ir dinamika! Kiek vėliau susipažinus su „MSB Signature DAC V“ (25 tūkst. eurų) buvo dar daugiau „Vau!“, gerokai daugiau visko, ko galima tikėtis iš muzikos atkūrimo naudojant skaitmeninį šaltinį. Ir patikėkit manimi, naujausias MSB kūrinys – dar fantastiškesnis! Perklausoje dalyvavusio žinomo akustikos specialisto Giedriaus Litvino žodžiais tariant, SELECT DAC-o atkuriama garso rezoliucija (skiriamoji geba) tiesiog (PYP, PYP…) negirdėto lygio!
+Ką mano Vilmantas?
+
+Žinomiausias lietuviškų SAK konstruktorius Vilmantas Dūda sutiko pateikti trumpą MSB keitiklio techninių ypatybių apžvalgą.
+„Įdomus prietaisas. Kūrėjai sugebėjo sukurti puikiai grojantį skaitmeninį-analoginį keitiklį panaudodami eilę inovatyvių sprendimų. Pirmiausia, norėčiau išskirti pagrindinį taktinio dažnio generatorių. Gamintojo deklaruojamas 33 Femto sekundžių fazinio triukšmo lygis yra tiesiog stebėtinai mažas. Matavimo metodika galbūt ir kelia šiokių tokių abejonių, tačiau rezultatai – solidūs. Garso kokybėje toks mažas triukšmas atsispindi atkuriamų detalių gausa, puikiu instrumentų atpažįstamumu. Atskiro paminėjimo yra vertas ir SAK lustas. Bendrovė MSB naudoja savos gamybos r2r jungiamąją rezistorių matricą, kurių vienam stereokanalui yra naudojama net po 4 vnt. Diskutuojant pavyko sužinoti (MSB inžinieriai kategoriškai nenorėjo kalbėti apie technines detales), kad prietaisas nenaudoja skaitmeninio dažnio paaukštinimo (angl. oversampling), tačiau 4 SAK moduliai, esantys išėjime, dirba analoginės interpoliacijos režimu. Taip pat norėtųsi paminėti modulinę prietaiso konstrukciją, kai įvairūs įėjimo ir išėjimo moduliai gali būti greitai pakeičiami ar instaliuojami. Tai suteikia plačias galimybes pritaikyti prietaisą individualiam vartotojui, taip pat ir puikias atnaujinimo galimybes. Trumpai apibendrinant – „MSB SELECT DAC“ yra inovatyvus ir puikiai grojantis SAK įrenginys, tiksiantis daugeliui audiofilų, vertinančių nespalvintą, didelės raiškos garso atkūrimą.“
+Ginčai dėl priešstiprintuvio
+
+Ar reikalingas priešstiprintuvis (pradinis stiprintuvas) audiosistemoje su atskirais galios stiprintuvais, jei SAK turi garsumo reguliavimo funkciją? Juolab kad atskiras pradinis stiprintuvas dažniausiai kainuoja beveik tiek, kiek galios stiprintuvas (-ai). „MSB Technology Corporation“ atstovas Larry Gullman buvo gana kategoriškai nusiteikęs prieš pradinio stiprintuvo naudojimą, jo žodžiais, keitiklis geriau atsikleis prijungus tiesiogiai. Ką gi, „MSB SELECT DAC“ jungėme tiesiai prie monoblokų (galios stiprintuvų). Apie amerikiečių SAK įrenginyje naudojamą garsumo reguliatorių sužinojome tik tai, kad jis valdomas ne skaitmeniniu būdu. Šis reikalas pasirodė esą labai įslaptintas, daugiau jokių komentarų. Visgi į garso stiprinimo traktą grąžinus priešstiprintuvį dauguma perklausos dalyvių pritarė, kad toks variantas daug patrauklesnis, atkuriamas garsas pilnesnis ir įtaigesnis. Suprantama, kad tokį brangų MSB produktą įsiūlyti pirkėjui būtų paprasčiau motyvuojant, kad audiosistemoje nereikės pradinio stiprintuvo. Bet yra, kaip yra.
+Mažytis nesklandumas dėl CD
+
+Per „MSB SELECT DAC“ parodomąją perklausą Kaune buvo puiki galimybė trinktelėti duris CD diskams ir juos atkuriančiai įrangai. Juolab kad proga pasitaikė išskirtinė. Po ranka buvo kompaktinių diskų leistuvas „Audio Note CDT Six“ ir jam skirtas SAK „Audio Note The Fifth Element“. Ketvirtadalis milijono priežasčių už arba prieš (šių įrenginių kainas galite rasti internete). Taigi, lyginome CD transportą su įvairiais kompiuteriniais garso šaltiniais ir, deja… teks dar luktelėti. Kiek painiau buvo palyginti panašiai kainuojančius, tačiau radikaliai skirtingos konstrukcijos ir ideologijos SAK. Keisčiausia, kad klausantis „MSB SELECT DAC“ ir „Audio Note The Fifth Element“ pirmi įspūdžiai nustebino skambesio panašumu. „Visgi klasė ta pati“, – nedrąsiai tarstelėjo vienas iš klausytojų. Kiek vėliau, ir vėl daugumos klausiusiųjų nuomone, teko pripažinti, kad MSB perteikia didesnę raišką, o „Audio Note“ – natūralesnius gyvos muzikos pojūčius. Mano galva, tikslesniems palyginimams ir apibūdinimams reikėtų gerokai daugiau laiko. O nuo kalbų apie CD formato laidotuves aš kuriam laikui susilaikyčiau.
+
+Apie čiulbuonėlius
+
+Pastaruoju metu naujos garso technikos oficialūs pristatymai dažniausiai vyksta už uždarų durų (ir nesvarbu, kas juos organizuoja). Taip jau susiklostė, kad yra tradiciniai prekybininkai, prekių ženklų atstovai su ilgamečiais įsipareigojimas savo tiekėjams ir klientams. Ir yra netradiciniai: perpardavėjai arba pardavėjai, manantys, kad patys geriau sukonstruotų, nei tai daro tradiciniai gamintojai. Štai pora tokių netradicinių, tarpusavyje susijusių čiulbuonėlių, jau kelerius metus labai agresyviai bando viską nuneigti, dergdami kitus gamintojus ir pardavėjus, o save išaukštindami. Net įžūlių šmeižto įrankių griebiasi. Bandydami atsiriboti nuo to nemalonaus kvapo, didžiuma Audio bendruomenės tapo uždaresnė. Tai ir mane paskatino vėl pradėti rašyti. Gal viskas ir į gera.
+
+_______________________
+
+Iki kito susitikimo.
+Audiosistemos komponentai, su kuriais buvo bandytas SAK „MSB SELECT DAC“
+
+Garso kolonėlės: „Focal Stella Utopia EM“
+Garso šaltinis:
+CD leistuvas – „Audio Note CDT Six“
+SAK (skaitmeninis-analoginis keitiklis) – „Audio Note The Fifth Element“
+Garso stiprintuvai:
+Priešstiprintuvis – „Ayre KX-R“
+Galios stiprintuvai – „Ayre MX-R“ (4 x monoblokai)
+SAK muzikai iš kompiuterio – „Nem DAC 1394“ (patobulintas)
+Audiofilinis kompiuteris – „Ultraudio.de“ + „Amarra Symphony 3.0“
+
+Jungiamieji kabeliai:
+Garso kolonėlių – „Nordost Odin“
+Tarpblokiniai stiprintuvams (XLR) – „Nordost Odin“
+Tarpblokiniai iš garso šaltinio (RCA) – „Audio Note SOOTTO“ ir „Less Loss Anchorwave RCA“
+Skaitmeniniai – „Nordost Odin“, „Audio Note SOOTTO“ ir „Siltech Royal Signature Golden Fire“
+Maitinimo kabeliai: „Nordost Odin“, „Siltech Ruby Double Crown“, „Less Loss DFPC Referente“ ir „Cardas Beyond Power“
+Maitinimo skirstytuvai: „Quantum QRT Qb 8“ * 2

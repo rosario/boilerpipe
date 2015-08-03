@@ -54,41 +54,54 @@ public class TerminatingBlocksFinder implements BoilerpipeFilter {
 			if (numWords < 32) {
 				final String text = tb.getText().trim();
 				final int len = text.length();
-				if (len >= 8) {
+				if (len >= 8) { // len of "dalintis"
 					final String textLC = text.toLowerCase();
-					if (textLC.startsWith("komentarai")
-							|| startsWithNumber(textLC, len, " komentarų", " komentarai",
-							" atsiliepimų", " atsiliepimai",
-							" griežtai draudžiama delfi")
-							|| textLC.startsWith("komentaras")
-							|| textLC.startsWith("komentuoti")
-							|| textLC.startsWith("komentuok")
-							|| textLC.startsWith("parašyk komentarą")
-							|| textLC.startsWith("skaityti komentarus")
-							|| textLC.startsWith("dalinkis")
-							|| textLC.startsWith("pasidalink")
-							|| textLC.startsWith("rašyti komentarą")
-							|| textLC.startsWith("griežtai draudžiama delfi")
-							|| textLC.startsWith("naujienų agentūros bns informaciją")
-							|| textLC.startsWith("visas tinklalapyje vz.lt skelbiamas")
-							|| textLC
-									.equals("thanks for your comments - this feedback is now closed")) {
+					if (startsWithNumber(textLC, len,
+                                                             " komentarų",
+                                                             " komentarai",
+                                                             " atsiliepimų",
+                                                             " atsiliepimai",
+                                                             " griežtai draudžiama delfi")
+                                            || textLC.startsWith("koment")
+                                            || textLC.startsWith("parašy")
+                                            || textLC.startsWith("rašy")
+                                            || textLC.startsWith("rašyti komentarą")
+                                            || textLC.startsWith("skaityti komentarus")
+                                            || textLC.startsWith("dalin")
+                                            || textLC.startsWith("pasidalin")
+                                            || textLC.startsWith("griežtai draudžiama")
+                                            || textLC.startsWith("naujienų agentūros bns informaciją")
+                                            || textLC.startsWith("visas tinklalapyje")
+                                            || textLC.startsWith("visa tinklalapyje")
+					    || textLC.startsWith("plačiau")
+					    || textLC.startsWith("daugiau")
+					    || textLC.startsWith("(plačiau")
+					    || textLC.startsWith("(daugiau")
+					    || textLC.startsWith("šaltinis")
+					    || textLC.startsWith("susiję")
+				|| textLC.endsWith("inf.")
+					    || textLC
+						.equals(
+						    "thanks for your comments - this feedback is now closed")) {
 						tb.addLabel(DefaultLabels.INDICATES_END_OF_TEXT);
 						changes = true;
 					}
-				} else if(tb.getLinkDensity() == 1.0) {
-					if(text.equals("Komentarai")) {
-						tb.addLabel(DefaultLabels.INDICATES_END_OF_TEXT);
-					}
+				} // else is not useful with condition above?
+                                else
+                                if(tb.getLinkDensity() > 0.5) {
+                                        tb.addLabel(DefaultLabels.INDICATES_END_OF_TEXT);
+                                        changes = true;
 				}
 			} else if (numWords < 60) {
 				final String text = tb.getText().trim();
 				final int len = text.length();
 				final String textLC = text.toLowerCase();
-				if (textLC.startsWith("griežtai draudžiama delfi")
+				if (textLC.startsWith("griežtai draudžiama")
 						|| textLC.startsWith("naujienų agentūros bns informaciją")
-						|| textLC.startsWith("visas tinklalapyje vz.lt skelbiamas")
-						|| textLC
+                                                || textLC.startsWith("visas tinklalapyje")
+                                                || textLC.startsWith("visa tinklalapyje")
+
+				    || textLC
 						.equals("thanks for your comments - this feedback is now closed")) {
 					tb.addLabel(DefaultLabels.INDICATES_END_OF_TEXT);
 					changes = true;

@@ -19,11 +19,9 @@ package de.l3s.boilerpipe.extractors;
 
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
 import de.l3s.boilerpipe.document.TextDocument;
-import de.l3s.boilerpipe.filters.debug.PrintDebugFilter;
 import de.l3s.boilerpipe.filters.english.IgnoreBlocksAfterContentFilter;
 import de.l3s.boilerpipe.filters.english.MinFulltextWordsFilter;
 import de.l3s.boilerpipe.filters.english.NumWordsRulesClassifier;
-import de.l3s.boilerpipe.filters.science.IgnoreTitleFilter;
 import de.l3s.boilerpipe.filters.science.TerminatingBlocksFinder;
 import de.l3s.boilerpipe.filters.heuristics.*;
 import de.l3s.boilerpipe.filters.simple.BoilerplateBlockFilter;
