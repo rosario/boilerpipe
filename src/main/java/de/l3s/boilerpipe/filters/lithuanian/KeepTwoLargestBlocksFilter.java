@@ -56,7 +56,7 @@ public final class KeepTwoLargestBlocksFilter implements BoilerpipeFilter {
 	public boolean process(final TextDocument doc)
 			throws BoilerpipeProcessingException {
 		List<TextBlock> textBlocks = doc.getTextBlocks();
-		if (textBlocks.size() < 3) {
+		if (textBlocks.size() < 2) {
 			return false;
 		}
 
@@ -69,42 +69,43 @@ public final class KeepTwoLargestBlocksFilter implements BoilerpipeFilter {
 		int level = -1;
           int level2 = -1;
 
-		int i = 0;
-		int n = -1, n2 = -1;
-		for (TextBlock tb : textBlocks) {
-			if (tb.isContent()) {
-				final int nw = tb.getNumWords();
-				
-				if (nw > maxNumWords) {
+          int i = 0;
+          int n = -1, n2 = -1;
+          for (TextBlock tb : textBlocks) {
+                  if (tb.isContent()) {
+                          final int nw = tb.getNumWords();
 
-					largestBlock2 = largestBlock;
-					maxNumWords2 = maxNumWords;
-                                        n2 = n;
-                                        level2 = level;
+                          if (nw > maxNumWords) {
 
-					largestBlock = tb;
-					maxNumWords = nw;
+                                  largestBlock2 = largestBlock;
+                                  maxNumWords2 = maxNumWords;
+                                  n2 = n;
+                                  level2 = level;
 
-					n = i;
+                                  largestBlock = tb;
+                                  maxNumWords = nw;
 
-					if (expandToSameLevelText) {
-						level = tb.getTagLevel();
-					}
-				}
-                                else if (nw>maxNumWords2) {
-                                        largestBlock2 = tb;
-                                        maxNumWords2 = nw;
-                                        n2 = n;
-                                        if (expandToSameLevelText) {
-                                          level2 = tb.getTagLevel();
-                                        }
-                                }
-			}
-			i++;
-		}
+                                  n = i;
+
+                                  if (expandToSameLevelText) {
+                                          level = tb.getTagLevel();
+                                  }
+                          }
+                          else if (nw>maxNumWords2) {
+                                  largestBlock2 = tb;
+                                  maxNumWords2 = nw;
+                                  n2 = n;
+                                  if (expandToSameLevelText) {
+                                    level2 = tb.getTagLevel();
+                                  }
+                          }
+                  }
+                  i++;
+          }
           // keep just largest or both?
           if (maxNumWords > maxNumWords2*2) {
             largestBlock2 = null;
+	    n2 = -1;
           }
 		for (TextBlock tb : textBlocks) {
 			if (tb == largestBlock || tb == largestBlock2) {
@@ -163,7 +164,7 @@ public final class KeepTwoLargestBlocksFilter implements BoilerpipeFilter {
               final int tl = tb.getTagLevel();
               if(tl < level2) {
                 break;
-              } else if(tl == level) {
+              } else if(tl == level2) {
                 if(tb.getNumWords() >= minWords) {
                   tb.setIsContent(true);
                 }

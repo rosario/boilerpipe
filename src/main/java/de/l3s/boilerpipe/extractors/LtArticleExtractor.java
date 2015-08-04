@@ -65,7 +65,8 @@ public final class LtArticleExtractor extends ExtractorBase {
 
         | BoilerplateBlockFilter.INSTANCE.process(doc)
 
-        | KeepLargestBlockFilter.INSTANCE_EXPAND_TO_SAME_TAGLEVEL_MIN_WORDS.process(doc)
+//        | KeepLargestBlockFilter.INSTANCE_EXPAND_TO_SAME_TAGLEVEL_MIN_WORDS.process(doc)
+        | KeepTwoLargestBlocksFilter.INSTANCE_EXPAND_TO_SAME_TAGLEVEL_MIN_WORDS.process(doc)
 
         | LargeBlockSameTagLevelToContentFilter.INSTANCE.process(doc)
 
